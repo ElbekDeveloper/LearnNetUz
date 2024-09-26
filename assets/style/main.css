@@ -5,5 +5,5 @@
 @import "tailwindcss/utilities";
 
 .open {
-  right: 100%;
+  right: 0;
 }
