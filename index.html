@@ -1,70 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/style/main.css" />
-    <title>.NET Darslari</title>
-  </head>
-  <body>
-    <header class="bg-bgsharp-700 mb-6">
-      <section class="md:container mx-auto px-4">
-        <div
-          class="flex relative w-full left-0 right-0 lg:h-auto flex-col lg:flex-row lg:items-center lg:justify-between"
-          
-        >
-          <div class="flex items-center justify-between">
-            <a href="/" class="inline-block h-20 lg:w-44"
-              ><img
-                src="./assets/images/png/csharp-logo.png"
-                class="h-full w-full object-contain object-center"
-                alt="logo"
-            /></a>
-            <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
-              <div class="tham-box">
-                <div class="tham-inner bg-white" /></div>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/style/main.css" />
+  <title>.NET Darslari</title>
+</head>
+
+<body>
+  <header class="mb-6 bg-bgsharp-700">
+    <section class="mx-auto px-4 md:container">
+      <div
+        class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex items-center justify-between">
+          <a href="/" class="inline-block h-20 lg:w-44"><img src="./assets/images/png/csharp-logo.png"
+              class="h-full w-full object-contain object-center" alt="logo" /></a>
+          <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
+            <div class="tham-box">
+              <div class="tham-inner bg-white" />
             </div>
           </div>
-          <nav class="fixed right-full pl-10 lg:pl-0 bg-bgsharp-500 lg:bg-transparent mt-20 w-full lg:w-auto duration-200 lg:mt-0 pt-10 lg:pt-0 lg:static h-screen lg:h-auto">
-            <ul class="flex flex-col lg:flex-row">
-              <li class="mb-8 lg:mb-0 mr-8">
-                <a href="#!" class="text-base text-white"
-                  >C# ga Kirish</a
-                >
-              </li>
-              <li class="mb-8 lg:mb-0 mr-8">
-                <a href="#!" class="text-base text-white">OOP Asoslari</a>
-              </li>
-              <li class="mb-8 lg:mb-0 mr-8">
-                <a href="#!" class="text-base text-white"
-                  >Tamoyillar va Dizayn Patternlar</a
-                >
-              </li>
-              <li class="mb-8 lg:mb-0 mr-8">
-                <a href="#!" class="text-base text-white">Advanced</a>
-              </li>
-              <li>
-                <a href="#!" class="text-base text-white">Advanced .NET</a>
-              </li>
-            </ul>
-          </nav>
         </div>
-      </section>
-    </header>
-    <main>
-      <section>
-        <div class="container mx-auto px-4">
-           <form action="" class="flex justify-center items-center">
-            <div class="flex flex-2  items-center w-2/3 lg:w-2/4 bg-violet-50 focus-within:bg-transparent focus-within:shadow-shadowsharp duration-150 rounded-sm mr-3 p-2">
-              <img src="./assets/images/svg/icon-search.svg" class="w-6 h-6 mr-1" alt="">
-              <input type="text" placeholder="kurs, mavzu nomi" class="px-2 rounded-sm w-full outline-none  font-medium lg:text-lg">
+      </div>
+      <nav
+        class="fixed right-full mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0">
+        <ul class="flex flex-col lg:flex-row">
+          <li class="mb-8 mr-8 lg:mb-0">
+            <a href="#!" class="text-base text-white">C# ga Kirish</a>
+          </li>
+          <li class="mb-8 mr-8 lg:mb-0">
+            <a href="#!" class="text-base text-white">OOP Asoslari</a>
+          </li>
+          <li class="mb-8 mr-8 lg:mb-0">
+            <a href="#!" class="text-base text-white">Tamoyillar va Dizayn Patternlar</a>
+          </li>
+          <li class="mb-8 mr-8 lg:mb-0">
+            <a href="#!" class="text-base text-white">Advanced</a>
+          </li>
+          <li>
+            <a href="#!" class="text-base text-white">Advanced .NET</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section>
+      <div class="container mx-auto px-4">
+        <h1 class="mb-6 text-center text-2xl font-medium capitalize">
+          C# ga kirish
+        </h1>
+        <form action="" class="flex items-center justify-center">
+          <div
+            class="flex-2 mr-3 flex w-2/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4">
+            <img src="./assets/images/svg/icon-search.svg" class="mr-1 h-6 w-6" alt="" />
+            <input type="text" placeholder="kurs, mavzu nomi"
+              class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg" />
+          </div>
+          <button type="submit"
+            class="leading-1 rounded-md bg-bgsharp-700 px-5 py-2.5 capitalize text-white duration-150 hover:bg-bgsharp-500">
+            qidirish
+          </button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto px-4">
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-4">
+          <article class="rounded-sm p-5 shadow-shadowsharp">
+            <h2 class="relative group">
+              <a target="_blank" href="https://youtu.be/LnXO2GNfDaU">Markdown tili, C# tili va VS Code O'rnatish</a>
+              <span
+                class="absolute right-0 opacity-0 group-hover:opacity-100 font-semibold text-bgsharp-700 bottom-0 text-sm group-hover:bottom-5 duration-150">video</span>
+            </h2>
+            <div>
+              <h3 class="capitalize">vazifa</h3>
             </div>
-            <button type="submit" class="bg-bgsharp-700 px-5 py-2.5 rounded-md hover:bg-bgsharp-500 duration-150 text-white capitalize leading-1 ">qidirish</button>
-           </form>
+          </article>
         </div>
-      </section>
-    </main>
-    <script src="app.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
 </html>
