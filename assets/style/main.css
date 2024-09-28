@@ -4,7 +4,7 @@
 @import "./card.css";
 
 @import "tailwindcss/utilities";
-
 .open {
   right: 0;
 }
+
