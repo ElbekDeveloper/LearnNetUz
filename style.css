@@ -1,0 +1,14 @@
+.nav-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.spacer {
+    height: 30px;
+}
+
+.spacer-large {
+    height: 70px;
+}
