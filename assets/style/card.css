@@ -1,3 +1,6 @@
+.open {
+  right: 0;
+}
 .card-wrap{
   height: 0;
   overflow-y: hidden;
