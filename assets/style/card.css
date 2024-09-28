@@ -1,0 +1,38 @@
+.card-wrap{
+  height: 0;
+  overflow-y: hidden;
+  
+}
+.card-task{
+  height: 0;
+  overflow-y: hidden;
+}
+.card-task-item {
+}
+.task-title{
+  
+}
+.collapse-btn{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 13px;
+    height: 2px;
+    background-color: #67217a;
+  }
+   &::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 13px;
+    height: 2px;
+    transform: rotate(-90deg);
+    background-color: #67217a;
+  }
+}
+.open-card{
+  height: auto;
+  overflow: auto;
+}
