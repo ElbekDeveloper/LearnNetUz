@@ -7,8 +7,7 @@ const Table = ({ data }) => {
             <tr>
                 <th style={{ border: '1px solid black', padding: '8px' }}>ID</th>
                 <th style={{ border: '1px solid black', padding: '8px' }}>Mavzu</th>
-                <th style={{ border: '1px solid black', padding: '8px' }}>Vazifa</th>
-                <th style={{ border: '1px solid black', padding: '8px' }}>Qo'shimcha</th>
+                <th style={{ border: '1px solid black', padding: '8px' }}>Video</th>
             </tr>
             </thead>
             <tbody>
@@ -16,8 +15,7 @@ const Table = ({ data }) => {
                 <tr key={row.id}>
                     <td style={{ border: '1px solid black', padding: '8px' }}>{row.id}</td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>{row.theme}</td>
-                    <td style={{ border: '1px solid black', padding: '8px' }}>{row.task}</td>
-                    <td style={{ border: '1px solid black', padding: '8px' }}>{row.topic}</td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>{row.video}</td>
                 </tr>
             ))}
             </tbody>
