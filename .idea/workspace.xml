@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86c1f72f-9fb8-4921-b719-4bd707abdad4" name="Changes" comment="INFRA: Initialize React">
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/footers/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/footers/footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/home/home_page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/home/home_page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/tables/Table.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn-dot-net/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn-dot-net/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn-dot-net/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/home_page.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/home/home_page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/home/home_page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/partOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/partOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/partOne.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,7 @@
       <list>
         <option value="HTML File" />
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,6 +55,7 @@
     "nodejs_package_manager_path": "npm",
     "npm.predeploy.executor": "Run",
     "npm.start.executor": "Run",
+    "ts.external.directory.path": "/Users/azamamonov/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,7 +67,7 @@
       <recent name="$PROJECT_DIR$/lear-dot-net/public" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.predeploy">
     <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/lear-dot-net/package.json" />
       <command value="run" />

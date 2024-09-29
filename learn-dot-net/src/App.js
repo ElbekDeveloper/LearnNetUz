@@ -1,30 +1,23 @@
-import logo from './logo2.svg';
 import './App.css';
 import Home from "./pages/home/home_page";
 import Footer from "./components/footers/footer";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import PartOne from "./pages/partOne";
 
 function App() {
-  return (
-    <div className="App">
-        
-      <header className="App-header">
-          <Home/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://learn.net.uz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn .NET
-        </a>
-      </header>
-        <header></header>
-        <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <header className="App-header">
+                    <Routes>
+                        <Route path="/" element={<Home />}/>
+                        <Route path="/partOne" element={<PartOne />} />  {/* Это маршрут для partOne */}
+                    </Routes>
+                </header>
+                <Footer />
+            </Router>
+        </div>
+    );
 }
 
 export default App;

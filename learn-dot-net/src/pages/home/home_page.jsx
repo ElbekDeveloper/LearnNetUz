@@ -1,22 +1,25 @@
 import React from 'react';
-import './home_page.css'
+import { useNavigate } from 'react-router-dom';
+import './home_page.css';
+
 function Home() {
+    const navigate = useNavigate();
+
     const handleClick = () => {
         window.open("https://mohirdev.uz/kasblar/net-praktikum/", "_blank");
     };
-    
+
     const freeCourse = () => {
-        window.open("https://learn.net.uz");
+        window.open("https://learn.net.uz", "_blank");
     }
-    
-    const partOne =() => {
-        window.location.href = "partOne.jsx";
+
+    const partOne = () => {
+        window.location.href = '/partOne';
     }
+
     return (
-        <div style={{textAlign: 'center', marginTop: '50px'}}>
+        <div style={{ textAlign: 'center', marginTop: '30px'}}>
             <h1>Welcome to Learn .NET</h1>
-            <p>This platform is dedicated to learning .NET and C#.</p>
-            <p>Explore the modules and start your learning journey!</p>
 
             <div style={{ position: 'relative', display: 'flex' }}>
                 <iframe width="646"
@@ -27,23 +30,25 @@ function Home() {
                         referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
                 </iframe>
             </div>
-                <div style={{ 
-                    position: 'relative', 
-                    width: '100%', 
-                    display: 'flex', 
-                    justifyContent: 'space-between', 
-                    transform: 'translateY(30%)' }}>
-                    <button className="animated-button" onClick={handleClick}>
-                        MohirDev-da o'rganish!
-                    </button>
-                    <button className="animated-button" onClick={partOne}>
-                        Bepul o'rganish!
-                    </button>
-                    
-                </div>
+            <div style={{
+                position: 'relative',
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'space-between',
+                transform: 'translateY(30%)'
+            }}>
+                <button className="animated-button" onClick={handleClick}>
+                    MohirDev-da o'rganish!
+                </button>
+                <button className="animated-button" onClick={freeCourse}>
+                    Bepul o'rganish!
+                </button>
+                <button className="animated-button" onClick={partOne}>
+                    Dasrlarni boshlash
+                </button>
+            </div>
         </div>
     );
 }
-
 
 export default Home;
