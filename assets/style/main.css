@@ -1,10 +1,16 @@
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
-@import "./card.css";
 
 @import "tailwindcss/utilities";
+@import "./card.css";
 .open {
-  right: 0;
+  @apply right-0;
 }
-
+.card-wrap {
+}
+.card-intro {
+}
+.open-card {
+  @apply -right-full top-full -z-30 translate-x-full bg-fuchsia-50  duration-500;
+}

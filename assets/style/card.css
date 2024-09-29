@@ -1,20 +1,14 @@
-.card-wrap{
+/* .card-task{
   height: 0;
   overflow-y: hidden;
-  
-}
-.card-task{
-  height: 0;
-  overflow-y: hidden;
-}
+} */
 .card-task-item {
 }
-.task-title{
-  
+.task-title {
 }
-.collapse-btn{
+.collapse-btn {
   position: relative;
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     right: 0;
@@ -22,7 +16,7 @@
     height: 2px;
     background-color: #67217a;
   }
-   &::before{
+  &::before {
     content: "";
     position: absolute;
     right: 0;
@@ -31,8 +25,4 @@
     transform: rotate(-90deg);
     background-color: #67217a;
   }
-}
-.open-card{
-  height: auto;
-  overflow: auto;
 }
