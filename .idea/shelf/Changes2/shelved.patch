@@ -1,0 +1,1802 @@
+Index: lear-dot-net/src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <header className=\"App-header\">\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n        <p>\n          Edit <code>src/App.js</code> and save to reload.\n        </p>\n        <a\n          className=\"App-link\"\n          href=\"https://reactjs.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Learn React\n        </a>\n      </header>\n    </div>\n  );\n}\n\nexport default App;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lear-dot-net/src/App.js b/lear-dot-net/src/App.js
+--- a/lear-dot-net/src/App.js	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/src/App.js	(date 1727552884878)
+@@ -1,25 +1,21 @@
+-import logo from './logo.svg';
+-import './App.css';
++// src/App.js
++import React from 'react';
++import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
++import Navigation from './components/Navigation';
++import Index from './pages/index.html';
++import PartOne from './pages/partOne.html';
+ 
+-function App() {
++const App = () => {
+   return (
+-    <div className="App">
+-      <header className="App-header">
+-        <img src={logo} className="App-logo" alt="logo" />
+-        <p>
+-          Edit <code>src/App.js</code> and save to reload.
+-        </p>
+-        <a
+-          className="App-link"
+-          href="https://reactjs.org"
+-          target="_blank"
+-          rel="noopener noreferrer"
+-        >
+-          Learn React
+-        </a>
+-      </header>
+-    </div>
++      <Router>
++        <Navigation />
++        <Routes>
++          <Route path="/" element={<Index />} />
++          <Route path="/partOne" element={<PartOne />} />
++          {/* Добавьте другие страницы */}
++        </Routes>
++      </Router>
+   );
+-}
++};
+ 
+ export default App;
+Index: lear-dot-net/src/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport './index.css';\nimport App from './App';\nimport reportWebVitals from './reportWebVitals';\n\nconst root = ReactDOM.createRoot(document.getElementById('root'));\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n\n// If you want to start measuring performance in your app, pass a function\n// to log results (for example: reportWebVitals(console.log))\n// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals\nreportWebVitals();\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lear-dot-net/src/index.js b/lear-dot-net/src/index.js
+--- a/lear-dot-net/src/index.js	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/src/index.js	(date 1727549983203)
+@@ -1,17 +1,14 @@
+ import React from 'react';
+-import ReactDOM from 'react-dom/client';
+-import './index.css';
+-import App from './App';
+-import reportWebVitals from './reportWebVitals';
++import Navigation from '../src/components/Navigation';
+ 
+-const root = ReactDOM.createRoot(document.getElementById('root'));
+-root.render(
+-  <React.StrictMode>
+-    <App />
+-  </React.StrictMode>
+-);
++const Index = () => {
++    return (
++        <div>
++            <Navigation />
++            <h1>Welcome to the Home Page</h1>
++            {/* Контент главной страницы */}
++        </div>
++    );
++};
+ 
+-// If you want to start measuring performance in your app, pass a function
+-// to log results (for example: reportWebVitals(console.log))
+-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+-reportWebVitals();
++export default Index;
+Index: lear-dot-net/public/index.html
+===================================================================
+diff --git a/lear-dot-net/public/index.html b/lear-dot-net/public/index.html
+deleted file mode 100644
+--- a/lear-dot-net/public/index.html	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ /dev/null	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
+@@ -1,1247 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-  <meta charset="UTF-8">
+-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-  <title>.NET Darslari</title>
+-</head>
+-<style>
+-  body{
+-    background-color: black;
+-    color: white;
+-    box-sizing: border-box;
+-    padding: 0 20px;
+-    font-family: Arial, sans-serif;
+-    max-width: 1024px;
+-    margin: 0 auto;
+-  }
+-  table {
+-    font-family: arial, sans-serif;
+-    border-collapse: collapse;
+-    width: 100%;
+-  }
+-
+-  td, th {
+-    border: 1px solid #dddddd;
+-    text-align: left;
+-    padding: 8px;
+-  }
+-  a{
+-    color: rgb(58, 131, 226);
+-  }
+-  tr:nth-child(even) {
+-    background-color: #1b1b1b;
+-  }
+-</style>
+-<body>
+-<h1>.NET Haqida Hammasi Bir Joyda!</h1>
+-<h3> <a href="https://t.me/learndotnetuz">Vazifalar guruhiga ulanish</a> </h3>
+-<h3>C# (Si-Sharp) ga Kirish </h3>
+-<table style="margin: 0 auto;">
+-  <thead>
+-  <tr>
+-    <th style="width: 15px">#</th>
+-    <th>Mavzu</th>
+-    <th>Vazifa</th>
+-    <th>Qo'shimcha</th>
+-  </tr>
+-  </thead>
+-  <tbody>
+-  <tr>
+-    <td>1</td>
+-    <td><a target="_blank" href="https://youtu.be/LnXO2GNfDaU"> Markdown tili, C# tili va VS Code O'rnatish</a></td>
+-    <td>
+-      <ul>
+-        <li><a target="_blank" href="https://t.me/c/2134085931/18">Markdown fayl yaratish</a></li>
+-        <li><a target="_blank" href="https://t.me/c/2134085931/22">Hello World! loyihasini yaratish  </a></li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.youtube.com/watch?v=QiK2IYZd6kY&list=PLG2w4duP-rS3GtPSe7oUVTUAU53h7rUnS&index=4">Git o'rnatish</a></li>
+-        <li>
+-          <a target="_blank" href="https://www.markdownguide.org/basic-syntax/">Markdown dokumentatsiyasi</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>2</td>
+-    <td><a target="_blank" href="https://youtu.be/c7_9Gx_l-js">Console nima? C# tilida ma'lumot turlari va operatorlar</a></td>
+-    <td>
+-      <ul>
+-
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/23">Armiya yoshidamisan?</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/90">Sodda kalkulyator</a>
+-        </li>
+-      </ul>
+-
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_variables.php">Variables</a>
+-          mavzudan toki
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_operators.php">Operators</a>
+-          mavzugacha o'rganish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-
+-  <tr>
+-    <td>4</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/0N3MM52VByU">String, if, switch, bool & ternary operator</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/91">Armiya yoshidamisan 2?</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/24">Geometry Guru va Calculator</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_math.php">Math</a>
+-          mavzudan toki
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_switch.php">Switch</a>
+-          mavzugacha o'rganish
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://github.com/JohnnySenior/GeometryGuru">
+-            Geometry Guru (example)
+-          </a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-
+-  <tr>
+-    <td>5</td>
+-    <td><a target="_blank" href="https://www.youtube.com/watch?v=VHNvangsF_A">While va for</a></td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/ElbekningCSharpDarslari/396">
+-            Ko'paytirish jadvali
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/25">
+-            Murakkab Kalkulyator
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/92">
+-            String Polindrommi?
+-          </a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_while_loop.php">While</a>
+-          mavzudan toki
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_for_loop.php">for loop</a>
+-          mavzugacha o'rganish
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://medium.com/@george.af.field/computer-science-fundamentals-sequencing-selection-iteration-b6d8f9ad904b">
+-            Sequence, selection & iteration
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://github.com/JohnnySenior/Calculator">
+-            Murakkab Calculator (example)
+-          </a>
+-        </li>
+-      </ul>
+-
+-    </td>
+-  </tr>
+-
+-  <tr>
+-    <td>6</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/rPLInoxDHHc">Array va foreach</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/26">
+-            IELTS Calculator
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/93">
+-            Shakl Chizuvchi
+-          </a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a href="https://www.w3schools.com/cs/cs_arrays.php">Array</a> mavzusini o'rganish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-
+-  <tr>
+-    <td>7</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/fBcMHZ4XoKM">Method nima?</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/27">Savollarga javob berish</a>
+-        </li>
+-
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/30">Kodni o'qib, o'rganing</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_methods.php">Methods</a>
+-          mavzudan toki
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_method_overloading.php">Method overloading</a>
+-          mavzugacha o'rganish
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_exceptions.php">Exceptions</a>
+-          mavzusini mustaqil o'rganish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>8</td>
+-    <td>
+-      <a target="_blank" href="https://www.youtube.com/watch?v=nwitZwE--Wk">CLR Basics</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/31">Savollarga javob berish</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://github.com/Hassanhabib/CSharpCodingStandard">Kodni o'qib o'rganish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://drive.google.com/file/d/1UQZpz_A1HL-ai5Q44sVvY59wjDNbfbFb/view?usp=share_link">
+-            CLR via C# ktobini yuklab olish.
+-          </a>
+-        </li>
+-        <li>
+-          CLR via C# pg. 3-6
+-        </li>
+-        <li>
+-          CLR Execution Model
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>9</td>
+-    <td>
+-      <a target="_blank" href="https://www.youtube.com/watch?v=f-QA-HGQccQ">IL & JIT Compilation</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/32"> Savollarga javob berish!</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C# pg. 6-16
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://positiwise.com/blog/types-of-jit-compiler-in-net">JIT compiler</a>
+-          mavzu bo'yicha o'qish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>10</td>
+-    <td>
+-      <a target="_blank" href="https://www.youtube.com/watch?v=nGhcPOshYxk">IL Verification & FCL</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/45">Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C# pg. 17-23
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  </tbody>
+-</table>
+-</body>
+-
+-<h3> OOP Asoslari </h3>
+-<h4> Obyektga yo'naltirilgan dasturlash.</h4>
+-<table style="margin: 0 auto;">
+-  <thead>
+-  <tr>
+-    <th style="width: 15px">#</th>
+-    <th>Mavzu</th>
+-    <th>Vazifa</th>
+-    <th>Qo'shimcha</th>
+-  </tr>
+-  </thead>
+-  <tbody>
+-  <tr>
+-    <td> 1 </td>
+-    <td> <a target="_blank" href="https://youtu.be/ZZtnP5_fIzM"> Class Members & Debugging </a></td>
+-    <td>
+-      <ul>
+-        <li>
+-          CRUD loyiha yaratish
+-          <a target=_blank" href="https://t.me/c/2134085931/46">Phone book</a>
+-        </li>
+-        <li>
+-          <a target=_blank" href="https://t.me/c/2134085931/47"> Savollarga javob berish </a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target=_blank" href="https://www.w3schools.com/cs/cs_class_members.php"> Class Members</a> mavzusidan
+-          <a target=_blank" href="https://www.w3schools.com/cs/cs_properties.php">Properties</a> mavzusigacha o'rganish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>2</td>
+-    <td>
+-      <a target=_blank" href="https://youtu.be/HfG36M057CQ">OOP</a>ning asosiy tamoyillari
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Loyihani davom ettirish
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.w3schools.com/cs/cs_inheritance.php">Inheritance</a>
+-          mavzusidan <a target="_blank" href="https://www.w3schools.com/cs/cs_exceptions.php" >Exceptions</a>
+-          mavzusigacha o'rganish
+-        </li>
+-        <li>
+-          Suratlarda OOP <a target=_blank" href="https://habr.com/ru/articles/463125/">(ООП в картинках)</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>3</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/GrgOp_rlBIQ">Savol va Javob | QA</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://github.com/ElbekDeveloper/PhoneBook.Crud">Phone book</a> Loyihasini yakunlash
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          OOP amalda <a target=_blank" href="https://www.freecodecamp.org/news/how-to-use-oop-in-c-sharp/">(How to use OOP)</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>4</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/3672FJO3WBc">CRUD</a> Ma'lumot qo'shish va qaytarish
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Kichik konsol loyiha yaratish
+-        </li>
+-        <li>
+-          CRUD haqida tushunchaga ega bo'lish
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target=_blank" href="https://www.geeksforgeeks.org/how-to-read-and-write-a-text-file-in-c-sharp/" >TextReader</a>
+-        </li>
+-        <li>
+-          <a target=_blank" href="https://www.codecademy.com/article/what-is-crud">What is CRUD?</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>5</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/bmpUEKzduRg">Coding Practice</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Loyiha bilan ishlash va mukammallashtirish
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          TextReader uchun to'liq CRUD yaratish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  </tbody>
+-</table>
+-
+-<h3> Principle & Design Patterns </h3>
+-<h4> Tamoyillar va Dizayn Patternlar</h4>
+-<table>
+-  <tbody>
+-  <tr>
+-    <th style="width: 15px">#</th>
+-    <th>Mavzu</th>
+-    <th>Vazifa</th>
+-    <th>Qo'shimcha</th>
+-  </tr>
+-  <tbody>
+-  </tbody>
+-  <tr>
+-    <td>1</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/4qh6z3y4WX0"> Tamoyillar </a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/51">Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Refactoring Guru, pg. 37-51
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://drive.google.com/file/d/1wQQDQOEJILA3_GaISaxyzYCBKRY5TO2i/view?usp=share_link">Kitobni yuklab olish</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>2</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/pzvqXjfU0a8">S.O.L.I.D. SRP </a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          SPR nima?
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/52">SRP tamoyiliga asoslangan kichik loyiha tuzish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.youtube.com/watch?v=5RwhyZnVRS8"> TimCorey SRP</a>
+-        </li>
+-        <li>
+-          Refactoring Guru, pg. 52-53
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>3</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/qD6IBL9_JMo">S.O.L.I.D. O/C</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          O/C tamoyili nima?
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/55">
+-            O/C tamoyiliga asoslangan kichik loyiha tuzish </a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Refactoring Guru, pg. 51-53
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>4</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/q5R9w7-jyww">S.O.L.I.D. Takrorlash</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/53">Portfolio Project</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Loyihani tayyorlash va GitHub-ga yuklash
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>5</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/fAkG4aGKo7Q">S.O.L.I.D. LSP</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          LSP tamoyili nima?
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          LSP nazariyasi haqida o'qing
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>6</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/ZZ4EHnTZyOA"> S.O.L.I.D. ISP </a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          ISP tamoyili nima?
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/58">ISP tamoyiliga asoslangan loyiha tuzish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Refactoring Guru, pg. 64-67
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>7</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/-bevwnOd3kc">S.O.L.I.D. DIP</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          DI tamoyili nima?
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/61">DIP tamoyiliga asoslangan dastur yozish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Refactoring Guru, pg. 67-70
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>8</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/PF5SsJx96Jg">Creational DP. Factory Method</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/64"> Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/factory-method">Refactoring Guru Web Site</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>9</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/nWFyJ5d3NPQ">Event-Driven Pattern</a>
+-      Cul-de-sac
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Event-driven arxitektura nima?
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Nazariyani o'rganish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>10</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/niVYM6TpWm0">Singleton DP</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Singleton nima?
+-        </li>
+-        <li>
+-          Undan nima maqsadda foydalanamiz?
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/66">Amaliy loyiha</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/singleton"> Singleton Design Pattern</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>11</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/9EsTdeiqaxA">Dependency Injection</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/67">Savollarga javob berish</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/68">Amaliy loyiha</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/">
+-            FreeCodeCamp article.
+-          </a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>12</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/lEWQ3ZU57d0">Composite & Observer DI</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/70">Amaliy loyiha №1</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/71">Amaliy loyiha №2</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/composite">Composite</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/proxy">Proxy</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/mediator">Mediator</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/observer/csharp/example"> Observer in C#</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/state">State</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://refactoring.guru/design-patterns/command">Command</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-</table>
+-
+-<h3> Advanced 2 </h3>
+-<table>
+-  <thead>
+-  <tr>
+-    <th style="width: 15px">#</th>
+-    <th>Mavzu</th>
+-    <th>Vazifa</th>
+-    <th>Qo'shimcha</th>
+-  </tr>
+-  </thead>
+-  <tbody>
+-  <tr>
+-    <td>1</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/1lWyNdw0_70"> Objects, Casting, Namespaces</a>
+-      <br> Ularning barchasi qanday ishlaydi?
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank"  href="https://t.me/c/2134085931/72"> Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C#, pg 91-106
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>2</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/ZSaA9QO8bRU"> Virtual, NonVirtual, Stati metod va Runtime </a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/73">Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C#, pg 106-110
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>3</td>
+-    <td>
+-      <a target = "_blank"  href="https://youtu.be/QolGHXcW3rk">Primitive, Value va Reference ma'lumot turlari</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target = "_blank" href="https://t.me/c/2134085931/74">Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C# pg. 111 - 123
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>4</td>
+-    <td>
+-      <a target = "_blank" href="https://youtu.be/jcn5uCZAk2w?si=qGJC0IeIdtyhDUpz">Access modifiers </a> by Tim Corey
+-      <br>
+-      <a target = "_blank"  href="https://youtu.be/q7aWkjH3UUI?si=BVi2DUZWdZBKrSGN"> Constructors </a> by Mosh
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank"  href="https://t.me/c/2134085931/75">Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C# pg. 124 - 180
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>5</td>
+-    <td>
+-      <a target = "_blank"  href="https://youtu.be/F4KJJF82588">Methods & Constructors</a>
+-      <br>
+-      Params, extensions va metodlar
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/75">Savollar to'plami - 1 </a>
+-        </li>
+-        <li>
+-          <a target="_blank"  href="https://t.me/c/2134085931/6">Savollar to'plami - 2 </a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C# pg. 181 - 226
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>6</td>
+-    <td>
+-      <a target="_blank"  href="https://youtu.be/XnlMX1ADvqg">Asinxron dasturlash</a>
+-      <br>
+-      Thread, Task, Async/Await
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/4">Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          CLR via C# pg. 669 - 756
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>7</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/RuUHzgY9dFE">Interfaces</a>
+-      <br>IEnumerable
+-      <br>IList
+-      <br>IQueryable
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/84">Savollarga javob berish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-8.0">
+-            MS Docs IEnumerable
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-8.0"> MS Docs IList</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.iqueryable.expression?view=net-8.0">MS Docs IQueryable</a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  </tbody>
+-</table>
+-<h3> Advanced .NET </h3>
+-<table>
+-  <thead>
+-  <tr>
+-    <th style="width: 15px">#</th>
+-    <th>Mavzu</th>
+-    <th>Vazifa</th>
+-    <th>Qo'shimcha</th>
+-  </tr>
+-  </thead>
+-  <tbody>
+-  <tr>
+-    <td>1</td>
+-    <td>
+-      <a target="_parent" href="https://youtu.be/qahowxLBfjk">Ma'lumotlar Bazasi Tamoyillari </a>
+-      <br>
+-      <br>
+-      <ul>
+-        <li>
+-          SQL
+-        </li>
+-        <li>
+-          Relation DB
+-        </li>
+-        <li>
+-          Normal Forms
+-        </li>
+-        <li>
+-          Execution Plan
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/3">Savollarga javob berish</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/2">Kichik sodda dastur yaratish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://www.youtube.com/watch?v=vewvhbZyOrc&list=PLG2w4duP-rS1nxiggMQeIFD9Q5hWMrEt5">SQL darsi (uzs)</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/">
+-            SQL indekslar (Article 1)
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://medium.com/trendyol-tech/sql-server-index-architecture-b320999547c4">
+-            SQL indekslar (Article 2)
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://www.freecodecamp.org/news/database-normalization-1nf-2nf-3nf-table-examples/">
+-            Normal Froms (Article 3)
+-          </a>
+-        </li>
+-        <li>
+-          <a target ="_blank" href=" https://www.w3schools.com/sql/default.asp">
+-            w3school SQL Sarslar
+-          </a>
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>2</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/kICIB6osz9k">Loyihani maqsadini aniqlash va modellashitirish</a>
+-      <br>
+-      <br>
+-      <ul>
+-        <li>
+-          Intro to The-Standard
+-        </li>
+-        <li>
+-          Principles
+-        </li>
+-        <li>
+-          Purposing
+-        </li>
+-        <li>
+-          Modeling
+-        </li>
+-        <li>
+-          Simulation
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/7">Savollarga javob berish</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/8">Data Base bilan loyiha yaratish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://github.com/hassanhabib/The-Standard-Uzbek/blob/main/0.%20Kirish/0.1%20Maqsad%2C%20Modellashtirish%20va%20Simulyatsiya.md">
+-            The Standard
+-          </a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://github.com/hassanhabib/The-Standard-Team">The Standard Team GitHub</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://www.youtube.com/watch?v=uLePrrM_G2I&list=PLan3SCnsISTQ63o4HFkIw0YcEcOlwqt53">
+-            Initializing ASP.NET Core API Project
+-          </a>
+-        </li>
+-        <a target="_blank" href="https://www.youtube.com/watch?v=8PveoymxCok&list=PLan3SCnsISTQqmSTZHQbGxBmVDwQdrlub">
+-          The Standard by Hassan Habib=
+-        </a>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>3</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/9yjTVAJ1Kpo">C# orqali Ma'lumotlar bazasi yaratish 1 </a>
+-      <br>
+-      <a target="_blank" href="https://youtu.be/OEFe7r6z-J4"> C# orqali Ma'lumotlar bazasi yaratish 2 </a>
+-      <ul>
+-        <li>
+-          Modeling
+-        </li>
+-        <li>
+-          Migrating
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/11">Savollarga javob berish</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/12">Loyiihani tugatish</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          STX.EFxceptions.SqlServer
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>4</td>
+-    <td>
+-      <a target = "_blank" href ="https://youtu.be/fvzk5rN8dJY">Services (Part 1)</a>
+-      <br>• Foundations Services
+-      <br>• Unit Tests, TDD
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/13">Savollarga javob berish</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/14">Amaliy mashg'ulotni yakunlash</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://github.com/hassanhabib/The-Standard-Uzbek/tree/main/2.%20Xizmatlar/2.1%20Asoslar">
+-            The Standard Asoslar
+-          </a>
+-          <br>
+-          GitHub repo
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://www.youtube.com/@HassanHabib/search?query=foundations%20">
+-            The Standard Asoslar
+-          </a>
+-          <br>
+-          YouTube tutorial by Hassan Habib
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>5</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/9ZOULWLUKeM">Services (Part 2)</a>
+-      <br>
+-      • Validations
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/15"> Savollarga javob berish</a>
+-        </li>
+-        <li>
+-          <a target="_blank" href="https://t.me/c/2134085931/16">Amaliy vazifani yakunlash</a>
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://github.com/hassanhabib/The-Standard-Uzbek/blob/main/2.%20Xizmatlar/2.1%20Asoslar/2.1%20Asoslar.md#2131-validatsiya-tekshiruv">
+-            The Standard Validation (uz)
+-          </a>
+-          <br>
+-          GitHub repo
+-        </li>
+-        <li>
+-          <a target="_blank" href=https://www.youtube.com/@HassanHabib/search?query=validations">
+-            The Standard Validation (end)
+-          </a>
+-          <br>
+-          Vide tutorial by Hassan Habib
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>6</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/y0zklAkiY5Q">ASP.NET Request Lifecycle</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://metanit.com/sharp/aspnet5/6.2.php">Жизненный цикл зависимостей</a>
+-          metanit.com
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Qo'shhimcha ma'lumotlar o'qish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>7</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/_H3Q3jICcyw">ASP.NET Middleware</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://metanit.com/sharp/aspnet6/2.15.php">Классы middleware</a>
+-          <br>
+-          metanit.com
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Qo'shhimcha ma'lumotlar o'qish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  <tr>
+-    <td>8</td>
+-    <td>
+-      <a target="_blank" href="https://youtu.be/2MdnA9xU4QA">ASP.NET HTTP Routing</a>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          <a target="_blank" href="https://metanit.com/sharp/aspnet5/11.1.php">
+-            Основы маршрутизации в ASP.NET Core
+-          </a>
+-          <br>
+-          metanit.com
+-        </li>
+-      </ul>
+-    </td>
+-    <td>
+-      <ul>
+-        <li>
+-          Qo'shhimcha ma'lumotlar o'qish
+-        </li>
+-      </ul>
+-    </td>
+-  </tr>
+-  </tbody>
+-</table>
+-<div style="height: 70px;"></div>
+-<div class="bootomLinks">
+-  <a href="https://t.me/ElbekningCSharpDarslari" title="Telegram kanalga obuna bo'lish" rel="nofollow">
+-    Telegram</a> |
+-  <a href="https://t.me/azam_amonov" title="Xato, kamchiliklar haqida xabar berish" rel="nofollow"> Bog'lanish</a>
+-</div>
+-<div style="height: 70px;"></div>
+-</html>
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>.NET Darslari</title>\n</head>\n<style>\n    body{\n        background-color: black;\n        color: white;\n        box-sizing: border-box;\n        padding: 0 20px;\n        font-family: Arial, sans-serif;\n        max-width: 1024px;\n        margin: 0 auto;\n    }\n    table {\n        font-family: arial, sans-serif;\n        border-collapse: collapse;\n        width: 100%;\n        }\n\n        td, th {\n        border: 1px solid #dddddd;\n        text-align: left;\n        padding: 8px;\n        }\n        a{\n            color: rgb(58, 131, 226);\n        }\n        tr:nth-child(even) {\n        background-color: #1b1b1b;\n        }\n</style>\n<body>\n    <h1>.NET Haqida Hammasi Bir Joyda!</h1>\n    <h3> <a href=\"https://t.me/learndotnetuz\">Vazifalar guruhiga ulanish</a> </h3> \n<nav>\n    <div class=\"spacer\"></div>\n    <div class=\"nav-links\">\n    <a href=\"./partOne.html\"> 1 </a>\n    <a href=\"./oopLessons.html\"> 2 </a>\n    <a href=\"./pattenrsPrinciples.html\"> 3 </a>\n    <a href=\"./advanced.html\"> 4 </a>\n    <a href=\"advancedDotNet.html\"> 5 </a>\n    </div>\n</nav>\n</body>\n\n<div style=\"height: 70px;\"></div>\n<div class=\"bootomLinks\">\n    <a href=\"https://t.me/ElbekningCSharpDarslari\" title=\"Telegram kanalga obuna bo'lish\" rel=\"nofollow\">\n        Telegram</a> |\n    <a href=\"https://t.me/azam_amonov\" title=\"Xato, kamchiliklar haqida xabar berish\" rel=\"nofollow\"> Bog'lanish</a>\n</div>\n<div style=\"height: 70px;\"></div>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/index.html	(date 1727552825422)
+@@ -39,11 +39,11 @@
+ <nav>
+     <div class="spacer"></div>
+     <div class="nav-links">
+-    <a href="./partOne.html"> 1 </a>
+-    <a href="./oopLessons.html"> 2 </a>
+-    <a href="./pattenrsPrinciples.html"> 3 </a>
+-    <a href="./advanced.html"> 4 </a>
+-    <a href="advancedDotNet.html"> 5 </a>
++    <a href="lear-dot-net/src/pages/partOne.html"> 1 </a>
++    <a href="lear-dot-net/public/oopLessons.html"> 2 </a>
++    <a href="lear-dot-net/public/patternsPrinciples.html"> 3 </a>
++    <a href="lear-dot-net/public/advanced.html"> 4 </a>
++    <a href="lear-dot-net/public/advancedDotNet.html"> 5 </a>
+     </div>
+ </nav>
+ </body>
+Index: lear-dot-net/package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lear-dot-net/package-lock.json b/lear-dot-net/package-lock.json
+--- a/lear-dot-net/package-lock.json	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/package-lock.json	(date 1727550313096)
+@@ -13,6 +13,7 @@
+         "@testing-library/user-event": "^13.5.0",
+         "react": "^18.3.1",
+         "react-dom": "^18.3.1",
++        "react-router-dom": "^6.26.2",
+         "react-scripts": "^5.0.1",
+         "web-vitals": "^2.1.4"
+       },
+@@ -3543,6 +3544,15 @@
+         }
+       }
+     },
++    "node_modules/@remix-run/router": {
++      "version": "1.19.2",
++      "resolved": "https://registry.npmjs.org/@remix-run/router/-/router-1.19.2.tgz",
++      "integrity": "sha512-baiMx18+IMuD1yyvOGaHM9QrVUPGGG0jC+z+IPHnRJWUAUvaKuWKyE8gjDj2rzv3sz9zOGoRSPgeBVHRhZnBlA==",
++      "license": "MIT",
++      "engines": {
++        "node": ">=14.0.0"
++      }
++    },
+     "node_modules/@rollup/plugin-babel": {
+       "version": "5.3.1",
+       "resolved": "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz",
+@@ -8207,9 +8217,9 @@
+       }
+     },
+     "node_modules/eslint-module-utils": {
+-      "version": "2.11.1",
+-      "resolved": "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.11.1.tgz",
+-      "integrity": "sha512-EwcbfLOhwVMAfatfqLecR2yv3dE5+kQ8kx+Rrt0DvDXEVwW86KQ/xbMDQhtp5l42VXukD5SOF8mQQHbaNtO0CQ==",
++      "version": "2.12.0",
++      "resolved": "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.12.0.tgz",
++      "integrity": "sha512-wALZ0HFoytlyh/1+4wuZ9FJCD/leWHQzzrxJ8+rebyReSLk7LApMyd3WJaLVoN+D5+WIdJyDK1c6JnE65V4Zyg==",
+       "license": "MIT",
+       "dependencies": {
+         "debug": "^3.2.7"
+@@ -8367,9 +8377,9 @@
+       }
+     },
+     "node_modules/eslint-plugin-react": {
+-      "version": "7.36.1",
+-      "resolved": "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.36.1.tgz",
+-      "integrity": "sha512-/qwbqNXZoq+VP30s1d4Nc1C5GTxjJQjk4Jzs4Wq2qzxFM7dSmuG2UkIjg2USMLh3A/aVcUNrK7v0J5U1XEGGwA==",
++      "version": "7.37.0",
++      "resolved": "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.37.0.tgz",
++      "integrity": "sha512-IHBePmfWH5lKhJnJ7WB1V+v/GolbB0rjS8XYVCSQCZKaQCAUhMoVoOEn1Ef8Z8Wf0a7l8KTJvuZg5/e4qrZ6nA==",
+       "license": "MIT",
+       "dependencies": {
+         "array-includes": "^3.1.8",
+@@ -14002,9 +14012,9 @@
+       }
+     },
+     "node_modules/nwsapi": {
+-      "version": "2.2.12",
+-      "resolved": "https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.12.tgz",
+-      "integrity": "sha512-qXDmcVlZV4XRtKFzddidpfVP4oMSGhga+xdMc25mv8kaLUHtgzCDhUxkrN8exkGdTlLNaXj7CV3GtON7zuGZ+w==",
++      "version": "2.2.13",
++      "resolved": "https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.13.tgz",
++      "integrity": "sha512-cTGB9ptp9dY9A5VbMSe7fQBcl/tt22Vcqdq8+eN93rblOuE0aCFu4aZ2vMwct/2t+lFnosm8RkQW1I0Omb1UtQ==",
+       "license": "MIT"
+     },
+     "node_modules/object-assign": {
+@@ -16376,6 +16386,38 @@
+         "node": ">=0.10.0"
+       }
+     },
++    "node_modules/react-router": {
++      "version": "6.26.2",
++      "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.26.2.tgz",
++      "integrity": "sha512-tvN1iuT03kHgOFnLPfLJ8V95eijteveqdOSk+srqfePtQvqCExB8eHOYnlilbOcyJyKnYkr1vJvf7YqotAJu1A==",
++      "license": "MIT",
++      "dependencies": {
++        "@remix-run/router": "1.19.2"
++      },
++      "engines": {
++        "node": ">=14.0.0"
++      },
++      "peerDependencies": {
++        "react": ">=16.8"
++      }
++    },
++    "node_modules/react-router-dom": {
++      "version": "6.26.2",
++      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.26.2.tgz",
++      "integrity": "sha512-z7YkaEW0Dy35T3/QKPYB1LjMK2R1fxnHO8kWpUMTBdfVzZrWOiY9a7CtN8HqdWtDUWd5FY6Dl8HFsqVwH4uOtQ==",
++      "license": "MIT",
++      "dependencies": {
++        "@remix-run/router": "1.19.2",
++        "react-router": "6.26.2"
++      },
++      "engines": {
++        "node": ">=14.0.0"
++      },
++      "peerDependencies": {
++        "react": ">=16.8",
++        "react-dom": ">=16.8"
++      }
++    },
+     "node_modules/react-scripts": {
+       "version": "5.0.1",
+       "resolved": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.1.tgz",
+@@ -18295,9 +18337,9 @@
+       }
+     },
+     "node_modules/terser": {
+-      "version": "5.34.0",
+-      "resolved": "https://registry.npmjs.org/terser/-/terser-5.34.0.tgz",
+-      "integrity": "sha512-y5NUX+U9HhVsK/zihZwoq4r9dICLyV2jXGOriDAVOeKhq3LKVjgJbGO90FisozXLlJfvjHqgckGmJFBb9KYoWQ==",
++      "version": "5.34.1",
++      "resolved": "https://registry.npmjs.org/terser/-/terser-5.34.1.tgz",
++      "integrity": "sha512-FsJZ7iZLd/BXkz+4xrRTGJ26o/6VTjQytUk8b8OxkwcD2I+79VPJlz7qss1+zE7h8GNIScFqXcDyJ/KqBYZFVA==",
+       "license": "BSD-2-Clause",
+       "dependencies": {
+         "@jridgewell/source-map": "^0.3.3",
+@@ -18709,9 +18751,9 @@
+       }
+     },
+     "node_modules/typescript": {
+-      "version": "4.9.5",
+-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz",
+-      "integrity": "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==",
++      "version": "5.6.2",
++      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.6.2.tgz",
++      "integrity": "sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==",
+       "license": "Apache-2.0",
+       "peer": true,
+       "bin": {
+@@ -18719,7 +18761,7 @@
+         "tsserver": "bin/tsserver"
+       },
+       "engines": {
+-        "node": ">=4.2.0"
++        "node": ">=14.17"
+       }
+     },
+     "node_modules/unbox-primitive": {
+Index: advanced.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/advanced.html b/lear-dot-net/public/advanced.html
+rename from advanced.html
+rename to lear-dot-net/public/advanced.html
+--- a/advanced.html	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/public/advanced.html	(date 1727552825429)
+@@ -213,12 +213,12 @@
+     <div style="height: 30px"> </div>
+     <div class="spacer"></div>
+     <div class="nav-links">
+-        <a href="index.html"> Home </a>
+-        <a href="./partOne.html"> 1 </a>
+-        <a href="./oopLessons.html"> 2 </a>
+-        <a href="./pattenrsPrinciples.html"> 3 </a>
++        <a href="../../index.html"> Home </a>
++        <a href="../src/pages/partOne.html"> 1 </a>
++        <a href="oopLessons.html"> 2 </a>
++        <a href="patternsPrinciples.html"> 3 </a>
+         <a href="./advanced.html"> 4 </a>
+-        <a href="./advancedDotNet.html"> 5 </a>
++        <a href="advancedDotNet.html"> 5 </a>
+     </div>
+     <div style="height: 30px"> </div>
+ </nav>
+Index: pattenrsPrinciples.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pattenrsPrinciples.html b/lear-dot-net/public/patternsPrinciples.html
+rename from pattenrsPrinciples.html
+rename to lear-dot-net/public/patternsPrinciples.html
+--- a/pattenrsPrinciples.html	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/public/patternsPrinciples.html	(date 1727552825415)
+@@ -341,12 +341,12 @@
+     <div style="height: 30px"> </div>
+     <div class="spacer"></div>
+     <div class="nav-links">
+-        <a href="index.html"> Home </a>
+-        <a href="./partOne.html"> 1 </a>
+-        <a href="./oopLessons.html"> 2 </a>
+-        <a href="./pattenrsPrinciples.html"> 3 </a>
+-        <a href="./advanced.html"> 4 </a>
+-        <a href="./advancedDotNet.html"> 5 </a>
++        <a href="../../index.html"> Home </a>
++        <a href="../src/pages/partOne.html"> 1 </a>
++        <a href="oopLessons.html"> 2 </a>
++        <a href="./patternsPrinciples.html"> 3 </a>
++        <a href="advanced.html"> 4 </a>
++        <a href="advancedDotNet.html"> 5 </a>
+     </div>
+     <div style="height: 30px"> </div>
+ </nav>
+Index: partOne.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/partOne.html b/lear-dot-net/src/pages/partOne.html
+rename from partOne.html
+rename to lear-dot-net/src/pages/partOne.html
+--- a/partOne.html	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/src/pages/partOne.html	(date 1727552825424)
+@@ -310,12 +310,12 @@
+     <div style="height: 30px"> </div>
+     <div class="spacer"></div>
+     <div class="nav-links">
+-        <a href="index.html"> Home </a>
++        <a href="../../../index.html"> Home </a>
+         <a href="./partOne.html"> 1 </a>
+-        <a href="./oopLessons.html"> 2 </a>
+-        <a href="./pattenrsPrinciples.html"> 3 </a>
+-        <a href="./advanced.html"> 4 </a>
+-        <a href="./advancedDotNet.html"> 5 </a>
++        <a href="../../public/oopLessons.html"> 2 </a>
++        <a href="../../public/patternsPrinciples.html"> 3 </a>
++        <a href="../../public/advanced.html"> 4 </a>
++        <a href="../../public/advancedDotNet.html"> 5 </a>
+     </div>
+     <div style="height: 30px"> </div>
+ </nav>
+Index: oopLessons.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/oopLessons.html b/lear-dot-net/public/oopLessons.html
+rename from oopLessons.html
+rename to lear-dot-net/public/oopLessons.html
+--- a/oopLessons.html	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/public/oopLessons.html	(date 1727552825435)
+@@ -167,12 +167,12 @@
+     <div style="height: 30px"> </div>
+     <div class="spacer"></div>
+     <div class="nav-links">
+-        <a href="index.html"> Home </a>
+-        <a href="./partOne.html"> 1 </a>
++        <a href="../../index.html"> Home </a>
++        <a href="../src/pages/partOne.html"> 1 </a>
+         <a href="./oopLessons.html"> 2 </a>
+-        <a href="./pattenrsPrinciples.html"> 3 </a>
+-        <a href="./advanced.html"> 4 </a>
+-        <a href="./advancedDotNet.html"> 5 </a>
++        <a href="patternsPrinciples.html"> 3 </a>
++        <a href="advanced.html"> 4 </a>
++        <a href="advancedDotNet.html"> 5 </a>
+     </div>
+     <div style="height: 30px"> </div>
+ </nav>
+Index: advancedDotNet.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/advancedDotNet.html b/lear-dot-net/public/advancedDotNet.html
+rename from advancedDotNet.html
+rename to lear-dot-net/public/advancedDotNet.html
+--- a/advancedDotNet.html	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/public/advancedDotNet.html	(date 1727552825432)
+@@ -338,11 +338,11 @@
+     <div style="height: 30px"> </div>
+     <div class="spacer"></div>
+     <div class="nav-links">
+-        <a href="index.html"> Home </a>
+-        <a href="./partOne.html"> 1 </a>
+-        <a href="./oopLessons.html"> 2 </a>
+-        <a href="./pattenrsPrinciples.html"> 3 </a>
+-        <a href="./advanced.html"> 4 </a>
++        <a href="../../index.html"> Home </a>
++        <a href="../src/pages/partOne.html"> 1 </a>
++        <a href="oopLessons.html"> 2 </a>
++        <a href="patternsPrinciples.html"> 3 </a>
++        <a href="advanced.html"> 4 </a>
+         <a href="./advancedDotNet.html"> 5 </a>
+     </div>
+     <div style="height: 30px"> </div>
+Index: lear-dot-net/src/components/Navigation.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lear-dot-net/src/components/Navigation.jsx b/lear-dot-net/src/components/Navigation.jsx
+new file mode 100644
+--- /dev/null	(date 1727549983198)
++++ b/lear-dot-net/src/components/Navigation.jsx	(date 1727549983198)
+@@ -0,0 +1,21 @@
++import React from 'react';
++import './Navigation.css'; 
++
++const Navigation = () => {
++    return (
++        <>
++            <div className="spacer"></div>
++            <div className="nav-links">
++                <a href="index.html">Home</a>
++                <a href="partOne.html">1</a>
++                <a href="oopLessons.html">2</a>
++                <a href="pattenrsPrinciples.html">3</a>
++                <a href="advanced.html">4</a>
++                <a href="advancedDotNet.html">5</a>
++            </div>
++            <div className="spacer-large"></div>
++        </>
++    );
++};
++
++export default Navigation;
+Index: lear-dot-net/src/components/Navigation.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lear-dot-net/src/components/Navigation.css b/lear-dot-net/src/components/Navigation.css
+new file mode 100644
+--- /dev/null	(date 1727548874015)
++++ b/lear-dot-net/src/components/Navigation.css	(date 1727548874015)
+@@ -0,0 +1,14 @@
++.nav-links {
++    display: flex;
++    gap: 15px;
++    justify-content: center;
++    padding: 20px 0;
++}
++
++.spacer {
++    height: 30px;
++}
++
++.spacer-large {
++    height: 70px;
++}
+\ No newline at end of file
+Index: lear-dot-net/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"lear-dot-net\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"@testing-library/jest-dom\": \"^5.17.0\",\n    \"@testing-library/react\": \"^13.4.0\",\n    \"@testing-library/user-event\": \"^13.5.0\",\n    \"react\": \"^18.3.1\",\n    \"react-dom\": \"^18.3.1\",\n    \"react-scripts\": \"^5.0.1\",\n    \"web-vitals\": \"^2.1.4\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"predeploy\": \"npm run build\",\n    \"deploy\": \"gh-pages -d build\"\n  },\n  \"eslintConfig\": {\n    \"extends\": [\n      \"react-app\",\n      \"react-app/jest\"\n    ]\n  },\n  \"browserslist\": {\n    \"production\": [\n      \">0.2%\",\n      \"not dead\",\n      \"not op_mini all\"\n    ],\n    \"development\": [\n      \"last 1 chrome version\",\n      \"last 1 firefox version\",\n      \"last 1 safari version\"\n    ]\n  },\n  \"devDependencies\": {\n    \"gh-pages\": \"^6.1.1\"\n  },\n  \"homepage\": \"https://learn.net.uz\"\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lear-dot-net/package.json b/lear-dot-net/package.json
+--- a/lear-dot-net/package.json	(revision 92771d7c6c9b12ab59b3502e3d306b556a05be91)
++++ b/lear-dot-net/package.json	(date 1727550312916)
+@@ -8,6 +8,7 @@
+     "@testing-library/user-event": "^13.5.0",
+     "react": "^18.3.1",
+     "react-dom": "^18.3.1",
++    "react-router-dom": "^6.26.2",
+     "react-scripts": "^5.0.1",
+     "web-vitals": "^2.1.4"
+   },
+Index: lear-dot-net/src/pages/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lear-dot-net/src/pages/index.html b/lear-dot-net/src/pages/index.html
+new file mode 100644
+--- /dev/null	(date 1727552884883)
++++ b/lear-dot-net/src/pages/index.html	(date 1727552884883)
+@@ -0,0 +1,58 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>.NET Darslari</title>
++</head>
++<style>
++  body{
++    background-color: black;
++    color: white;
++    box-sizing: border-box;
++    padding: 0 20px;
++    font-family: Arial, sans-serif;
++    max-width: 1024px;
++    margin: 0 auto;
++  }
++  table {
++    font-family: arial, sans-serif;
++    border-collapse: collapse;
++    width: 100%;
++  }
++
++  td, th {
++    border: 1px solid #dddddd;
++    text-align: left;
++    padding: 8px;
++  }
++  a{
++    color: rgb(58, 131, 226);
++  }
++  tr:nth-child(even) {
++    background-color: #1b1b1b;
++  }
++</style>
++<body>
++<h1>.NET Haqida Hammasi Bir Joyda!</h1>
++<h3> <a href="https://t.me/learndotnetuz">Vazifalar guruhiga ulanish</a> </h3>
++<nav>
++  <div class="spacer"></div>
++  <div class="nav-links">
++    <a href="partOne.html"> 1 </a>
++    <a href="../../public/oopLessons.html"> 2 </a>
++    <a href="../../public/patternsPrinciples.html"> 3 </a>
++    <a href="../../public/advanced.html"> 4 </a>
++    <a href="../../public/advancedDotNet.html"> 5 </a>
++  </div>
++</nav>
++</body>
++
++<div style="height: 70px;"></div>
++<div class="bootomLinks">
++  <a href="https://t.me/ElbekningCSharpDarslari" title="Telegram kanalga obuna bo'lish" rel="nofollow">
++    Telegram</a> |
++  <a href="https://t.me/azam_amonov" title="Xato, kamchiliklar haqida xabar berish" rel="nofollow"> Bog'lanish</a>
++</div>
++<div style="height: 70px;"></div>
++</html>
+diff --git a/style.css b/lear-dot-net/public/style.css
+rename from style.css
+rename to lear-dot-net/public/style.css

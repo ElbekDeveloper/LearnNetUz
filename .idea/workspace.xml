@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="86c1f72f-9fb8-4921-b719-4bd707abdad4" name="Changes" comment="INFRA: Initialize Navigate Bar">
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/home_page.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="developer" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2kkYUFK6ZLS6DTKchpMkXw6crMK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.predeploy.executor": "Run",
+    "npm.start.executor": "Run",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn-dot-net/src" />
+      <recent name="$PROJECT_DIR$/lear-dot-net/src/pages" />
+      <recent name="$PROJECT_DIR$/lear-dot-net/public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/lear-dot-net/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/lear-dot-net/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.predeploy" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.predeploy" />
+        <item itemvalue="npm.predeploy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86c1f72f-9fb8-4921-b719-4bd707abdad4" name="Changes" comment="" />
+      <created>1723829056498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723829056498</updated>
+      <workItem from="1723829058362" duration="6895000" />
+      <workItem from="1723886626599" duration="693000" />
+      <workItem from="1723954591160" duration="1982000" />
+      <workItem from="1724471837885" duration="16796000" />
+      <workItem from="1725690113781" duration="11127000" />
+      <workItem from="1725899407631" duration="777000" />
+      <workItem from="1727371883750" duration="2686000" />
+      <workItem from="1727375719803" duration="21761000" />
+    </task>
+    <task id="LOCAL-00001" summary="C# Advanced Part One">
+      <option name="closed" value="true" />
+      <created>1723875553096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723875553097</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <option name="closed" value="true" />
+      <created>1723875900596</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723875900596</updated>
+    </task>
+    <task id="LOCAL-00003" summary="MINOR FIX: Fix 10s Lesson Link">
+      <option name="closed" value="true" />
+      <created>1723955803343</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723955803343</updated>
+    </task>
+    <task id="LOCAL-00004" summary="INFRA: OOP Pillars">
+      <option name="closed" value="true" />
+      <created>1724482793454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724482793454</updated>
+    </task>
+    <task id="LOCAL-00005" summary="INFRA: Design Patterns And Principles">
+      <option name="closed" value="true" />
+      <created>1725703935636</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725703935636</updated>
+    </task>
+    <task id="LOCAL-00006" summary="INFRA: Initialize React">
+      <option name="closed" value="true" />
+      <created>1727540520940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727540520940</updated>
+    </task>
+    <task id="LOCAL-00007" summary="INFRA: Initialize Navigate Bar">
+      <option name="closed" value="true" />
+      <created>1727546279521</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727546279521</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="developer" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="C# Advanced Part One" />
+    <MESSAGE value="test" />
+    <MESSAGE value="MINOR FIX: Fix 10s Lesson Link" />
+    <MESSAGE value="INFRA: OOP Pillars" />
+    <MESSAGE value="INFRA: Design Patterns And Principles" />
+    <MESSAGE value="INFRA: Initialize React" />
+    <MESSAGE value="INFRA: Initialize Navigate Bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="INFRA: Initialize Navigate Bar" />
+  </component>
+</project>
