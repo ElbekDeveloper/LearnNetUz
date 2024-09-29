@@ -8,9 +8,10 @@
   @apply right-0;
 }
 .card-wrap {
+  @apply relative;
 }
-.card-intro {
-}
+/*.card-intro {
+} */
 .open-card {
-  @apply -right-full top-full -z-30 translate-x-full bg-fuchsia-50  duration-500;
+  @apply bg-fuchsia-50  duration-500;
 }
