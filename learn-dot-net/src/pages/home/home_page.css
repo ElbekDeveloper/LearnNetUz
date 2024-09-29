@@ -1,0 +1,28 @@
+/* Home_page.css */
+
+.animated-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b693fe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    transform: scale(1.1); 
+    background-color: #007bff;
+}
+
+/* Если нужно добавить отступы между кнопками, добавьте стиль для контейнера кнопок */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Разместить кнопки по краям */
+    position: absolute; /* Чтобы кнопки располагались над видео */
+    top: 50%; /* Центрировать вертикально */
+    width: 100%; /* Занять всю ширину родителя */
+    transform: translateY(-50%); /* Центрировать по вертикали */
+    padding: 0 20px; /* Паддинг для краев */
+}

@@ -1,6 +1,7 @@
 import logo from './logo2.svg';
 import './App.css';
-import Home from "./pages/home_page";
+import Home from "./pages/home/home_page";
+import Footer from "./components/footers/footer";
 
 function App() {
   return (
@@ -8,8 +9,6 @@ function App() {
         
       <header className="App-header">
           <Home/>
-          
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,6 +21,8 @@ function App() {
           Learn .NET
         </a>
       </header>
+        <header></header>
+        <Footer/>
     </div>
   );
 }

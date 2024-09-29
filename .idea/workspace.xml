@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86c1f72f-9fb8-4921-b719-4bd707abdad4" name="Changes" comment="INFRA: Initialize Navigate Bar">
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/home_page.jsx" afterDir="false" />
+    <list default="true" id="86c1f72f-9fb8-4921-b719-4bd707abdad4" name="Changes" comment="INFRA: Initialize React">
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/footers/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/footers/footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/home/home_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/home/home_page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-dot-net/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-dot-net/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/home_page.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn-dot-net/src/pages/home" />
       <recent name="$PROJECT_DIR$/learn-dot-net/src" />
       <recent name="$PROJECT_DIR$/lear-dot-net/src/pages" />
       <recent name="$PROJECT_DIR$/lear-dot-net/public" />
@@ -110,7 +119,7 @@
       <workItem from="1725690113781" duration="11127000" />
       <workItem from="1725899407631" duration="777000" />
       <workItem from="1727371883750" duration="2686000" />
-      <workItem from="1727375719803" duration="21761000" />
+      <workItem from="1727375719803" duration="27483000" />
     </task>
     <task id="LOCAL-00001" summary="C# Advanced Part One">
       <option name="closed" value="true" />
@@ -168,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727546279521</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="INFRA: Initialize React">
+      <option name="closed" value="true" />
+      <created>1727597566093</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727597566093</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,8 +225,8 @@
     <MESSAGE value="MINOR FIX: Fix 10s Lesson Link" />
     <MESSAGE value="INFRA: OOP Pillars" />
     <MESSAGE value="INFRA: Design Patterns And Principles" />
-    <MESSAGE value="INFRA: Initialize React" />
     <MESSAGE value="INFRA: Initialize Navigate Bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="INFRA: Initialize Navigate Bar" />
+    <MESSAGE value="INFRA: Initialize React" />
+    <option name="LAST_COMMIT_MESSAGE" value="INFRA: Initialize React" />
   </component>
 </project>
