@@ -8,7 +8,10 @@ function Home() {
     const freeCourse = () => {
         window.open("https://learn.net.uz");
     }
-
+    
+    const partOne =() => {
+        window.location.href = "partOne.jsx";
+    }
     return (
         <div style={{textAlign: 'center', marginTop: '50px'}}>
             <h1>Welcome to Learn .NET</h1>
@@ -33,9 +36,10 @@ function Home() {
                     <button className="animated-button" onClick={handleClick}>
                         MohirDev-da o'rganish!
                     </button>
-                    <button className="animated-button" onClick={freeCourse}>
+                    <button className="animated-button" onClick={partOne}>
                         Bepul o'rganish!
                     </button>
+                    
                 </div>
         </div>
     );
