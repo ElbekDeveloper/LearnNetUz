@@ -1,6 +1,6 @@
 const tham = document.querySelector(".tham");
 const nav = document.querySelector("nav");
-const cardCourse = document.querySelector(".card-course");
+const cardTask = document.querySelector(".card-task");
 const taskTitle = document.querySelector(".task-title");
 const cardWrap = document.querySelector(".card-wrap");
 tham.addEventListener("click", () => {
@@ -8,5 +8,5 @@ tham.addEventListener("click", () => {
   tham.classList.toggle("tham-active");
 });
 taskTitle.addEventListener("click", () => {
-  cardWrap.classList.toggle("open-card");
+  cardTask.classList.toggle("open-card");
 });

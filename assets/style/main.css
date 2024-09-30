@@ -13,5 +13,5 @@
 /*.card-intro {
 } */
 .open-card {
-  @apply bg-fuchsia-50  duration-500;
+  @apply translate-x-0;
 }
