@@ -2,10 +2,10 @@
   height: 0;
   overflow-y: hidden;
 } */
-.card-task-item {
+/* .card-task-item {
 }
 .task-title {
-}
+} */
 .collapse-btn {
   position: relative;
   &::after {

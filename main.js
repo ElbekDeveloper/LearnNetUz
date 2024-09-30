@@ -1,12 +1,19 @@
 const tham = document.querySelector(".tham");
 const nav = document.querySelector("nav");
-const cardTask = document.querySelector(".card-task");
-const taskTitle = document.querySelector(".task-title");
 const cardWrap = document.querySelector(".card-wrap");
+const cardSlideTask = document.querySelector(".card-slide-task");
+const cardSlideExtra = document.querySelector(".card-slide-extra");
+const taskBtn = document.querySelector(".task");
+const extraBtn = document.querySelector(".extra");
+
 tham.addEventListener("click", () => {
   nav.classList.toggle("open");
   tham.classList.toggle("tham-active");
 });
-taskTitle.addEventListener("click", () => {
-  cardTask.classList.toggle("open-card");
+
+taskBtn.addEventListener("click", () => {
+  cardSlideTask.classList.toggle("open-card");
+});
+extraBtn.addEventListener("click", () => {
+  cardSlideExtra.classList.toggle("open-card");
 });
