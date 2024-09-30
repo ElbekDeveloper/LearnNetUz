@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+thead th {
+    background-color: #ab77ef;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tbody tr {
+    background-color: #3f3561;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ceaff4;
+}
+
+tbody tr:hover {
+    background-color: rgba(230, 229, 229, 0.1);
+}
+
+tbody td {
+    color: rgb(255, 255, 255);
+}

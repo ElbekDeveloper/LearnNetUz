@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Table = ({ data }) => {
     return (
         <table style={{ borderCollapse: 'collapse', width: '100%' }}>

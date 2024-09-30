@@ -1,4 +1,5 @@
 import React from "react";
+import TaskOne from "../tasks/taskFirst";
 
 function FirstLesson (){
     return (
@@ -11,6 +12,9 @@ function FirstLesson (){
                 referrerPolicy="strict-origin-when-cross-origin" 
                 allowFullScreen>
         </iframe>
+            <div>
+                <TaskOne/>
+            </div>
         </div>
     );
 }
