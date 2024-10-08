@@ -1,11 +1,3 @@
-/* .card-task{
-  height: 0;
-  overflow-y: hidden;
-} */
-/* .card-task-item {
-}
-.task-title {
-} */
 .collapse-btn {
   position: relative;
   &::after {
@@ -15,6 +7,7 @@
     width: 13px;
     height: 2px;
     background-color: #67217a;
+    transition: all 300ms;
   }
   &::before {
     content: "";
@@ -24,5 +17,19 @@
     height: 2px;
     transform: rotate(-90deg);
     background-color: #67217a;
+    transition: all 300ms;
   }
+}
+.task-block,
+.extra-block {
+  clip-path: circle(0% at 0% 0%);
+}
+.open-card {
+  clip-path: circle(100%);
+}
+.rotate::after {
+  @apply -rotate-45;
+}
+.rotate::before {
+  @apply rotate-45;
 }

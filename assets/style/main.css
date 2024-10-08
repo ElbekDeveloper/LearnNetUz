@@ -7,11 +7,7 @@
 .open {
   @apply right-0;
 }
-.card-wrap {
-  @apply relative;
+.card {
 }
 /*.card-intro {
 } */
-.open-card {
-  @apply translate-x-0;
-}
