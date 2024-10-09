@@ -24,7 +24,7 @@
 .extra-block {
   clip-path: circle(0% at 0% 0%);
 }
-.open-card {
+.open-task {
   clip-path: circle(100%);
 }
 .rotate::after {
