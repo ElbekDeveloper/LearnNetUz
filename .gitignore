@@ -1,2 +1,10 @@
 node_modules
 .vscode
+build.css
+CNAME
+package-lock.json
+package.json
+postcss.config.js
+prettier.config.js
+README.md
+tailwind.config.js
