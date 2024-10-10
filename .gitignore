@@ -1,6 +1,5 @@
 node_modules
 .vscode
-build.css
 CNAME
 package-lock.json
 package.json
