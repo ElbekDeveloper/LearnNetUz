@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .collapse-btn {
   position: relative;
   &::after {
@@ -32,4 +35,12 @@
 }
 .rotate::before {
   @apply rotate-45;
+}
+
+.open {
+  right: 0 !important;
+}
+
+.fixed-body {
+  overflow: hidden;
 }
