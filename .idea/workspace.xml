@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86c1f72f-9fb8-4921-b719-4bd707abdad4" name="Changes" comment="x">
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/tables/table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/tasks/taskFirst.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/eightLesson.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/fifthLesson.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/ninethLesson.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/seventhLesson.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/sixthLesson.jsx" afterDir="false" />
+    <list default="true" id="86c1f72f-9fb8-4921-b719-4bd707abdad4" name="Changes" comment="Add Pagination">
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/modal/Modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-dot-net/src/components/modal/Modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/components/tables/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/components/tables/Table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/PartOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/PartOne.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/tasks/part_one_tasks.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/firstLesson.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/firstLesson.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/fourthLesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/videos/fourthLesson.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/tasks/taskFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/tasks/taskFirst.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,24 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "users/azam-amonov/react",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.predeploy.executor": "Run",
-    "npm.start (1).executor": "Run",
-    "npm.start.executor": "Run",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.predeploy.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/azamamonov/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/learn-dot-net/src/pages/part_one/tasks" />
@@ -77,32 +64,12 @@
       <recent name="$PROJECT_DIR$/learn-dot-net/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start (1)">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/learn-dot-net/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.predeploy">
     <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/lear-dot-net/package.json" />
       <command value="run" />
       <scripts>
         <script value="predeploy" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/learn-dot-net/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -120,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start (1)" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.predeploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.predeploy" />
+        <item itemvalue="npm.predeploy" />
       </list>
     </recent_temporary>
   </component>
