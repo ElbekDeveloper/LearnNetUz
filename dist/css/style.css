@@ -2198,6 +2198,18 @@ video {
   overflow: hidden;
 }
 
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
