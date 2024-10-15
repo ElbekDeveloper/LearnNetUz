@@ -1848,8 +1848,8 @@ video {
   margin-right: 1.5rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-20 {
@@ -1866,14 +1866,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
 }
 
 .inline-block {
@@ -2218,6 +2210,13 @@ video {
   z-index: 9999;
 }
 
+.body {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
@@ -2295,12 +2294,12 @@ video {
     margin-bottom: 0px;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:mr-10 {
     margin-right: 2.5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:hidden {

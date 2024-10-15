@@ -1,11 +1,12 @@
 const tham = document.querySelector(".tham");
 const nav = document.querySelector("nav");
 const cards = document.querySelectorAll(".card");
-
+const body = document.querySelector("body");
 if (tham) {
   tham.addEventListener("click", () => {
     nav.classList.toggle("open");
     tham.classList.toggle("tham-active");
+    body.classList.toggle("body");
   });
 }
 
