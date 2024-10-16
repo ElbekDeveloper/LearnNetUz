@@ -1774,6 +1774,10 @@ video {
   bottom: -12px;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
