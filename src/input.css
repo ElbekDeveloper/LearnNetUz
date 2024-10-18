@@ -57,3 +57,30 @@
 .body {
   @apply fixed left-0 right-0 w-full;
 }
+* {
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #67217a;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #67217a;
+    transition: 0.4s ease-in-out;
+  }
+}

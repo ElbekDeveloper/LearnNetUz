@@ -82,17 +82,16 @@
                   alt=""
                 />
                 <input
+                  id="card-filter"
                   type="text"
                   placeholder="kurs, mavzu nomi"
                   class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg"
                 />
               </div>
-              <button
-                type="submit"
-                class="leading-1 rounded-md bg-bgsharp-700 px-5 py-2.5 capitalize text-white duration-150 hover:bg-bgsharp-500"
-              >
-                qidirish
-              </button>
+              <!-- <button type="submit"
+              class="leading-1 rounded-md bg-bgsharp-700 px-5 py-2.5 capitalize text-white duration-150 hover:bg-bgsharp-500">
+              qidirish
+            </button> -->
             </form>
             <div class="mt-6 text-center text-2xl text-bgsharp-700">
               Support me:
@@ -102,6 +101,7 @@
         <section class="pb-12">
           <div class="container mx-auto px-4">
             <div
+              id="row"
               class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
             >
               <div class="card relative">
@@ -112,7 +112,7 @@
                     <a
                       target="_blank"
                       href="https://youtu.be/LnXO2GNfDaU"
-                      class="font-medium"
+                      class="card-title font-medium"
                     >
                       Markdown tili, C# tili va VS Code O'rnatish
                     </a>
@@ -130,14 +130,14 @@
                       class="task mb-4 flex cursor-pointer items-center justify-between"
                     >
                       <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
+                      ><button type="button" class="collapse-btn"></button>
                     </h3>
 
                     <h3
                       class="extra flex cursor-pointer items-center justify-between"
                     >
                       <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
+                      ><button type="button" class="collapse-btn"></button>
                     </h3>
                   </div>
                 </div>
@@ -195,7 +195,7 @@
                     <a
                       target="_blank"
                       href="https://youtu.be/LnXO2GNfDaU"
-                      class="font-medium"
+                      class="card-title font-medium"
                     >
                       Console nima? C# tilida ma'lumot turlari va operatorlar
                     </a>
@@ -270,7 +270,7 @@
                     <a
                       target="_blank"
                       href="https://youtu.be/LnXO2GNfDaU"
-                      class="font-medium"
+                      class="card-title font-medium"
                     >
                       String, if, switch, bool & ternary operator
                     </a>
@@ -355,7 +355,7 @@
                     <a
                       target="_blank"
                       href="https://www.youtube.com/embed/rPLInoxDHHc"
-                      class="font-medium"
+                      class="card-title font-medium"
                     >
                       Array va foreach
                     </a>
@@ -464,7 +464,7 @@
                     <a
                       target="_blank"
                       href="https://youtu.be/fBcMHZ4XoKM"
-                      class="font-medium"
+                      class="card-title font-medium"
                     >
                       Method nima?
                     </a>
@@ -584,7 +584,7 @@
                     <a
                       target="_blank"
                       href="https://youtu.be/LnXO2GNfDaU"
-                      class="font-medium"
+                      class="card-title font-medium"
                     >
                       CLR Basics
                     </a>
@@ -663,6 +663,7 @@
                 >
                   <h2 class="h-12">
                     <a
+                      class="card-title font-medium"
                       target="_blank"
                       href="https://www.youtube.com/watch?v=f-QA-HGQccQ"
                       >IL &amp; JIT Compilation</a
@@ -732,7 +733,7 @@
                     <a
                       target="_blank"
                       href="https://youtu.be/LnXO2GNfDaU"
-                      class="font-medium"
+                      class="card-title font-medium"
                     >
                       While va for
                     </a>
@@ -843,6 +844,7 @@
                 >
                   <h2 class="h-12">
                     <a
+                      class="card-title font-medium"
                       target="_blank"
                       href="https://www.youtube.com/watch?v=nGhcPOshYxk"
                       >IL Verification &amp; FCL</a
