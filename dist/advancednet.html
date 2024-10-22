@@ -1,811 +1,559 @@
 <!doctype html>
 <html lang="uz">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>.NET Darslari</title>
-  </head>
 
-  <body>
-    <div class="flex min-h-screen flex-col">
-      <header class="mb-6 bg-bgsharp-700">
-        <section class="mx-auto px-4 md:container">
-          <div
-            class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between"
-          >
-            <div class="flex items-center justify-between">
-              <a href="/" class="inline-block h-20 lg:w-44"
-                ><img
-                  src="./images/png/csharp-logo.png"
-                  class="h-full w-full object-contain object-center"
-                  alt="logo"
-              /></a>
-              <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
-                <div class="tham-box">
-                  <div class="tham-inner bg-white" />
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>.NET Darslari</title>
+</head>
+
+<body>
+  <div class="flex min-h-screen flex-col">
+    <header class="mb-6 bg-bgsharp-700">
+      <section class="mx-auto px-4 md:container">
+        <div
+          class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between">
+          <div class="flex items-center justify-between">
+            <a href="index.html" class="inline-block h-20 lg:w-44"><img src="./images/png/csharp-logo.png"
+                class="h-full w-full object-contain object-center" alt="logo" /></a>
+            <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
+              <div class="tham-box">
+                <div class="tham-inner bg-white" />
               </div>
             </div>
           </div>
-          <nav
-            class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0"
-          >
-            <ul class="flex flex-col lg:flex-row lg:items-center">
-              <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
-                <a href="/" class="text-base text-white">C# ga Kirish</a>
-              </li>
-              <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
-                <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
-              </li>
-              <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
-                <a href="patterns.html" class="text-base text-white"
-                  >Tamoyillar va Dizayn Patternlar</a
-                >
-              </li>
-              <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
-                <a href="advanced.html" class="text-base text-white"
-                  >Advanced</a
-                >
-              </li>
-              <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
-                <a href="advancednet.html" class="text-base text-white"
-                  >Advanced .NET</a
-                >
-              </li>
-              <li>
-                <a
-                  class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
-                  href="https://t.me/learndotnetuz"
-                  target="_blank"
-                  ><span>Vazifalar guruhi</span>
-                  <img class="ml-3" src="./images/svg/tg.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-      </header>
-      <main>
-        <section>
-          <div class="container mx-auto px-4">
-            <h1 class="mb-6 text-center text-2xl font-medium capitalize">
-              Advanced .NET
-            </h1>
-            <form action="" class="flex items-center justify-center">
-              <div
-                class="flex-2 mr-3 flex w-2/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4"
-              >
-                <img
-                  src="./images/svg/icon-search.svg"
-                  class="mr-1 h-6 w-6"
-                  alt=""
-                />
-                <input
-                  id="card-filter"
-                  type="text"
-                  placeholder="kurs, mavzu nomi"
-                  class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg"
-                />
-              </div>
-              <!-- <button type="submit"
+        </div>
+        <nav
+          class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0">
+          <ul class="flex flex-col lg:flex-row lg:items-center">
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+              <a href="index.html" class="text-base text-white">C# ga Kirish</a>
+            </li>
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+              <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
+            </li>
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+              <a href="patterns.html" class="text-base text-white">Tamoyillar va Dizayn Patternlar</a>
+            </li>
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+              <a href="advanced.html" class="text-base text-white">Advanced</a>
+            </li>
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+              <a href="advancednet.html" class="text-base text-white">Advanced .NET</a>
+            </li>
+            <li>
+              <a class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
+                href="https://t.me/learndotnetuz" target="_blank"><span>Vazifalar guruhi</span>
+                <img class="ml-3" src="./images/svg/tg.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="container mx-auto px-4">
+          <h1 class="mb-6 text-center text-2xl font-medium capitalize">
+            Advanced .NET
+          </h1>
+          <form action="" class="flex items-center justify-center">
+            <div
+              class="flex-2 mr-3 flex w-2/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4">
+              <img src="./images/svg/icon-search.svg" class="mr-1 h-6 w-6" alt="" />
+              <input id="card-filter" type="text" placeholder="kurs, mavzu nomi"
+                class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg" />
+            </div>
+            <!-- <button type="submit"
               class="leading-1 rounded-md bg-bgsharp-700 px-5 py-2.5 capitalize text-white duration-150 hover:bg-bgsharp-500">
               qidirish
             </button> -->
-            </form>
-            <div class="mt-6 text-center text-2xl text-bgsharp-700">
-              Support me:
-            </div>
+          </form>
+          <div class="mt-6 text-center text-2xl text-bgsharp-700">
+            Support me:
           </div>
-        </section>
-        <section class="pb-12">
-          <div class="container mx-auto px-4">
-            <div
-              id="row"
-              class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
-            >
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_parent"
-                      href="https://youtu.be/qahowxLBfjk"
-                      >Ma'lumotlar Bazasi Tamoyillari
-                      <br />
-                      <span
-                        >SQL, Relation DB, Normal Forms, Execution Plan</span
-                      ></a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/qahowxLBfjk"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                    <ul>
-                      <li>---dbms</li>
-                      <li>1. What is SQL?</li>
-                      <li>2. What is DBMS?</li>
-                      <li>3. What is Key?</li>
-                      <li>4. What is Composite Key?</li>
-                      <li>5. What is index?</li>
-                      <li>6. What types of indexes do you know?</li>
-                      <li>7. What is clustered index? Non-clustered?</li>
-                      <li>8. What is database integrity?</li>
-                      <li>9. What is transaction?</li>
-                      <li>10. What is View, Function and Stored Procedure?</li>
-                      <li>11. What are normal forms? 1NF?</li>
-                      <li>12. What is execution plan?</li>
-                      <li>13. What is SQL Profiler?</li>
-                      <hr class="my-1" />
-                      <li>DBMS Project</li>
-                      <li>1. Install MS SQL Server Management Studio</li>
-                      <li>2. Create school database in sql language</li>
-                      <li>3. Create students table</li>
-                      <li>4. Insert students (sql insert statement)</li>
-                      <li>5. Do the rest CRUD operations</li>
-                      <li>
-                        6. Wrap those operations in stored procedures (use
-                        print())
-                      </li>
-                      <li>7. Call stored procedured</li>
-                      <li>
-                        8. Create clustered index for firstname + lastname of
-                        student
-                      </li>
-                      <li>9. Find and show exection plan?</li>
-                      <li>10. Use SQL Profiler</li>
-                      <li>create database [school]</li>
-                      <li>create table [dbo].[Students] (....)</li>
-                      <li>insert into [dbo].[Students] (...)</li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://www.youtube.com/watch?v=vewvhbZyOrc&amp;list=PLG2w4duP-rS1nxiggMQeIFD9Q5hWMrEt5"
-                          >SQL darsi (uzs)</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/"
-                        >
-                          SQL indekslar (Article 1)
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://medium.com/trendyol-tech/sql-server-index-architecture-b320999547c4"
-                        >
-                          SQL indekslar (Article 2)
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://www.freecodecamp.org/news/database-normalization-1nf-2nf-3nf-table-examples/"
-                        >
-                          Normal Froms (Article 3)
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href=" https://www.w3schools.com/sql/default.asp"
-                        >
-                          w3school SQL Sarslar
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/kICIB6osz9k"
-                      >Loyihani maqsadini aniqlash va modellashitirish,
-                      <span>
-                        Intro to The-Standard, Principles, Purposing, Modeling,
-                        Simulation
-                      </span></a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/kICIB6osz9k"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                    <ul>
-                      <li>1. What is ERD?</li>
-                      <li>2. What is Foreign Key?</li>
-                      <li>3. What is Primary Key?</li>
-                      <li>4. What is Self-Referencing Foreign Key?</li>
-                      <li>5. What are primary vs secondary models?</li>
-                      <li>
-                        6. What relationships do you know among SQL Tables?
-                      </li>
-                      <li>7. What is ORM?</li>
-                      <li>8. What is SQLite?</li>
-                      <li>9. How to use SQLite in .NET apps?</li>
-                      <li>10. What is CRUD? How to do in using EF core?</li>
-                      <hr class="my-1" />
-                      <li>
-                        Foydalanuvchilarning insholarini Sun'iy Intellekt (AI)
-                        yordamida tekshirib beradigan loyiha qilinsin
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://github.com/hassanhabib/The-Standard-Uzbek/blob/main/0.%20Kirish/0.1%20Maqsad%2C%20Modellashtirish%20va%20Simulyatsiya.md"
-                        >
-                          The Standard
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://github.com/hassanhabib/The-Standard-Team"
-                          >The Standard Team GitHub</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://www.youtube.com/watch?v=uLePrrM_G2I&amp;list=PLan3SCnsISTQ63o4HFkIw0YcEcOlwqt53"
-                        >
-                          Initializing ASP.NET Core API Project
-                        </a>
-                      </li>
-                      <a
-                        class="font-medium text-blue-700"
-                        target="_blank"
-                        href="https://www.youtube.com/watch?v=8PveoymxCok&amp;list=PLan3SCnsISTQqmSTZHQbGxBmVDwQdrlub"
-                      >
-                        The Standard by Hassan Habib=
-                      </a>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/9yjTVAJ1Kpo"
-                      >1 C# orqali Ma'lumotlar bazasi yaratish</a
-                    >
-                    <br />
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/OEFe7r6z-J4"
-                      >2 C# orqali Ma'lumotlar bazasi yaratish Modeling
-                      Migrating</a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/9yjTVAJ1Kpo"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                    <ul>
-                      <li>--- the standard</li>
-                      <li>1. What is purposing?</li>
-                      <li>2. What is modelling?</li>
-                      <li>3. What is simulation?</li>
-                      <li>
-                        4. What is broker? What types of brokers are there? What
-                        is the difference?
-                      </li>
-                      <li>
-                        5. What is storage broker? Is it repository pattern?
-                      </li>
-                      <hr class="my-1" />
-                      <li>
-                        <a href="./images/png/net-1.jpg"
-                          ><img src="./images/png/net-1.jpg" alt=""
-                        /></a>
-                        <p>
-                          Yuqoridagi rasm bo'yicha Essay va Feedback modellari
-                          uchun kerakli methodlarning simulyatsiyasini chizib
-                          chiqing Storage Brokerda u methodlarni yaratib
-                          chiqing. Team Standard reposini o'qib commit qilish
-                          qoidalari bo'yicha githubga joylang. PR orqali
-                          masterga qo'shish SHART
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>STX.EFxceptions.SqlServe</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/fvzk5rN8dJY"
-                      >Services (Part 1) <br />Foundations Services, Unit Tests,
-                      TDD</a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/fvzk5rN8dJY"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                    <ul>
-                      <li>1. What is Object Filler? vs Bogus?</li>
-                      <li>2. What is Fluent Assertions?</li>
-                      <li>3. What is TDD? or Read-Green Refactor?</li>
-                      <li>4. What is Moq?</li>
-                      <li>5. Why randomize Unit Test parameters?</li>
-                      <li>6. What is Unit Tests? Why we need them?</li>
-                      <hr class="my-1" />
-                      <li>
-                        1. CRUD operations for storage broker for all models
-                        should be complete
-                      </li>
-                      <li>
-                        2. Add operation for all models should be complete. All
-                        use-cases
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://github.com/hassanhabib/The-Standard-Uzbek/tree/main/2.%20Xizmatlar/2.1%20Asoslar"
-                        >
-                          The Standard Asoslar (GitHub repo)
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://www.youtube.com/@HassanHabib/search?query=foundations%20"
-                        >
-                          The Standard Asoslar, (YouTube tutorial by Hassan
-                          Habib)
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/9ZOULWLUKeM"
-                      >Services (Part 2) Validations</a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/9ZOULWLUKeM"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                    <ul>
-                      <li>
-                        1. What is localization and categorization in Exception
-                        handling in Standard?
-                      </li>
-                      <li>
-                        2. What is circuit-breaking and non-circuit breaking
-                        validations?
-                      </li>
-                      <li>
-                        3. What is delegate? Func<>, Expression? Action<>?
-                        Predicate?
-                      </li>
-                      <li>4. [Fact] vs [Theory] test?</li>
-                      <hr class="my-1" />
-                      <li>
-                        Complete validation use-case tests in your projects
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://github.com/hassanhabib/The-Standard-Uzbek/blob/main/2.%20Xizmatlar/2.1%20Asoslar/2.1%20Asoslar.md#2131-validatsiya-tekshiruv"
-                        >
-                          The Standard Validation (uz) (GitHub repo)
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href='https://www.youtube.com/@HassanHabib/search?query=validations"'
-                        >
-                          The Standard Validation (end) (Vide tutorial by Hassan
-                          Habib)
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/y0zklAkiY5Q"
-                      >ASP.NET Request Lifecycle</a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/y0zklAkiY5Q"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://metanit.com/sharp/aspnet5/6.2.php"
-                          >Жизненный цикл зависимостей metanit.com</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>Qo'shhimcha ma'lumotlar o'qish</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/_H3Q3jICcyw"
-                      >ASP.NET Middleware</a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/_H3Q3jICcyw"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://metanit.com/sharp/aspnet6/2.15.php"
-                          >Классы middleware metanit.com</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>Qo'shhimcha ma'lumotlar o'qish</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card relative">
-                <div
-                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
-                >
-                  <h2 class="h-12">
-                    <a
-                      class="card-title font-medium"
-                      target="_blank"
-                      href="https://youtu.be/2MdnA9xU4QA"
-                      >ASP.NET HTTP Routing</a
-                    >
-                  </h2>
-                  <div class="h-44">
-                    <iframe
-                      loading="lazy"
-                      src="https://www.youtube.com/embed/2MdnA9xU4QA"
-                      allowfullscreen
-                      class="h-full w-full rounded-sm"
-                    ></iframe>
-                  </div>
-                  <div>
-                    <h3
-                      class="task mb-4 flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">vazifa</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                    <h3
-                      class="extra flex cursor-pointer items-center justify-between"
-                    >
-                      <span class="font-medium capitalize">Qo'shimcha</span
-                      ><button class="collapse-btn"></button>
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>
-                        <a
-                          class="font-medium text-blue-700"
-                          target="_blank"
-                          href="https://metanit.com/sharp/aspnet5/11.1.php"
-                        >
-                          Основы маршрутизации в ASP.NET Core - metanit.com
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
-                  >
-                    <ul>
-                      <li>Qo'shhimcha ma'lumotlar o'qish</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
-        <div class="flex justify-center">
-          <ul class="flex items-center">
-            <li class="mr-4 border-r-2 border-violet-50 pr-4">
-              <a
-                class="text-2xl font-medium text-violet-50"
-                target="_blank"
-                href="https://t.me/ElbekningCSharpDarslari"
-                ><img src="./images/svg/tg.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a
-                class="text-2xl font-medium text-violet-50"
-                target="_blank"
-                href="https://t.me/azam_amonov"
-                >Bog'lanish</a
-              >
-            </li>
-          </ul>
         </div>
-      </footer>
-    </div>
-    <script defer src="js/app.js"></script>
-  </body>
+      </section>
+      <section class="pb-12">
+        <div class="container mx-auto px-4">
+          <div id="row" class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_parent" href="https://youtu.be/qahowxLBfjk">Ma'lumotlar
+                    Bazasi Tamoyillari
+                    <br />
+                    <span>SQL, Relation DB, Normal Forms, Execution Plan</span></a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/qahowxLBfjk" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                  <ul>
+                    <li>---dbms</li>
+                    <li>1. What is SQL?</li>
+                    <li>2. What is DBMS?</li>
+                    <li>3. What is Key?</li>
+                    <li>4. What is Composite Key?</li>
+                    <li>5. What is index?</li>
+                    <li>6. What types of indexes do you know?</li>
+                    <li>7. What is clustered index? Non-clustered?</li>
+                    <li>8. What is database integrity?</li>
+                    <li>9. What is transaction?</li>
+                    <li>10. What is View, Function and Stored Procedure?</li>
+                    <li>11. What are normal forms? 1NF?</li>
+                    <li>12. What is execution plan?</li>
+                    <li>13. What is SQL Profiler?</li>
+                    <hr class="my-1" />
+                    <li>DBMS Project</li>
+                    <li>1. Install MS SQL Server Management Studio</li>
+                    <li>2. Create school database in sql language</li>
+                    <li>3. Create students table</li>
+                    <li>4. Insert students (sql insert statement)</li>
+                    <li>5. Do the rest CRUD operations</li>
+                    <li>
+                      6. Wrap those operations in stored procedures (use
+                      print())
+                    </li>
+                    <li>7. Call stored procedured</li>
+                    <li>
+                      8. Create clustered index for firstname + lastname of
+                      student
+                    </li>
+                    <li>9. Find and show exection plan?</li>
+                    <li>10. Use SQL Profiler</li>
+                    <li>create database [school]</li>
+                    <li>create table [dbo].[Students] (....)</li>
+                    <li>insert into [dbo].[Students] (...)</li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://www.youtube.com/watch?v=vewvhbZyOrc&amp;list=PLG2w4duP-rS1nxiggMQeIFD9Q5hWMrEt5">SQL
+                        darsi (uzs)</a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/">
+                        SQL indekslar (Article 1)
+                      </a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://medium.com/trendyol-tech/sql-server-index-architecture-b320999547c4">
+                        SQL indekslar (Article 2)
+                      </a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://www.freecodecamp.org/news/database-normalization-1nf-2nf-3nf-table-examples/">
+                        Normal Froms (Article 3)
+                      </a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href=" https://www.w3schools.com/sql/default.asp">
+                        w3school SQL Sarslar
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/kICIB6osz9k">Loyihani
+                    maqsadini aniqlash va modellashitirish,
+                    <span>
+                      Intro to The-Standard, Principles, Purposing, Modeling,
+                      Simulation
+                    </span></a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/kICIB6osz9k" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                  <ul>
+                    <li>1. What is ERD?</li>
+                    <li>2. What is Foreign Key?</li>
+                    <li>3. What is Primary Key?</li>
+                    <li>4. What is Self-Referencing Foreign Key?</li>
+                    <li>5. What are primary vs secondary models?</li>
+                    <li>
+                      6. What relationships do you know among SQL Tables?
+                    </li>
+                    <li>7. What is ORM?</li>
+                    <li>8. What is SQLite?</li>
+                    <li>9. How to use SQLite in .NET apps?</li>
+                    <li>10. What is CRUD? How to do in using EF core?</li>
+                    <hr class="my-1" />
+                    <li>
+                      Foydalanuvchilarning insholarini Sun'iy Intellekt (AI)
+                      yordamida tekshirib beradigan loyiha qilinsin
+                    </li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://github.com/hassanhabib/The-Standard-Uzbek/blob/main/0.%20Kirish/0.1%20Maqsad%2C%20Modellashtirish%20va%20Simulyatsiya.md">
+                        The Standard
+                      </a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://github.com/hassanhabib/The-Standard-Team">The Standard Team GitHub</a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://www.youtube.com/watch?v=uLePrrM_G2I&amp;list=PLan3SCnsISTQ63o4HFkIw0YcEcOlwqt53">
+                        Initializing ASP.NET Core API Project
+                      </a>
+                    </li>
+                    <a class="font-medium text-blue-700" target="_blank"
+                      href="https://www.youtube.com/watch?v=8PveoymxCok&amp;list=PLan3SCnsISTQqmSTZHQbGxBmVDwQdrlub">
+                      The Standard by Hassan Habib=
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/9yjTVAJ1Kpo">1 C# orqali
+                    Ma'lumotlar bazasi yaratish</a>
+                  <br />
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/OEFe7r6z-J4">2 C# orqali
+                    Ma'lumotlar bazasi yaratish Modeling
+                    Migrating</a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/9yjTVAJ1Kpo" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                  <ul>
+                    <li>--- the standard</li>
+                    <li>1. What is purposing?</li>
+                    <li>2. What is modelling?</li>
+                    <li>3. What is simulation?</li>
+                    <li>
+                      4. What is broker? What types of brokers are there? What
+                      is the difference?
+                    </li>
+                    <li>
+                      5. What is storage broker? Is it repository pattern?
+                    </li>
+                    <hr class="my-1" />
+                    <li>
+                      <a href="./images/png/net-1.jpg"><img src="./images/png/net-1.jpg" alt="" /></a>
+                      <p>
+                        Yuqoridagi rasm bo'yicha Essay va Feedback modellari
+                        uchun kerakli methodlarning simulyatsiyasini chizib
+                        chiqing Storage Brokerda u methodlarni yaratib
+                        chiqing. Team Standard reposini o'qib commit qilish
+                        qoidalari bo'yicha githubga joylang. PR orqali
+                        masterga qo'shish SHART
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>STX.EFxceptions.SqlServe</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/fvzk5rN8dJY">Services (Part
+                    1) <br />Foundations Services, Unit Tests,
+                    TDD</a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/fvzk5rN8dJY" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                  <ul>
+                    <li>1. What is Object Filler? vs Bogus?</li>
+                    <li>2. What is Fluent Assertions?</li>
+                    <li>3. What is TDD? or Read-Green Refactor?</li>
+                    <li>4. What is Moq?</li>
+                    <li>5. Why randomize Unit Test parameters?</li>
+                    <li>6. What is Unit Tests? Why we need them?</li>
+                    <hr class="my-1" />
+                    <li>
+                      1. CRUD operations for storage broker for all models
+                      should be complete
+                    </li>
+                    <li>
+                      2. Add operation for all models should be complete. All
+                      use-cases
+                    </li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://github.com/hassanhabib/The-Standard-Uzbek/tree/main/2.%20Xizmatlar/2.1%20Asoslar">
+                        The Standard Asoslar (GitHub repo)
+                      </a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://www.youtube.com/@HassanHabib/search?query=foundations%20">
+                        The Standard Asoslar, (YouTube tutorial by Hassan
+                        Habib)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/9ZOULWLUKeM">Services (Part
+                    2) Validations</a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/9ZOULWLUKeM" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                  <ul>
+                    <li>
+                      1. What is localization and categorization in Exception
+                      handling in Standard?
+                    </li>
+                    <li>
+                      2. What is circuit-breaking and non-circuit breaking
+                      validations?
+                    </li>
+                    <li>
+                      3. What is delegate? Func<>, Expression? Action<>?
+                          Predicate?
+                    </li>
+                    <li>4. [Fact] vs [Theory] test?</li>
+                    <hr class="my-1" />
+                    <li>
+                      Complete validation use-case tests in your projects
+                    </li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://github.com/hassanhabib/The-Standard-Uzbek/blob/main/2.%20Xizmatlar/2.1%20Asoslar/2.1%20Asoslar.md#2131-validatsiya-tekshiruv">
+                        The Standard Validation (uz) (GitHub repo)
+                      </a>
+                    </li>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href='https://www.youtube.com/@HassanHabib/search?query=validations"'>
+                        The Standard Validation (end) (Vide tutorial by Hassan
+                        Habib)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/y0zklAkiY5Q">ASP.NET Request
+                    Lifecycle</a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/y0zklAkiY5Q" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://metanit.com/sharp/aspnet5/6.2.php">Жизненный цикл зависимостей metanit.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>Qo'shhimcha ma'lumotlar o'qish</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/_H3Q3jICcyw">ASP.NET
+                    Middleware</a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/_H3Q3jICcyw" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://metanit.com/sharp/aspnet6/2.15.php">Классы middleware metanit.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>Qo'shhimcha ma'lumotlar o'qish</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card relative">
+              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
+                <h2 class="h-12">
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/2MdnA9xU4QA">ASP.NET HTTP
+                    Routing</a>
+                </h2>
+                <div class="h-44">
+                  <iframe loading="lazy" src="https://www.youtube.com/embed/2MdnA9xU4QA" allowfullscreen
+                    class="h-full w-full rounded-sm"></iframe>
+                </div>
+                <div>
+                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
+                  </h3>
+                  <h3 class="extra flex cursor-pointer items-center justify-between">
+                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>
+                      <a class="font-medium text-blue-700" target="_blank"
+                        href="https://metanit.com/sharp/aspnet5/11.1.php">
+                        Основы маршрутизации в ASP.NET Core - metanit.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
+                  <ul>
+                    <li>Qo'shhimcha ma'lumotlar o'qish</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
+      <div class="flex justify-center">
+        <ul class="flex items-center">
+          <li class="mr-4 border-r-2 border-violet-50 pr-4">
+            <a class="text-2xl font-medium text-violet-50" target="_blank"
+              href="https://t.me/ElbekningCSharpDarslari"><img src="./images/svg/tg.svg" alt="" /></a>
+          </li>
+          <li>
+            <a class="text-2xl font-medium text-violet-50" target="_blank"
+              href="https://t.me/azam_amonov">Bog'lanish</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script defer src="js/app.js"></script>
+</body>
+
 </html>

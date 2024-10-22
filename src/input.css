@@ -30,6 +30,16 @@
 .open-task {
   clip-path: circle(100%);
 }
+.menu-item {
+  @apply relative;
+}
+.menu-item::after {
+  content: "";
+  @apply absolute left-0 top-full mt-[2px] h-[1.5px] w-0 bg-violet-50 duration-300;
+}
+.menu-item:hover::after {
+  @apply w-full;
+}
 .rotate::after {
   @apply -rotate-45;
 }
