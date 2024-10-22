@@ -22,7 +22,7 @@
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -44,9 +44,10 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -89,7 +90,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -135,7 +136,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -236,9 +238,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+input:where([type="button"]),
+input:where([type="reset"]),
+input:where([type="submit"]) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -285,7 +287,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -378,7 +380,8 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -446,7 +449,9 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -594,7 +599,7 @@ video {
   justify-content: center;
   cursor: pointer;
   transition-timing-function: linear;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-property: opacity;
 }
 
@@ -614,7 +619,7 @@ video {
   position: absolute;
   border-radius: 4px;
   transition-timing-function: ease;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-property: transform;
 }
 
@@ -625,7 +630,7 @@ video {
   display: block;
   border-radius: 4px;
   transition-timing-function: ease;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-property: transform;
 }
 
@@ -636,7 +641,7 @@ video {
   display: block;
   border-radius: 4px;
   transition-timing-function: ease;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-property: transform;
 }
 
@@ -669,62 +674,78 @@ video {
 }
 
 .tham.tham-e-squeeze .tham-inner {
-  transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition-duration: 75ms;
 }
 
 .tham.tham-e-squeeze .tham-inner::before {
-  transition: top 75ms ease .12s,opacity 75ms ease;
+  transition:
+    top 75ms ease 0.12s,
+    opacity 75ms ease;
 }
 
 .tham.tham-e-squeeze .tham-inner::after {
-  transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+  transition:
+    bottom 75ms ease 0.12s,
+    transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-e-squeeze.tham-active .tham-inner {
-  transition-delay: .12s;
-  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: rotate(45deg);
 }
 
 .tham.tham-e-squeeze.tham-active .tham-inner::before {
   top: 0;
-  transition: top 75ms ease,opacity 75ms ease .12s;
+  transition:
+    top 75ms ease,
+    opacity 75ms ease 0.12s;
   opacity: 0;
 }
 
 .tham.tham-e-squeeze.tham-active .tham-inner::after {
   bottom: 0;
-  transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+  transition:
+    bottom 75ms ease,
+    transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   transform: rotate(-90deg);
 }
 
 .tham.tham-w-4.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-3.20px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-3.2px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-4.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-3.20px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-3.2px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-4.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-4.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-4.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-3.20px, -4.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-3.2px, -4px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-4.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-3.20px, 4.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-3.2px, 4px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-4.tham-e-arrow-turn.tham-active .tham-inner {
@@ -732,11 +753,11 @@ video {
 }
 
 .tham.tham-w-4.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(3.20px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(3.2px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-4.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(3.20px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(3.2px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-4.tham-e-spin .tham-inner {
@@ -745,11 +766,15 @@ video {
 }
 
 .tham.tham-w-4.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-4.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-4.tham-e-spin.tham-active .tham-inner {
@@ -761,13 +786,17 @@ video {
 .tham.tham-w-4.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-4.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-5.tham-e-slider .tham-inner {
@@ -799,31 +828,39 @@ video {
 }
 
 .tham.tham-w-5.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-4.00px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-4px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-5.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-4.00px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-4px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-5.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-5.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-5.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-4.00px, -5.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-4px, -5px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-5.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-4.00px, 5.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-4px, 5px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-5.tham-e-arrow-turn.tham-active .tham-inner {
@@ -831,11 +868,11 @@ video {
 }
 
 .tham.tham-w-5.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(4.00px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(4px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-5.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(4.00px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(4px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-5.tham-e-spin .tham-inner {
@@ -844,11 +881,15 @@ video {
 }
 
 .tham.tham-w-5.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-5.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-5.tham-e-spin.tham-active .tham-inner {
@@ -860,13 +901,17 @@ video {
 .tham.tham-w-5.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-5.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-6.tham-e-slider .tham-inner {
@@ -898,31 +943,39 @@ video {
 }
 
 .tham.tham-w-6.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-4.80px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-4.8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-6.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-4.80px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-4.8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-6.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-6.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-6.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-4.80px, -6.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-4.8px, -6px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-6.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-4.80px, 6.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-4.8px, 6px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-6.tham-e-arrow-turn.tham-active .tham-inner {
@@ -930,11 +983,11 @@ video {
 }
 
 .tham.tham-w-6.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(4.80px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(4.8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-6.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(4.80px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(4.8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-6.tham-e-spin .tham-inner {
@@ -943,11 +996,15 @@ video {
 }
 
 .tham.tham-w-6.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-6.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-6.tham-e-spin.tham-active .tham-inner {
@@ -959,13 +1016,17 @@ video {
 .tham.tham-w-6.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-6.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-7.tham-e-slider .tham-inner {
@@ -997,31 +1058,39 @@ video {
 }
 
 .tham.tham-w-7.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-5.60px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-5.6px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-7.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-5.60px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-5.6px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-7.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-7.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-7.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-5.60px, -7.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-5.6px, -7px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-7.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-5.60px, 7.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-5.6px, 7px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-7.tham-e-arrow-turn.tham-active .tham-inner {
@@ -1029,11 +1098,11 @@ video {
 }
 
 .tham.tham-w-7.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(5.60px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(5.6px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-7.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(5.60px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(5.6px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-7.tham-e-spin .tham-inner {
@@ -1042,11 +1111,15 @@ video {
 }
 
 .tham.tham-w-7.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-7.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-7.tham-e-spin.tham-active .tham-inner {
@@ -1058,13 +1131,17 @@ video {
 .tham.tham-w-7.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-7.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-8.tham-e-slider .tham-inner {
@@ -1096,31 +1173,39 @@ video {
 }
 
 .tham.tham-w-8.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-6.40px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-6.4px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-8.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-6.40px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-6.4px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-8.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-8.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-8.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-6.40px, -8.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-6.4px, -8px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-8.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-6.40px, 8.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-6.4px, 8px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-8.tham-e-arrow-turn.tham-active .tham-inner {
@@ -1128,11 +1213,11 @@ video {
 }
 
 .tham.tham-w-8.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(6.40px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(6.4px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-8.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(6.40px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(6.4px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-8.tham-e-spin .tham-inner {
@@ -1141,11 +1226,15 @@ video {
 }
 
 .tham.tham-w-8.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-8.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-8.tham-e-spin.tham-active .tham-inner {
@@ -1157,13 +1246,17 @@ video {
 .tham.tham-w-8.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-8.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-9.tham-e-slider .tham-inner {
@@ -1195,31 +1288,39 @@ video {
 }
 
 .tham.tham-w-9.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-7.20px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-7.2px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-9.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-7.20px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-7.2px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-9.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-9.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-9.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-7.20px, -9.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-7.2px, -9px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-9.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-7.20px, 9.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-7.2px, 9px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-9.tham-e-arrow-turn.tham-active .tham-inner {
@@ -1227,11 +1328,11 @@ video {
 }
 
 .tham.tham-w-9.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(7.20px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(7.2px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-9.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(7.20px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(7.2px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-9.tham-e-spin .tham-inner {
@@ -1240,11 +1341,15 @@ video {
 }
 
 .tham.tham-w-9.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-9.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-9.tham-e-spin.tham-active .tham-inner {
@@ -1256,13 +1361,17 @@ video {
 .tham.tham-w-9.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-9.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-10.tham-e-slider .tham-inner {
@@ -1294,31 +1403,39 @@ video {
 }
 
 .tham.tham-w-10.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-8.00px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-10.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-8.00px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-10.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-10.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-10.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-8.00px, -10.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-8px, -10px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-10.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-8.00px, 10.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-8px, 10px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-10.tham-e-arrow-turn.tham-active .tham-inner {
@@ -1326,11 +1443,11 @@ video {
 }
 
 .tham.tham-w-10.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(8.00px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-10.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(8.00px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-10.tham-e-spin .tham-inner {
@@ -1339,11 +1456,15 @@ video {
 }
 
 .tham.tham-w-10.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-10.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-10.tham-e-spin.tham-active .tham-inner {
@@ -1355,13 +1476,17 @@ video {
 .tham.tham-w-10.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-10.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-11.tham-e-slider .tham-inner {
@@ -1393,31 +1518,39 @@ video {
 }
 
 .tham.tham-w-11.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-8.80px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-8.8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-11.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-8.80px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-8.8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-11.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-11.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-11.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-8.80px, -11.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-8.8px, -11px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-11.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-8.80px, 11.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-8.8px, 11px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-11.tham-e-arrow-turn.tham-active .tham-inner {
@@ -1425,11 +1558,11 @@ video {
 }
 
 .tham.tham-w-11.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(8.80px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(8.8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-11.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(8.80px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(8.8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-11.tham-e-spin .tham-inner {
@@ -1438,11 +1571,15 @@ video {
 }
 
 .tham.tham-w-11.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-11.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-11.tham-e-spin.tham-active .tham-inner {
@@ -1454,13 +1591,17 @@ video {
 .tham.tham-w-11.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-11.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham.tham-w-12.tham-e-slider .tham-inner {
@@ -1492,31 +1633,39 @@ video {
 }
 
 .tham.tham-w-12.tham-e-arrow.tham-active .tham-inner::before {
-  transform: translate3d(-9.60px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(-9.6px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-12.tham-e-arrow.tham-active .tham-inner::after {
-  transform: translate3d(-9.60px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(-9.6px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-12.tham-e-arrow-alt .tham-inner::before {
-  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    top 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-12.tham-e-arrow-alt .tham-inner::after {
-  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:
+    bottom 0.1s 0.1s ease,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .tham.tham-w-12.tham-e-arrow-alt.tham-active .tham-inner::before {
   top: 0;
-  transform: translate3d(-9.60px, -12.00px, 0) rotate(-45deg) scale(0.7, 1);
-  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-9.6px, -12px, 0) rotate(-45deg) scale(0.7, 1);
+  transition:
+    top 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-12.tham-e-arrow-alt.tham-active .tham-inner::after {
   bottom: 0;
-  transform: translate3d(-9.60px, 12.00px, 0) rotate(45deg) scale(0.7, 1);
-  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transform: translate3d(-9.6px, 12px, 0) rotate(45deg) scale(0.7, 1);
+  transition:
+    bottom 0.1s ease,
+    transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .tham.tham-w-12.tham-e-arrow-turn.tham-active .tham-inner {
@@ -1524,11 +1673,11 @@ video {
 }
 
 .tham.tham-w-12.tham-e-arrow-turn.tham-active .tham-inner::before {
-  transform: translate3d(9.60px, 0, 0) rotate(45deg) scale(0.7, 1);
+  transform: translate3d(9.6px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-12.tham-e-arrow-turn.tham-active .tham-inner::after {
-  transform: translate3d(9.60px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  transform: translate3d(9.6px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .tham.tham-w-12.tham-e-spin .tham-inner {
@@ -1537,11 +1686,15 @@ video {
 }
 
 .tham.tham-w-12.tham-e-spin .tham-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition:
+    top 0.1s 0.25s ease-in,
+    opacity 0.1s ease-in;
 }
 
 .tham.tham-w-12.tham-e-spin .tham-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .tham.tham-w-12.tham-e-spin.tham-active .tham-inner {
@@ -1553,13 +1706,17 @@ video {
 .tham.tham-w-12.tham-e-spin.tham-active .tham-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s 0.12s ease-out;
 }
 
 .tham.tham-w-12.tham-e-spin.tham-active .tham-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .tham-w-4 .tham-box {
@@ -1840,6 +1997,10 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1854,6 +2015,10 @@ video {
 
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
 }
 
 .mr-8 {
@@ -2007,11 +2172,6 @@ video {
   background-color: rgb(103 33 122 / var(--tw-bg-opacity));
 }
 
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
 .bg-violet-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 243 255 / var(--tw-bg-opacity));
@@ -2024,17 +2184,12 @@ video {
 
 .object-contain {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .object-center {
   -o-object-position: center;
-     object-position: center;
-}
-
-.object-left {
-  -o-object-position: left;
-     object-position: left;
+  object-position: center;
 }
 
 .p-2 {
@@ -2144,7 +2299,8 @@ video {
 .shadow-shadowsharp {
   --tw-shadow: 0 0px 5px #76288c;
   --tw-shadow-colored: 0 0px 5px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none {
@@ -2158,10 +2314,6 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .duration-500 {
@@ -2223,12 +2375,16 @@ video {
 
 .rotate::after {
   --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate::before {
   --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .open {
@@ -2246,7 +2402,7 @@ video {
   width: 100vw;
   height: 100vh;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999;
 }
@@ -2329,13 +2485,16 @@ video {
 .focus-within\:shadow-shadowsharp:focus-within {
   --tw-shadow: 0 0px 5px #76288c;
   --tw-shadow-colored: 0 0px 5px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:scale-\[4\]:hover {
   --tw-scale-x: 4;
   --tw-scale-y: 4;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-bgsharp-500:hover {
