@@ -48,7 +48,7 @@
 }
 
 .open {
-  right: 0 !important;
+  left: 0 !important;
 }
 
 .fixed-body {
@@ -69,10 +69,10 @@
 }
 * {
   scroll-behavior: smooth;
-
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
     transition: 0.4s ease-in-out;
+    cursor: pointer;
   }
 
   /* Track */

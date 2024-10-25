@@ -1940,6 +1940,10 @@ video {
   width: 66.666667%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1978,6 +1982,10 @@ video {
 
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 .rounded-md {
@@ -2232,7 +2240,7 @@ video {
 }
 
 .open {
-  right: 0 !important;
+  left: 0 !important;
 }
 
 .fixed-body {
@@ -2261,9 +2269,10 @@ video {
 * {
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
+    cursor: pointer;
   }
   /* Track */
   &::-webkit-scrollbar-track {
@@ -2349,6 +2358,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
