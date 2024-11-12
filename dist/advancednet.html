@@ -15,7 +15,7 @@
         <div
           class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between">
           <div class="flex items-center justify-between">
-            <a href="/" class="inline-block h-20 lg:w-44"><img src="./images/png/csharp-logo.png"
+            <a href="index.html" class="inline-block h-20 lg:w-44"><img src="./images/png/csharp-logo.png"
                 class="h-full w-full object-contain object-center" alt="logo" /></a>
             <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
               <div class="tham-box">
@@ -27,19 +27,19 @@
         <nav
           class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0">
           <ul class="flex flex-col lg:flex-row lg:items-center">
-            <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="/" class="text-base text-white">C# ga Kirish</a>
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+              <a href="index.html" class="text-base text-white">C# ga Kirish</a>
             </li>
-            <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
               <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
             </li>
-            <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
               <a href="patterns.html" class="text-base text-white">Tamoyillar va Dizayn Patternlar</a>
             </li>
-            <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
               <a href="advanced.html" class="text-base text-white">Advanced</a>
             </li>
-            <li class="mb-8 mr-8 lg:mb-0 lg:mr-10">
+            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
               <a href="advancednet.html" class="text-base text-white">Advanced .NET</a>
             </li>
             <li>
@@ -60,15 +60,11 @@
           </h1>
           <form action="" class="flex items-center justify-center">
             <div
-              class="flex-2 mr-3 flex w-2/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4">
+              class="flex-2 mr-3 flex w-full md:w-2/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4">
               <img src="./images/svg/icon-search.svg" class="mr-1 h-6 w-6" alt="" />
-              <input type="text" placeholder="kurs, mavzu nomi"
+              <input id="card-filter" type="search" placeholder="kurs, mavzu nomi"
                 class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg" />
             </div>
-            <button type="submit"
-              class="leading-1 rounded-md bg-bgsharp-700 px-5 py-2.5 capitalize text-white duration-150 hover:bg-bgsharp-500">
-              qidirish
-            </button>
           </form>
           <div class="mt-6 text-center text-2xl text-bgsharp-700">
             Support me:
@@ -77,12 +73,12 @@
       </section>
       <section class="pb-12">
         <div class="container mx-auto px-4">
-          <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div id="row" class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_parent" href="https://youtu.be/qahowxLBfjk">Ma'lumotlar Bazasi
-                    Tamoyillari
+                  <a class="card-title font-medium" target="_parent" href="https://youtu.be/qahowxLBfjk">Ma'lumotlar
+                    Bazasi Tamoyillari
                     <br />
                     <span>SQL, Relation DB, Normal Forms, Execution Plan</span></a>
                 </h2>
@@ -178,8 +174,8 @@
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_blank" href="https://youtu.be/kICIB6osz9k">Loyihani maqsadini aniqlash
-                    va modellashitirish,
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/kICIB6osz9k">Loyihani
+                    maqsadini aniqlash va modellashitirish,
                     <span>
                       Intro to The-Standard, Principles, Purposing, Modeling,
                       Simulation
@@ -250,12 +246,12 @@
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_blank" href="https://youtu.be/9yjTVAJ1Kpo">1 C# orqali Ma'lumotlar
-                    bazasi yaratish</a> <br>
-                  <a class="font-medium" target="_blank" href="https://youtu.be/OEFe7r6z-J4">2 C# orqali Ma'lumotlar
-                    bazasi yaratish Modeling
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/9yjTVAJ1Kpo">1 C# orqali
+                    Ma'lumotlar bazasi yaratish</a>
+                  <br />
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/OEFe7r6z-J4">2 C# orqali
+                    Ma'lumotlar bazasi yaratish Modeling
                     Migrating</a>
-
                 </h2>
                 <div class="h-44">
                   <iframe loading="lazy" src="https://www.youtube.com/embed/9yjTVAJ1Kpo" allowfullscreen
@@ -278,26 +274,30 @@
                     <li>1. What is purposing?</li>
                     <li>2. What is modelling?</li>
                     <li>3. What is simulation?</li>
-                    <li>4. What is broker? What types of brokers are there? What is the difference?</li>
-                    <li>5. What is storage broker? Is it repository pattern?</li>
+                    <li>
+                      4. What is broker? What types of brokers are there? What
+                      is the difference?
+                    </li>
+                    <li>
+                      5. What is storage broker? Is it repository pattern?
+                    </li>
                     <hr class="my-1" />
                     <li>
-                      <a href="./images/png/net-1.jpg"><img src="./images/png/net-1.jpg" alt=""></a>
+                      <a href="./images/png/net-1.jpg"><img src="./images/png/net-1.jpg" alt="" /></a>
                       <p>
-                        Yuqoridagi rasm bo'yicha Essay va Feedback modellari uchun kerakli methodlarning
-                        simulyatsiyasini chizib chiqing
-                        Storage Brokerda u methodlarni yaratib chiqing. Team Standard reposini o'qib commit qilish
-                        qoidalari bo'yicha githubga
-                        joylang. PR orqali masterga qo'shish SHART
+                        Yuqoridagi rasm bo'yicha Essay va Feedback modellari
+                        uchun kerakli methodlarning simulyatsiyasini chizib
+                        chiqing Storage Brokerda u methodlarni yaratib
+                        chiqing. Team Standard reposini o'qib commit qilish
+                        qoidalari bo'yicha githubga joylang. PR orqali
+                        masterga qo'shish SHART
                       </p>
                     </li>
                   </ul>
                 </div>
                 <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
                   <ul>
-                    <li>
-                      STX.EFxceptions.SqlServe
-                    </li>
+                    <li>STX.EFxceptions.SqlServe</li>
                   </ul>
                 </div>
               </div>
@@ -305,9 +305,9 @@
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_blank" href="https://youtu.be/fvzk5rN8dJY">Services (Part 1)
-                    <br>Foundations Services,
-                    Unit Tests, TDD</a>
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/fvzk5rN8dJY">Services (Part
+                    1) <br />Foundations Services, Unit Tests,
+                    TDD</a>
                 </h2>
                 <div class="h-44">
                   <iframe loading="lazy" src="https://www.youtube.com/embed/fvzk5rN8dJY" allowfullscreen
@@ -332,9 +332,15 @@
                     <li>4. What is Moq?</li>
                     <li>5. Why randomize Unit Test parameters?</li>
                     <li>6. What is Unit Tests? Why we need them?</li>
-                    <hr class="my-1">
-                    <li>1. CRUD operations for storage broker for all models should be complete</li>
-                    <li>2. Add operation for all models should be complete. All use-cases</li>
+                    <hr class="my-1" />
+                    <li>
+                      1. CRUD operations for storage broker for all models
+                      should be complete
+                    </li>
+                    <li>
+                      2. Add operation for all models should be complete. All
+                      use-cases
+                    </li>
                   </ul>
                 </div>
                 <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
@@ -348,7 +354,8 @@
                     <li>
                       <a class="font-medium text-blue-700" target="_blank"
                         href="https://www.youtube.com/@HassanHabib/search?query=foundations%20">
-                        The Standard Asoslar, (YouTube tutorial by Hassan Habib)
+                        The Standard Asoslar, (YouTube tutorial by Hassan
+                        Habib)
                       </a>
                     </li>
                   </ul>
@@ -358,8 +365,8 @@
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_blank" href="https://youtu.be/9ZOULWLUKeM">Services (Part 2)
-                    Validations</a>
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/9ZOULWLUKeM">Services (Part
+                    2) Validations</a>
                 </h2>
                 <div class="h-44">
                   <iframe loading="lazy" src="https://www.youtube.com/embed/9ZOULWLUKeM" allowfullscreen
@@ -378,12 +385,23 @@
                 <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
                   <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
                   <ul>
-                    <li>1. What is localization and categorization in Exception handling in Standard?</li>
-                    <li>2. What is circuit-breaking and non-circuit breaking validations?</li>
-                    <li>3. What is delegate? Func<>, Expression? Action<>? Predicate?</li>
+                    <li>
+                      1. What is localization and categorization in Exception
+                      handling in Standard?
+                    </li>
+                    <li>
+                      2. What is circuit-breaking and non-circuit breaking
+                      validations?
+                    </li>
+                    <li>
+                      3. What is delegate? Func<>, Expression? Action<>?
+                          Predicate?
+                    </li>
                     <li>4. [Fact] vs [Theory] test?</li>
-                    <hr class="my-1">
-                    <li>Complete validation use-case tests in your projects</li>
+                    <hr class="my-1" />
+                    <li>
+                      Complete validation use-case tests in your projects
+                    </li>
                   </ul>
                 </div>
                 <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
@@ -396,8 +414,9 @@
                     </li>
                     <li>
                       <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.youtube.com/@HassanHabib/search?query=validations&quot;">
-                        The Standard Validation (end) (Vide tutorial by Hassan Habib)
+                        href='https://www.youtube.com/@HassanHabib/search?query=validations"'>
+                        The Standard Validation (end) (Vide tutorial by Hassan
+                        Habib)
                       </a>
                     </li>
                   </ul>
@@ -407,7 +426,7 @@
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_blank" href="https://youtu.be/y0zklAkiY5Q">ASP.NET Request
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/y0zklAkiY5Q">ASP.NET Request
                     Lifecycle</a>
                 </h2>
                 <div class="h-44">
@@ -428,8 +447,7 @@
                   <ul>
                     <li>
                       <a class="font-medium text-blue-700" target="_blank"
-                        href="https://metanit.com/sharp/aspnet5/6.2.php">Жизненный цикл зависимостей
-                        metanit.com</a>
+                        href="https://metanit.com/sharp/aspnet5/6.2.php">Жизненный цикл зависимостей metanit.com</a>
                     </li>
                   </ul>
                 </div>
@@ -443,7 +461,8 @@
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_blank" href="https://youtu.be/_H3Q3jICcyw">ASP.NET Middleware</a>
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/_H3Q3jICcyw">ASP.NET
+                    Middleware</a>
                 </h2>
                 <div class="h-44">
                   <iframe loading="lazy" src="https://www.youtube.com/embed/_H3Q3jICcyw" allowfullscreen
@@ -463,8 +482,7 @@
                   <ul>
                     <li>
                       <a class="font-medium text-blue-700" target="_blank"
-                        href="https://metanit.com/sharp/aspnet6/2.15.php">Классы middleware
-                        metanit.com</a>
+                        href="https://metanit.com/sharp/aspnet6/2.15.php">Классы middleware metanit.com</a>
                     </li>
                   </ul>
                 </div>
@@ -478,7 +496,8 @@
             <div class="card relative">
               <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
                 <h2 class="h-12">
-                  <a class="font-medium" target="_blank" href="https://youtu.be/2MdnA9xU4QA">ASP.NET HTTP Routing</a>
+                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/2MdnA9xU4QA">ASP.NET HTTP
+                    Routing</a>
                 </h2>
                 <div class="h-44">
                   <iframe loading="lazy" src="https://www.youtube.com/embed/2MdnA9xU4QA" allowfullscreen
@@ -499,10 +518,8 @@
                     <li>
                       <a class="font-medium text-blue-700" target="_blank"
                         href="https://metanit.com/sharp/aspnet5/11.1.php">
-                        Основы маршрутизации в ASP.NET Core -
-                        metanit.com
+                        Основы маршрутизации в ASP.NET Core - metanit.com
                       </a>
-
                     </li>
                   </ul>
                 </div>

@@ -36,3 +36,20 @@ cards.forEach((cardItem) => {
     });
   }
 });
+function filtrCards() {
+  const input = document.getElementById("card-filter");
+  const filter = input.value.toUpperCase();
+  const cardContainer = document.getElementById("row");
+  const cards = cardContainer.getElementsByClassName("card");
+
+  for (let i = 0; i < cards.length; i++) {
+    const title = cards[i].querySelector(".card-title");
+
+    if (title && title.innerText.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+document.getElementById("card-filter").addEventListener("input", filtrCards);

@@ -30,6 +30,16 @@
 .open-task {
   clip-path: circle(100%);
 }
+.menu-item {
+  @apply relative;
+}
+.menu-item::after {
+  content: "";
+  @apply absolute left-0 top-full mt-[2px] h-[1.5px] w-0 bg-violet-50 duration-300;
+}
+.menu-item:hover::after {
+  @apply w-full;
+}
 .rotate::after {
   @apply -rotate-45;
 }
@@ -38,7 +48,7 @@
 }
 
 .open {
-  right: 0 !important;
+  left: 0 !important;
 }
 
 .fixed-body {
@@ -56,4 +66,31 @@
 }
 .body {
   @apply fixed left-0 right-0 w-full;
+}
+* {
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 4px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #67217a;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #67217a;
+    transition: 0.4s ease-in-out;
+  }
 }
