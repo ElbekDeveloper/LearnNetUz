@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 .collapse-btn {
   position: relative;
   &::after {
@@ -33,6 +35,9 @@
 .menu-item {
   @apply relative;
 }
+.author:hover {
+  background-color: brown;
+}
 .menu-item::after {
   content: "";
   @apply absolute left-0 top-full mt-[2px] h-[1.5px] w-0 bg-violet-50 duration-300;
@@ -49,6 +54,7 @@
 
 .open {
   left: 0 !important;
+  @apply duration-200;
 }
 
 .fixed-body {
