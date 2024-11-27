@@ -2027,6 +2027,11 @@ video {
      object-fit: contain;
 }
 
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .object-center {
   -o-object-position: center;
      object-position: center;
@@ -2035,11 +2040,6 @@ video {
 .object-left {
   -o-object-position: left;
      object-position: left;
-}
-
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 
 .p-2 {
@@ -2211,10 +2211,6 @@ video {
   position: relative;
 }
 
-.author:hover {
-  background-color: brown;
-}
-
 .menu-item::after {
   content: "";
   position: absolute;
@@ -2345,15 +2341,15 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:scale-\[4\]:hover {
-  --tw-scale-x: 4;
-  --tw-scale-y: 4;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-\[4\]:hover {
+  --tw-scale-x: 4;
+  --tw-scale-y: 4;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

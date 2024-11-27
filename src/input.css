@@ -35,9 +35,7 @@
 .menu-item {
   @apply relative;
 }
-.author:hover {
-  background-color: brown;
-}
+
 .menu-item::after {
   content: "";
   @apply absolute left-0 top-full mt-[2px] h-[1.5px] w-0 bg-violet-50 duration-300;
