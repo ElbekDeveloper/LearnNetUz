@@ -1,311 +1,487 @@
 <!doctype html>
 <html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>.NET Darslari</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>.NET Darslari</title>
-</head>
-
-<body>
-  <div class="flex min-h-screen flex-col">
-    <header class="mb-6 bg-bgsharp-700">
-      <section class="mx-auto px-4 md:container">
-        <div
-          class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between">
-          <div class="flex items-center justify-between">
-            <a href="index.html" class="inline-block h-20 lg:w-44"><img src="./images/png/csharp-logo.png"
-                class="h-full w-full object-contain object-center" alt="logo" /></a>
-            <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
-              <div class="tham-box">
-                <div class="tham-inner bg-white" />
+  <body>
+    <div class="flex min-h-screen flex-col">
+      <header class="mb-6 bg-bgsharp-700">
+        <section class="mx-auto px-4 md:container">
+          <div
+            class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="flex items-center justify-between">
+              <a href="index.html" class="inline-block h-20 lg:w-44"
+                ><img
+                  src="./images/png/csharp-logo.png"
+                  class="h-full w-full object-contain object-center"
+                  alt="logo"
+              /></a>
+              <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
+                <div class="tham-box">
+                  <div class="tham-inner bg-white" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <nav
-          class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0">
-          <ul class="flex flex-col lg:flex-row lg:items-center">
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="index.html" class="text-base text-white">C# ga Kirish</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="patterns.html" class="text-base text-white">Tamoyillar va Dizayn Patternlar</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="advanced.html" class="text-base text-white">Advanced</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="advancednet.html" class="text-base text-white">Advanced .NET</a>
+          <nav
+            class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0"
+          >
+            <ul class="flex flex-col lg:flex-row lg:items-center">
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="index.html" class="text-base text-white"
+                  >C# ga Kirish</a
+                >
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="patterns.html" class="text-base text-white"
+                  >Tamoyillar va Dizayn Patternlar</a
+                >
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="advanced.html" class="text-base text-white"
+                  >Advanced</a
+                >
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="advancednet.html" class="text-base text-white"
+                  >Advanced .NET</a
+                >
+              </li>
+              <li>
+                <a
+                  class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
+                  href="https://t.me/learndotnetuz"
+                  target="_blank"
+                  ><span>Vazifalar guruhi</span>
+                  <img class="ml-3" src="./images/svg/tg.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <main>
+        <section>
+          <div class="container mx-auto px-4">
+            <h1 class="mb-6 text-center text-2xl font-medium capitalize">
+              OOP Asoslari
+              <div class="text-xl">Obyektga yo'naltirilgan dasturlash.</div>
+            </h1>
+            <form action="" class="flex items-center justify-center">
+              <div
+                class="flex-2 mr-3 flex w-full items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp md:w-2/3 lg:w-2/4"
+              >
+                <img
+                  src="./images/svg/icon-search.svg"
+                  class="mr-1 h-6 w-6"
+                  alt=""
+                />
+                <input
+                  id="card-filter"
+                  type="search"
+                  placeholder="kurs, mavzu nomi"
+                  class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg"
+                />
+              </div>
+            </form>
+            <div class="mt-6 text-center text-2xl text-bgsharp-700">
+              Support me:
+            </div>
+          </div>
+        </section>
+        <section class="pb-12">
+          <div class="container mx-auto px-4">
+            <div
+              id="row"
+              class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
+            >
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/ZZtnP5_fIzM"
+                    >
+                      Class Members &amp; Debugging
+                    </a>
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/ZZtnP5_fIzM"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <h4 class="mb-2 font-medium">Markdown fayl yaratish</h4>
+                    <ul>
+                      <li>
+                        CRUD loyiha yaratish
+                        <a
+                          class="font-medium text-blue-700"
+                          target='_blank"'
+                          href="https://t.me/c/2134085931/46"
+                          >Phone book</a
+                        >
+                      </li>
+                      <hr class="my-1" />
+                      <li>Savollarga javob berish</li>
+                      <li>1. What is breakpoint?</li>
+                      <li>2. What is field? Property? Method? Constructor?</li>
+                      <li>3. Why we need debugging?</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target='_blank"'
+                          href="https://www.w3schools.com/cs/cs_class_members.php"
+                        >
+                          Class Members</a
+                        >
+                        mavzusidan
+                      </li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target='_blank"'
+                          href="https://www.w3schools.com/cs/cs_properties.php"
+                          >Properties</a
+                        >
+                        mavzusigacha o'rganish
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/HfG36M057CQ"
+                      >OOP </a
+                    >ning asosiy tamoyillari
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/HfG36M057CQ"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <h4 class="mb-2 font-medium">Loyihani davom ettirish</h4>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.w3schools.com/cs/cs_inheritance.php"
+                          >Inheritance</a
+                        >
+                        mavzusidan
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.w3schools.com/cs/cs_exceptions.php"
+                          >Exceptions</a
+                        >
+                        mavzusigacha o'rganish
+                      </li>
+                      <li>
+                        Suratlarda OOP
+                        <a
+                          target='_blank"'
+                          href="https://habr.com/ru/articles/463125/"
+                          >(ООП в картинках)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/GrgOp_rlBIQ"
+                      >Savol va Javob | QA</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/GrgOp_rlBIQ"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://github.com/ElbekDeveloper/PhoneBook.Crud"
+                          >Phone book</a
+                        >
+                        Loyihasini yakunlash
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        OOP amalda
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.freecodecamp.org/news/how-to-use-oop-in-c-sharp/"
+                          >(How to use OOP)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/3672FJO3WBc"
+                      >CRUD</a
+                    >
+                    Ma'lumot qo'shish va qaytarish
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/3672FJO3WBc"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>1. Kichik konsol loyiha yaratish</li>
+                      <li>2. CRUD haqida tushunchaga ega bo'lish</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target='_blank"'
+                          href="https://www.geeksforgeeks.org/how-to-read-and-write-a-text-file-in-c-sharp/"
+                          >TextReader</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target='_blank"'
+                          href="https://www.codecademy.com/article/what-is-crud"
+                          >What is CRUD?</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="font-medium text-blue-700"
+                      target="_blank"
+                      href="https://youtu.be/bmpUEKzduRg"
+                      >Coding Practice</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/bmpUEKzduRg"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Loyiha bilan ishlash va mukammallashtirish</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>TextReader uchun to'liq CRUD yaratish</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
+        <div class="flex justify-center">
+          <ul class="flex items-center">
+            <li class="mr-4 border-r-2 border-violet-50 pr-4">
+              <a
+                class="text-2xl font-medium text-violet-50"
+                target="_blank"
+                href="https://t.me/ElbekningCSharpDarslari"
+                ><img src="./images/svg/tg.svg" alt=""
+              /></a>
             </li>
             <li>
-              <a class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
-                href="https://t.me/learndotnetuz" target="_blank"><span>Vazifalar guruhi</span>
-                <img class="ml-3" src="./images/svg/tg.svg" alt="" />
-              </a>
+              <a
+                class="text-2xl font-medium text-violet-50"
+                target="_blank"
+                href="https://t.me/azam_amonov"
+                >Bog'lanish</a
+              >
             </li>
           </ul>
-        </nav>
-      </section>
-    </header>
-    <main>
-      <section>
-        <div class="container mx-auto px-4">
-          <h1 class="mb-6 text-center text-2xl font-medium capitalize">
-            OOP Asoslari
-            <div class="text-xl">Obyektga yo'naltirilgan dasturlash.</div>
-          </h1>
-          <form action="" class="flex items-center justify-center">
-            <div
-              class="flex-2 mr-3 flex w-full md:w-2/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4">
-              <img src="./images/svg/icon-search.svg" class="mr-1 h-6 w-6" alt="" />
-              <input id="card-filter" type="search" placeholder="kurs, mavzu nomi"
-                class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg" />
-            </div>
-          </form>
-          <div class="mt-6 text-center text-2xl text-bgsharp-700">
-            Support me:
-          </div>
         </div>
-      </section>
-      <section class="pb-12">
-        <div class="container mx-auto px-4">
-          <div id="row" class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/ZZtnP5_fIzM">
-                    Class Members &amp; Debugging
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/ZZtnP5_fIzM" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Markdown fayl yaratish</h4>
-                  <ul>
-                    <li>
-                      CRUD loyiha yaratish
-                      <a class="font-medium text-blue-700" target='_blank"' href="https://t.me/c/2134085931/46">Phone
-                        book</a>
-                    </li>
-                    <hr class="my-1" />
-                    <li>Savollarga javob berish</li>
-                    <li>1. What is breakpoint?</li>
-                    <li>2. What is field? Property? Method? Constructor?</li>
-                    <li>3. Why we need debugging?</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target='_blank"'
-                        href="https://www.w3schools.com/cs/cs_class_members.php">
-                        Class Members</a>
-                      mavzusidan
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target='_blank"'
-                        href="https://www.w3schools.com/cs/cs_properties.php">Properties</a>
-                      mavzusigacha o'rganish
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/HfG36M057CQ">OOP </a>ning
-                  asosiy tamoyillari
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/HfG36M057CQ" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Loyihani davom ettirish</h4>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_inheritance.php">Inheritance</a>
-                      mavzusidan
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_exceptions.php">Exceptions</a>
-                      mavzusigacha o'rganish
-                    </li>
-                    <li>
-                      Suratlarda OOP
-                      <a target='_blank"' href="https://habr.com/ru/articles/463125/">(ООП в картинках)</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/GrgOp_rlBIQ">Savol va Javob |
-                    QA</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/GrgOp_rlBIQ" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://github.com/ElbekDeveloper/PhoneBook.Crud">Phone book</a>
-                      Loyihasini yakunlash
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      OOP amalda
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.freecodecamp.org/news/how-to-use-oop-in-c-sharp/">(How to use OOP)</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/3672FJO3WBc">CRUD</a>
-                  Ma'lumot qo'shish va qaytarish
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/3672FJO3WBc" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>1. Kichik konsol loyiha yaratish</li>
-                    <li>2. CRUD haqida tushunchaga ega bo'lish</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target='_blank"'
-                        href="https://www.geeksforgeeks.org/how-to-read-and-write-a-text-file-in-c-sharp/">TextReader</a>
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target='_blank"'
-                        href="https://www.codecademy.com/article/what-is-crud">What is CRUD?</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="font-medium text-blue-700" target="_blank" href="https://youtu.be/bmpUEKzduRg">Coding
-                    Practice</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/bmpUEKzduRg" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Loyiha bilan ishlash va mukammallashtirish</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>TextReader uchun to'liq CRUD yaratish</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
-      <div class="flex justify-center">
-        <ul class="flex items-center">
-          <li class="mr-4 border-r-2 border-violet-50 pr-4">
-            <a class="text-2xl font-medium text-violet-50" target="_blank"
-              href="https://t.me/ElbekningCSharpDarslari"><img src="./images/svg/tg.svg" alt="" /></a>
-          </li>
-          <li>
-            <a class="text-2xl font-medium text-violet-50" target="_blank"
-              href="https://t.me/azam_amonov">Bog'lanish</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  <script defer src="js/app.js"></script>
-</body>
-
+      </footer>
+    </div>
+    <script defer src="js/app.js"></script>
+  </body>
 </html>

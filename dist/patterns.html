@@ -1,686 +1,1018 @@
 <!doctype html>
 <html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>.NET Darslari</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>.NET Darslari</title>
-</head>
-
-<body>
-  <div class="flex min-h-screen flex-col">
-    <header class="mb-6 bg-bgsharp-700">
-      <section class="mx-auto px-4 md:container">
-        <div
-          class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between">
-          <div class="flex items-center justify-between">
-            <a href="index.html" class="inline-block h-20 lg:w-44"><img src="./images/png/csharp-logo.png"
-                class="h-full w-full object-contain object-center" alt="logo" /></a>
-            <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
-              <div class="tham-box">
-                <div class="tham-inner bg-white" />
+  <body>
+    <div class="flex min-h-screen flex-col">
+      <header class="mb-6 bg-bgsharp-700">
+        <section class="mx-auto px-4 md:container">
+          <div
+            class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="flex items-center justify-between">
+              <a href="index.html" class="inline-block h-20 lg:w-44"
+                ><img
+                  src="./images/png/csharp-logo.png"
+                  class="h-full w-full object-contain object-center"
+                  alt="logo"
+              /></a>
+              <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
+                <div class="tham-box">
+                  <div class="tham-inner bg-white" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <nav
-          class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0">
-          <ul class="flex flex-col lg:flex-row lg:items-center">
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="index.html" class="text-base text-white">C# ga Kirish</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="patterns.html" class="text-base text-white">Tamoyillar va Dizayn Patternlar</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="advanced.html" class="text-base text-white">Advanced</a>
-            </li>
-            <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="advancednet.html" class="text-base text-white">Advanced .NET</a>
+          <nav
+            class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0"
+          >
+            <ul class="flex flex-col lg:flex-row lg:items-center">
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="index.html" class="text-base text-white"
+                  >C# ga Kirish</a
+                >
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="patterns.html" class="text-base text-white"
+                  >Tamoyillar va Dizayn Patternlar</a
+                >
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="advanced.html" class="text-base text-white"
+                  >Advanced</a
+                >
+              </li>
+              <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                <a href="advancednet.html" class="text-base text-white"
+                  >Advanced .NET</a
+                >
+              </li>
+              <li>
+                <a
+                  class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
+                  href="https://t.me/learndotnetuz"
+                  target="_blank"
+                  ><span>Vazifalar guruhi</span>
+                  <img class="ml-3" src="./images/svg/tg.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <main>
+        <section>
+          <div class="container mx-auto px-4">
+            <h1
+              class="mb-6 text-balance text-center text-2xl font-medium capitalize"
+            >
+              Principle & Design Patterns
+              <div class="text-xl">Tamoyillar va Dizayn Patternlar</div>
+            </h1>
+            <form action="" class="flex items-center justify-center">
+              <div
+                class="flex-2 mr-3 flex w-full items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp md:w-2/3 lg:w-2/4"
+              >
+                <img
+                  src="./images/svg/icon-search.svg"
+                  class="mr-1 h-6 w-6"
+                  alt=""
+                />
+                <input
+                  id="card-filter"
+                  type="search"
+                  placeholder="kurs, mavzu nomi"
+                  class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg"
+                />
+              </div>
+            </form>
+            <div class="mt-6 text-center text-2xl text-bgsharp-700">
+              Support me:
+            </div>
+          </div>
+        </section>
+        <section class="pb-12">
+          <div class="container mx-auto px-4">
+            <div
+              id="row"
+              class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
+            >
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/4qh6z3y4WX0"
+                    >
+                      Tamoyillar
+                    </a>
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/4qh6z3y4WX0"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                    <ul>
+                      <li>1. What are Design Principles? Why we need them?</li>
+                      <li>2. What Design Principles you know?</li>
+                      <li>3. Explain the following:</li>
+                      <li>
+                        3.1 Program to an Interface, not an Implementation
+                      </li>
+                      <li>
+                        3.2 Encapsulate What Varies (application-, class- and
+                        method-level)
+                      </li>
+                      <li>3.3 Favor Composition Over Inheritance</li>
+                      <li>
+                        4. How practically you used above-mentioned principles
+                        in your projects?
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Refactoring Guru, pg. 37-51</li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://drive.google.com/file/d/1wQQDQOEJILA3_GaISaxyzYCBKRY5TO2i/view?usp=share_link"
+                          >Kitobni yuklab olish</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/pzvqXjfU0a8"
+                      >S.O.L.I.D. SRP
+                    </a>
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/pzvqXjfU0a8"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>SPR nima?</li>
+                      <li>1. Create UserManagment.Console</li>
+                      <li>2. It offers 2 features:</li>
+                      <li>2.1 Add credential (username, password) -> file</li>
+                      <li>
+                        <hr class="my-1" />
+                        2.2 Login Here are some of the criteria:
+                      </li>
+                      <li>1. There should be at least 2 branches</li>
+                      <li>
+                        2. The repo should be well-documented (headings, gifs,
+                        etc.)
+                      </li>
+                      <li>3. Exception handling required</li>
+                      <li>4. Validation required</li>
+                      <li>
+                        5. Exception handling and validation are only allowed in
+                        services.
+                      </li>
+                      <li>6. Retry logic for console required</li>
+                      <li>7. Pair-programming recommended</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.youtube.com/watch?v=5RwhyZnVRS8"
+                        >
+                          TimCorey SRP</a
+                        >
+                      </li>
+                      <li>Refactoring Guru, pg. 52-53</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/qD6IBL9_JMo"
+                      >S.O.L.I.D. O/C</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/qD6IBL9_JMo"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>O/C tamoyili nima?</li>
+                      <li class="flex flex-col bg-violet-50">
+                        <a target="_blank" href="./images/png/OC-1.png">
+                          <img src="./images/png/OC-1.png" alt="" />
+                        </a>
+                        <a target="_blank" href="./images/png/OC-2.jpg">
+                          <img src="./images/png/OC-2.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li></li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Refactoring Guru, pg. 51-53</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/q5R9w7-jyww"
+                      >S.O.L.I.D. Takrorlash</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/q5R9w7-jyww"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>O/C tamoyili nima?</li>
+                      <hr class="my-1" />
+                      <li>
+                        <h4 class="card-title font-medium">
+                          Portfolio Project
+                        </h4>
+                        Name: e-shop (EShop) FEATURES:
+                      </li>
+                      <li>1. Auth (file storage)</li>
+                      <li>1.1 Login</li>
+                      <li>1.2 Create credentials</li>
+                      <li>2. Show products</li>
+                      <li>
+                        2.1 Products (memory storage) - (id, price, weight)
+                      </li>
+                      <li>2.2 AddToCart</li>
+                      <li>3. Show shipping method</li>
+                      <li>3.2 Air, Sea, Ground</li>
+                      <li>4. Show total price</li>
+                      <li>4.1 Show line items + shipping details</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Loyihani tayyorlash va GitHub-ga yuklash</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/fAkG4aGKo7Q"
+                      >S.O.L.I.D. LSP</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/fAkG4aGKo7Q"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <h4 class="card-title font-medium">
+                          LSP tamoyili nima?
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>LSP nazariyasi haqida o'qing</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/ZZ4EHnTZyOA"
+                    >
+                      S.O.L.I.D. ISP
+                    </a>
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/ZZ4EHnTZyOA"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <h4 class="card-title font-medium">
+                          ISP tamoyili nima?
+                        </h4>
+                      </li>
+                      <li>
+                        <a target="_blank" href="./images/png/ISP-1.jpg"
+                          ><img src="./images/png/ISP-1.jpg" alt="" />
+                        </a>
+                        <a target="_blank" href="./images/png/ISP-2.jpg"
+                          ><img src="./images/png/ISP-2.jpg" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Refactoring Guru, pg. 64-67</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/-bevwnOd3kc"
+                      >S.O.L.I.D. DIP</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/-bevwnOd3kc"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <h4 class="card-title font-medium">
+                          DIP tamoyili nima?
+                        </h4>
+                      </li>
+                      <li>
+                        <a target="_blank" href="./images/png/DIP-2.jpg"
+                          ><img src="./images/png/DIP-2.jpg" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Refactoring Guru, pg. 67-70</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/PF5SsJx96Jg"
+                      >Creational DP. Factory Method</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/PF5SsJx96Jg"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>1. What types of Design Patters are there?</li>
+                      <li>2. What is Design Pattern?</li>
+                      <li>3. What is Factory method?</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/factory-method"
+                          >Refactoring Guru Web Site</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/nWFyJ5d3NPQ"
+                      >Event-Driven Pattern</a
+                    >
+                    Cul-de-sac
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/nWFyJ5d3NPQ"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Event-driven arxitektura nima?</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Nazariyani o'rganish</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/niVYM6TpWm0"
+                      >Singleton DP</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/niVYM6TpWm0"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Singleton nima?</li>
+                      <li>Undan nima maqsadda foydalanamiz?</li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://t.me/c/2134085931/66"
+                          >Amaliy loyiha</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/singleton"
+                        >
+                          Singleton Design Pattern</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/9EsTdeiqaxA"
+                      >Dependency Injection</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/9EsTdeiqaxA"
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>What is Dependency Inversion?</li>
+                      <li>What is Inversion of Control?</li>
+                      <li>What is Dependency Injection?</li>
+                      <li>What is IoC Container?</li>
+                      <hr class="my-1" />
+                      <h4>📌Uy ishi</h4>
+
+                      <li>Nazariy:</li>
+                      <li>1.What is Dependency Inversion?</li>
+                      <li>2.What is Inversion of Control?</li>
+                      <li>3.What is Dependency Injection?</li>
+                      <li>4.What is IoC Container?</li>
+                      <hr class="my-1" />
+                      <li>Amaliy:</li>
+                      <li>
+                        1. FileDb loyhasiga JSON file bilan ishlash imkonini
+                        qo'shing.
+                      </li>
+                      <li>
+                        2. Foydalanuvchi dasturni ishlatganda .json yoki .txt
+                        file bilan ishlashi mumkin bo'lsin(yani tanlash imkoni
+                        bo'lishi kerak).
+                      </li>
+                      <li>
+                        3. Loyha har bir kishining GitHub repository asida
+                        bo'lishi kerak.
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/"
+                        >
+                          FreeCodeCamp article.
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card relative">
+                <div
+                  class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                >
+                  <h2 class="h-12">
+                    <a
+                      class="card-title font-medium"
+                      target="_blank"
+                      href="https://youtu.be/lEWQ3ZU57d0"
+                      >Composite &amp; Observer DI</a
+                    >
+                  </h2>
+                  <div class="h-44">
+                    <iframe
+                      loading="lazy"
+                      src="https://www.youtube.com/embed/lEWQ3ZU57d0
+                  "
+                      allowfullscreen
+                      class="h-full w-full rounded-sm"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <h3
+                      class="task mb-4 flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">vazifa</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                    <h3
+                      class="extra flex cursor-pointer items-center justify-between"
+                    >
+                      <span class="font-medium capitalize">Qo'shimcha</span
+                      ><button class="collapse-btn"></button>
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>Amaliy loyiha №1</li>
+                      <li>
+                        <a target="_blank" href="./images/png/12.1.jpg"
+                          ><img src="./images/png/12.1.jpg" alt="" />
+                          File Reader Read file names inside particular
+                          directory. Directory might have inner directories.
+                          File Calculator Calculate total of files in a
+                          particular directory
+                        </a>
+                      </li>
+                      <hr class="mt-1" />
+                      <li>
+                        <a target="_blank" href="./images/png/12.2.jpg"
+                          ><img src="./images/png/12.2.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li>Balance:</li>
+                      <li>
+                        1. Hisobizda hamma pul yechib olinsa va hisob 0 ga
+                        tushsa, xabar berilsin (Email Service)
+                      </li>
+                      <li>
+                        2. Hisobda pul yetmasa, qizil yozuv bilan xabar berilsin
+                        (Error Service)
+                      </li>
+                      <li>
+                        3. Hisobdan shunchaki pul yechilsa, yashil bilan
+                        ma'lumot xabar berilsin (Info Service)
+                      </li>
+                      <li>
+                        Uchchala holat uchun alohida alohida classlar qiziqish
+                        bildirsin.
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/composite"
+                          >Composite</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/proxy"
+                          >Proxy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/mediator"
+                          >Mediator</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/observer/csharp/example"
+                        >
+                          Observer in C#</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/state"
+                          >State</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://refactoring.guru/design-patterns/command"
+                          >Command</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
+        <div class="flex justify-center">
+          <ul class="flex items-center">
+            <li class="mr-4 border-r-2 border-violet-50 pr-4">
+              <a
+                class="text-2xl font-medium text-violet-50"
+                target="_blank"
+                href="https://t.me/ElbekningCSharpDarslari"
+                ><img src="./images/svg/tg.svg" alt=""
+              /></a>
             </li>
             <li>
-              <a class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
-                href="https://t.me/learndotnetuz" target="_blank"><span>Vazifalar guruhi</span>
-                <img class="ml-3" src="./images/svg/tg.svg" alt="" />
-              </a>
+              <a
+                class="text-2xl font-medium text-violet-50"
+                target="_blank"
+                href="https://t.me/azam_amonov"
+                >Bog'lanish</a
+              >
             </li>
           </ul>
-        </nav>
-      </section>
-    </header>
-    <main>
-      <section>
-        <div class="container mx-auto px-4">
-          <h1 class="mb-6 text-center text-balance text-2xl font-medium capitalize">
-            Principle & Design Patterns
-            <div class="text-xl">Tamoyillar va Dizayn Patternlar</div>
-          </h1>
-          <form action="" class="flex items-center justify-center">
-            <div
-              class="flex-2 mr-3 flex w-full md:w-2/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4">
-              <img src="./images/svg/icon-search.svg" class="mr-1 h-6 w-6" alt="" />
-              <input id="card-filter" type="search" placeholder="kurs, mavzu nomi"
-                class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg" />
-            </div>
-          </form>
-          <div class="mt-6 text-center text-2xl text-bgsharp-700">
-            Support me:
-          </div>
         </div>
-      </section>
-      <section class="pb-12">
-        <div class="container mx-auto px-4">
-          <div id="row" class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/4qh6z3y4WX0">
-                    Tamoyillar
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/4qh6z3y4WX0" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                  <ul>
-                    <li>1. What are Design Principles? Why we need them?</li>
-                    <li>2. What Design Principles you know?</li>
-                    <li>3. Explain the following:</li>
-                    <li>
-                      3.1 Program to an Interface, not an Implementation
-                    </li>
-                    <li>
-                      3.2 Encapsulate What Varies (application-, class- and
-                      method-level)
-                    </li>
-                    <li>3.3 Favor Composition Over Inheritance</li>
-                    <li>
-                      4. How practically you used above-mentioned principles
-                      in your projects?
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Refactoring Guru, pg. 37-51</li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://drive.google.com/file/d/1wQQDQOEJILA3_GaISaxyzYCBKRY5TO2i/view?usp=share_link">Kitobni
-                        yuklab olish</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/pzvqXjfU0a8">S.O.L.I.D. SRP
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/pzvqXjfU0a8" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>SPR nima?</li>
-                    <li>1. Create UserManagment.Console</li>
-                    <li>2. It offers 2 features:</li>
-                    <li>2.1 Add credential (username, password) -> file</li>
-                    <li>
-                      <hr class="my-1" />
-                      2.2 Login Here are some of the criteria:
-                    </li>
-                    <li>1. There should be at least 2 branches</li>
-                    <li>
-                      2. The repo should be well-documented (headings, gifs,
-                      etc.)
-                    </li>
-                    <li>3. Exception handling required</li>
-                    <li>4. Validation required</li>
-                    <li>
-                      5. Exception handling and validation are only allowed in
-                      services.
-                    </li>
-                    <li>6. Retry logic for console required</li>
-                    <li>7. Pair-programming recommended</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.youtube.com/watch?v=5RwhyZnVRS8">
-                        TimCorey SRP</a>
-                    </li>
-                    <li>Refactoring Guru, pg. 52-53</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/qD6IBL9_JMo">S.O.L.I.D.
-                    O/C</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/qD6IBL9_JMo" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>O/C tamoyili nima?</li>
-                    <li class="flex flex-col bg-violet-50">
-                      <a target="_blank" href="./images/png/OC-1.png">
-                        <img src="./images/png/OC-1.png" alt="" />
-                      </a>
-                      <a target="_blank" href="./images/png/OC-2.jpg">
-                        <img src="./images/png/OC-2.jpg" alt="" />
-                      </a>
-                    </li>
-                    <li></li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Refactoring Guru, pg. 51-53</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/q5R9w7-jyww">S.O.L.I.D.
-                    Takrorlash</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/q5R9w7-jyww" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>O/C tamoyili nima?</li>
-                    <hr class="my-1" />
-                    <li>
-                      <h4 class="card-title font-medium">
-                        Portfolio Project
-                      </h4>
-                      Name: e-shop (EShop) FEATURES:
-                    </li>
-                    <li>1. Auth (file storage)</li>
-                    <li>1.1 Login</li>
-                    <li>1.2 Create credentials</li>
-                    <li>2. Show products</li>
-                    <li>
-                      2.1 Products (memory storage) - (id, price, weight)
-                    </li>
-                    <li>2.2 AddToCart</li>
-                    <li>3. Show shipping method</li>
-                    <li>3.2 Air, Sea, Ground</li>
-                    <li>4. Show total price</li>
-                    <li>4.1 Show line items + shipping details</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Loyihani tayyorlash va GitHub-ga yuklash</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/fAkG4aGKo7Q">S.O.L.I.D.
-                    LSP</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/fAkG4aGKo7Q" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <h4 class="card-title font-medium">
-                        LSP tamoyili nima?
-                      </h4>
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>LSP nazariyasi haqida o'qing</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/ZZ4EHnTZyOA">
-                    S.O.L.I.D. ISP
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/ZZ4EHnTZyOA" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <h4 class="card-title font-medium">
-                        ISP tamoyili nima?
-                      </h4>
-                    </li>
-                    <li>
-                      <a target="_blank" href="./images/png/ISP-1.jpg"><img src="./images/png/ISP-1.jpg" alt="" />
-                      </a>
-                      <a target="_blank" href="./images/png/ISP-2.jpg"><img src="./images/png/ISP-2.jpg" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Refactoring Guru, pg. 64-67</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/-bevwnOd3kc">S.O.L.I.D.
-                    DIP</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/-bevwnOd3kc" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <h4 class="card-title font-medium">
-                        DIP tamoyili nima?
-                      </h4>
-                    </li>
-                    <li>
-                      <a target="_blank" href="./images/png/DIP-2.jpg"><img src="./images/png/DIP-2.jpg" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Refactoring Guru, pg. 67-70</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/PF5SsJx96Jg">Creational DP.
-                    Factory Method</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/PF5SsJx96Jg" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>1. What types of Design Patters are there?</li>
-                    <li>2. What is Design Pattern?</li>
-                    <li>3. What is Factory method?</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/factory-method">Refactoring Guru Web Site</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/nWFyJ5d3NPQ">Event-Driven
-                    Pattern</a>
-                  Cul-de-sac
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/nWFyJ5d3NPQ" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Event-driven arxitektura nima?</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Nazariyani o'rganish</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/niVYM6TpWm0">Singleton DP</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/niVYM6TpWm0" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Singleton nima?</li>
-                    <li>Undan nima maqsadda foydalanamiz?</li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank" href="https://t.me/c/2134085931/66">Amaliy
-                        loyiha</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/singleton">
-                        Singleton Design Pattern</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/9EsTdeiqaxA">Dependency
-                    Injection</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/9EsTdeiqaxA" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>What is Dependency Inversion?</li>
-                    <li>What is Inversion of Control?</li>
-                    <li>What is Dependency Injection?</li>
-                    <li>What is IoC Container?</li>
-                    <hr class="my-1" />
-                    <h4>📌Uy ishi</h4>
-
-                    <li>Nazariy:</li>
-                    <li>1.What is Dependency Inversion?</li>
-                    <li>2.What is Inversion of Control?</li>
-                    <li>3.What is Dependency Injection?</li>
-                    <li>4.What is IoC Container?</li>
-                    <hr class="my-1" />
-                    <li>Amaliy:</li>
-                    <li>
-                      1. FileDb loyhasiga JSON file bilan ishlash imkonini
-                      qo'shing.
-                    </li>
-                    <li>
-                      2. Foydalanuvchi dasturni ishlatganda .json yoki .txt
-                      file bilan ishlashi mumkin bo'lsin(yani tanlash imkoni
-                      bo'lishi kerak).
-                    </li>
-                    <li>
-                      3. Loyha har bir kishining GitHub repository asida
-                      bo'lishi kerak.
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/">
-                        FreeCodeCamp article.
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank" href="https://youtu.be/lEWQ3ZU57d0">Composite &amp;
-                    Observer DI</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/lEWQ3ZU57d0
-                  " allowfullscreen class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>Amaliy loyiha №1</li>
-                    <li>
-                      <a target="_blank" href="./images/png/12.1.jpg"><img src="./images/png/12.1.jpg" alt="" />
-                        File Reader Read file names inside particular
-                        directory. Directory might have inner directories.
-                        File Calculator Calculate total of files in a
-                        particular directory
-                      </a>
-                    </li>
-                    <hr class="mt-1" />
-                    <li>
-                      <a target="_blank" href="./images/png/12.2.jpg"><img src="./images/png/12.2.jpg" alt="" />
-                      </a>
-                    </li>
-                    <li>Balance:</li>
-                    <li>
-                      1. Hisobizda hamma pul yechib olinsa va hisob 0 ga
-                      tushsa, xabar berilsin (Email Service)
-                    </li>
-                    <li>
-                      2. Hisobda pul yetmasa, qizil yozuv bilan xabar berilsin
-                      (Error Service)
-                    </li>
-                    <li>
-                      3. Hisobdan shunchaki pul yechilsa, yashil bilan
-                      ma'lumot xabar berilsin (Info Service)
-                    </li>
-                    <li>
-                      Uchchala holat uchun alohida alohida classlar qiziqish
-                      bildirsin.
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/composite">Composite</a>
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/proxy">Proxy</a>
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/mediator">Mediator</a>
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/observer/csharp/example">
-                        Observer in C#</a>
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/state">State</a>
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://refactoring.guru/design-patterns/command">Command</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
-      <div class="flex justify-center">
-        <ul class="flex items-center">
-          <li class="mr-4 border-r-2 border-violet-50 pr-4">
-            <a class="text-2xl font-medium text-violet-50" target="_blank"
-              href="https://t.me/ElbekningCSharpDarslari"><img src="./images/svg/tg.svg" alt="" /></a>
-          </li>
-          <li>
-            <a class="text-2xl font-medium text-violet-50" target="_blank"
-              href="https://t.me/azam_amonov">Bog'lanish</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  <script defer src="js/app.js"></script>
-</body>
-
+      </footer>
+    </div>
+    <script defer src="js/app.js"></script>
+  </body>
 </html>
