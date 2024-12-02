@@ -1,694 +1,1084 @@
 <!doctype html>
 <html lang="uz">
+  <!doctype html>
+  <html lang="uz">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>.NET Darslari</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9989171770321242"
-     crossorigin="anonymous"></script>
-</head>
+      <!-- Primary Meta Tags -->
+      <title>
+        LearnNet.uz - C# va .NET Dasturlash Darslari | Bepul Video Kurslar
+      </title>
+      <meta
+        name="title"
+        content="LearnNet.uz - C# va .NET Dasturlash Darslari | Bepul Video Kurslar"
+      />
+      <meta
+        name="description"
+        content="C# va .NET dasturlash tillari bo'yicha professional darajadagi bepul video darsliklar. OOP asoslari, dizayn patternlar, ASP.NET va zamonaviy .NET texnologiyalari."
+      />
+      <meta
+        name="keywords"
+        content="C#, .NET, dasturlash, programming, uzbek, o'zbek, darslik, video kurs, OOP, patterns, ASP.NET"
+      />
+      <meta name="author" content="LearnNet.uz" />
+      <meta name="robots" content="index, follow" />
 
-<body>
-  <div class="flex min-h-screen flex-col">
-    <header class="mb-6 bg-bgsharp-700">
-      <section class="mx-auto px-4 md:container">
-        <div
-          class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between">
-          <div class="flex items-center justify-between">
-            <a href="index.html" class="inline-block h-20 lg:w-44"><img src="./images/png/csharp-logo.png"
-                class="h-full w-full object-contain object-center" alt="logo" /></a>
-            <div class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden">
-              <div class="tham-box">
-                <div class="tham-inner bg-white" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav
-          class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0">
-          <ul class="flex flex-col lg:flex-row lg:items-center">
-            <li class="menu-item  mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="index.html" class="text-base text-white">C# ga Kirish</a>
-            </li>
-            <li class="menu-item  mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="oop.html" class="text-base text-white">OOP Asoslari</a>
-            </li>
-            <li class="menu-item  mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="patterns.html" class="text-base text-white">Tamoyillar va Dizayn Patternlar</a>
-            </li>
-            <li class="menu-item  mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="advanced.html" class="text-base text-white">Advanced</a>
-            </li>
-            <li class="menu-item  mb-8 mr-8 lg:mb-0 lg:mr-10">
-              <a href="advancednet.html" class="text-base text-white">Advanced .NET</a>
-            </li>
-            <li>
-              <a class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
-                href="https://t.me/learndotnetuz" target="_blank"><span>Vazifalar guruhi</span>
-                <img class="ml-3" src="./images/svg/tg.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </header>
-    <main>
-      <section>
-        <div class="container mx-auto px-4">
-          <h1 class="mb-6 text-center text-2xl font-medium capitalize">
-            C# ga kirish
-          </h1>
-          <form action="" class="flex items-center justify-center">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://learnnet.uz/" />
+      <meta
+        property="og:title"
+        content="LearnNet.uz - C# va .NET Dasturlash Darslari"
+      />
+      <meta
+        property="og:description"
+        content="C# va .NET dasturlash tillari bo'yicha professional darajadagi bepul video darsliklar. OOP asoslari, dizayn patternlar, ASP.NET va zamonaviy .NET texnologiyalari."
+      />
+      <meta property="og:image" content="./images/png/csharp-logo.png" />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://learnnet.uz/" />
+      <meta
+        property="twitter:title"
+        content="LearnNet.uz - C# va .NET Dasturlash Darslari"
+      />
+      <meta
+        property="twitter:description"
+        content="C# va .NET dasturlash tillari bo'yicha professional darajadagi bepul video darsliklar."
+      />
+      <meta property="twitter:image" content="./images/png/csharp-logo.png" />
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="./images/png/csharp-logo.png" />
+      <link rel="canonical" href="https://learnnet.uz/" />
+      <link rel="stylesheet" href="css/style.css" />
+
+      <!-- JSON-LD Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "name": "LearnNet.uz",
+          "description": "C# va .NET dasturlash tillari bo'yicha professional darajadagi bepul video darsliklar",
+          "url": "https://learnnet.uz",
+          "logo": "./images/png/csharp-logo.png",
+          "sameAs": ["https://t.me/learndotnetuz"]
+        }
+      </script>
+
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9989171770321242"
+        crossorigin="anonymous"
+      ></script>
+    </head>
+
+    <body>
+      <div class="flex min-h-screen flex-col">
+        <header class="mb-6 bg-bgsharp-700" role="banner">
+          <section class="mx-auto px-4 md:container">
             <div
-              class="flex-2 mr-3 flex w-full md:w-1/3 items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp lg:w-2/4">
-              <img src="./images/svg/icon-search.svg" class="mr-1 h-6 w-6" alt="" />
-              <input id="card-filter" type="search" placeholder="kurs, mavzu nomi"
-                class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg" />
+              class="relative left-0 right-0 flex w-full flex-col lg:h-auto lg:flex-row lg:items-center lg:justify-between"
+            >
+              <div class="flex items-center justify-between">
+                <a
+                  href="index.html"
+                  class="inline-block h-20 lg:w-44"
+                  aria-label="Home"
+                  ><img
+                    src="./images/png/csharp-logo.png"
+                    class="h-full w-full object-contain object-center"
+                    alt="logo"
+                /></a>
+                <div
+                  class="tham tham-e-squeeze tham-w-6 mr-6 lg:hidden"
+                  aria-label="Toggle navigation"
+                >
+                  <div class="tham-box">
+                    <div class="tham-inner bg-white" />
+                  </div>
+                </div>
+              </div>
             </div>
+            <nav
+              class="fixed right-full z-50 mt-20 h-screen w-full bg-bgsharp-500 pl-10 pt-10 duration-200 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:pl-0 lg:pt-0"
+              role="navigation"
+              aria-label="Main navigation"
+            >
+              <ul class="flex flex-col lg:flex-row lg:items-center">
+                <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                  <a href="index.html" class="text-base text-white"
+                    >C# ga Kirish</a
+                  >
+                </li>
+                <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                  <a href="oop.html" class="text-base text-white"
+                    >OOP Asoslari</a
+                  >
+                </li>
+                <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                  <a href="patterns.html" class="text-base text-white"
+                    >Tamoyillar va Dizayn Patternlar</a
+                  >
+                </li>
+                <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                  <a href="advanced.html" class="text-base text-white"
+                    >Advanced</a
+                  >
+                </li>
+                <li class="menu-item mb-8 mr-8 lg:mb-0 lg:mr-10">
+                  <a href="advancednet.html" class="text-base text-white"
+                    >Advanced .NET</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="leading-1 inline-flex cursor-pointer items-center rounded-md bg-white px-4 py-2 font-medium capitalize text-bgsharp-700 duration-150 hover:bg-violet-50 lg:flex"
+                    href="https://t.me/learndotnetuz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Join Telegram group"
+                    ><span>Vazifalar guruhi</span>
+                    <img
+                      class="ml-3"
+                      src="./images/svg/tg.svg"
+                      alt="Telegram icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </header>
+        <main role="main">
+          <section aria-label="Introduction">
+            <div class="container mx-auto px-4">
+              <h1 class="mb-6 text-center text-2xl font-medium capitalize">
+                C# ga kirish
+              </h1>
+              <form
+                role="search"
+                aria-label="Course search"
+                class="flex items-center justify-center"
+              >
+                <div
+                  class="flex-2 mr-3 flex w-full items-center rounded-sm bg-violet-50 p-2 duration-150 focus-within:bg-transparent focus-within:shadow-shadowsharp md:w-1/3 lg:w-2/4"
+                >
+                  <img
+                    src="./images/svg/icon-search.svg"
+                    class="mr-1 h-6 w-6"
+                    alt=""
+                  />
+                  <input
+                    id="card-filter"
+                    type="search"
+                    placeholder="kurs, mavzu nomi"
+                    aria-label="Search courses"
+                    class="w-full rounded-sm px-2 font-medium outline-none lg:text-lg"
+                  />
+                </div>
+              </form>
+              <a
+                href="https://tirikchilik.uz/elbek"
+                target="_blank"
+                aria-label="Contact author"
+                class="author mt-6 flex items-center justify-center text-2xl leading-normal text-bgsharp-700 transition duration-150"
+              >
+                <p>Let's grab a coffee</p>
+                <img
+                  style="width: 50px; height: 50px; margin-left: 8px"
+                  class="inline-block object-contain object-bottom hover:scale-110"
+                  area-hidden="true"
+                  src="./images/png/cup-coffe.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </section>
+          <section class="pb-12">
+            <div class="container mx-auto px-4">
+              <div
+                id="row"
+                class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
+              >
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        target="_blank"
+                        href="https://youtu.be/LnXO2GNfDaU"
+                        class="card-title font-medium"
+                      >
+                        Markdown tili, C# tili va VS Code O'rnatish
+                      </a>
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/LnXO2GNfDaU"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button type="button" class="collapse-btn"></button>
+                      </h3>
 
-          </form>
-          <div class="mt-6 text-center text-2xl text-bgsharp-700">
-            Support me:
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button type="button" class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Markdown fayl yaratish</h4>
+                      <ul>
+                        <li>
+                          1. O'zingiz haqingizda README.md file yarating.
+                          Shartlar:
+                        </li>
+                        <li>1.1 Sarlavha bo'lishi shart</li>
+                        <li>1.2 Matn bo'lish shart</li>
+                        <li>1.3 Rasm bo'lishi shart</li>
+                        <li>1.4 Ro'yxat bo'lishi shart</li>
+                        <li>1.5. Link bo'lishi shart</li>
+                        <hr class="my-1" />
+                        <li>2. Hello World! loyihasini yaratish</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-4 font-medium">
+                        <a
+                          target="_blank"
+                          class="font-medium text-blue-700"
+                          href="https://www.youtube.com/watch?v=QiK2IYZd6kY&amp;list=PLG2w4duP-rS3GtPSe7oUVTUAU53h7rUnS&amp;index=4"
+                          >1. Git o'rnatish</a
+                        >
+                        <iframe
+                          loading="lazy"
+                          src="https://www.youtube.com/embed/QiK2IYZd6kY?list=PLG2w4duP-rS3GtPSe7oUVTUAU53h7rUnS"
+                          allowfullscreen
+                        ></iframe>
+                      </h4>
+                      <h4>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.markdownguide.org/basic-syntax/"
+                          >2. Markdown dokumentatsiyasi</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        target="_blank"
+                        href="https://youtu.be/LnXO2GNfDaU"
+                        class="card-title font-medium"
+                      >
+                        Console nima? C# tilida ma'lumot turlari va operatorlar
+                      </a>
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/c7_9Gx_l-js"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Armiya yoshidamisan?</h4>
+                      <ul>
+                        <li>
+                          1. Armiya yoshi kiritilganda katta yoki kichikligini
+                          aytadigan sodda loyiha tuzilsin
+                        </li>
+                        <li class="card">
+                          2. Darsda ko'rsatilgandek sodda kalkulyator loyihasi
+                          bajarilsin va githubga qoyilsin
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                    >
+                      <h4>
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.w3schools.com/cs/cs_variables.php"
+                          >Variables</a
+                        >
+                        mavzudan toki
+                        <a
+                          class="font-medium text-blue-700"
+                          target="_blank"
+                          href="https://www.w3schools.com/cs/cs_operators.php"
+                          >Operators</a
+                        >
+                        mavzugacha o'rganish
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        target="_blank"
+                        href="https://youtu.be/LnXO2GNfDaU"
+                        class="card-title font-medium"
+                      >
+                        String, if, switch, bool & ternary operator
+                      </a>
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/0N3MM52VByU"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Armiya yoshidamisan?</h4>
+                      <ul>
+                        <li>
+                          1. Armiya yoshi kiritilganda katta yoki kichikligini
+                          aytadigan sodda loyiha tuzilsin
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          2. Darsda ko'rsatilgandek sodda kalkulyator loyihasi
+                          bajarilsin va githubga qoyilsin
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <h4>1. Geometry Guru:</h4>
+                      <ul>
+                        <li>1. Aylana yuzasini hisoblash (Pi * R^2)</li>
+                        <li>2. Mustaqil izlanib, qiziq muammoni hal qiling</li>
+                      </ul>
+                      <hr class="my-1" />
+                      <h4>2.Simple Calculator</h4>
+                      <ul>
+                        <li>1. +, -, *, /, ^ Input: 2^2, Output: 4</li>
+                        <li>
+                          2. Murakkab algebraik amallar orqali qiziq muammoni
+                          hal qiling
+                        </li>
+                        <hr class="my-1" />
+                        <li>Qabul qilish shartlari:</li>
+                        <li>1. Minimum: 3 Commit</li>
+                        <li>
+                          2. README file formatlangan holda, screenshot va gif
+                          (demo)
+                        </li>
+                        <li>
+                          3. Repo ortiqcha (ex. bin, obj, etc.) fayllar bo'lishi
+                          mumkin emas
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        target="_blank"
+                        href="https://www.youtube.com/embed/rPLInoxDHHc"
+                        class="card-title font-medium"
+                      >
+                        Array va foreach
+                      </a>
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/rPLInoxDHHc"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">
+                        1. IELTS Score Calculator
+                      </h4>
+                      <ul>
+                        <li>
+                          Foydalanuvchi har bir bo'lim bahosini kiritadi.
+                          O'rtachasini hisoblang IELTS baholash categorisini
+                          ko'rsating.
+                        </li>
+                        <hr class="my-1" />
+                        <li>9 - Expert</li>
+                        <li>8 - Very Good</li>
+                        <li>7 - Good</li>
+                        <li>6 - Competent</li>
+                        <li>5 - Modest</li>
+                        <li>Below or above that range is Invalid</li>
+                        <li class="cursor-pointer font-medium text-blue-700">
+                          https://ieltsliz.com/ielts-band-scores
+                        </li>
+                        <hr class="my-1" />
+                        <li>Qabul qilish shartlari:</li>
+                        <li>1. Minimum: 3 Commit</li>
+                        <li>
+                          2. README file formatlangan holda, screenshot va gif
+                          (demo)
+                        </li>
+                        <li>
+                          3. Repo ortiqcha (ex. bin, obj, etc.) fayllar bo'lishi
+                          mumkin emas
+                        </li>
+                        <hr class="my-1" />
+                        <li>2. Drawer</li>
+                        <li>1. Triangle, Square va hokazo kabi menu chiqadi</li>
+                        <li>
+                          2. Foydalanuvchi tanglagan shaklni * orqali chizib
+                          berish kerak
+                        </li>
+                        <li>
+                          3. Do you want to continue? Yes (y) / No (n)
+                          chiqarilsin. Yes bo'lsa dastur boshiga qaytilsin.
+                        </li>
+                        <hr class="my-1" />
+                        <li>Qabul qilish shartlari:</li>
+                        <li>1. Minimum: 3 Commit</li>
+                        <li>
+                          2. README file formatlangan holda, screenshot va gif
+                          (demo)
+                        </li>
+                        <li>
+                          3. Repo ortiqcha (ex. bin, obj, etc.) fayllar bo'lishi
+                          mumkin emas
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            href="https://www.w3schools.com/cs/cs_arrays.php"
+                            >Array</a
+                          >
+                          mavzusini o'rganish
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        target="_blank"
+                        href="https://youtu.be/fBcMHZ4XoKM"
+                        class="card-title font-medium"
+                      >
+                        Method nima?
+                      </a>
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/fBcMHZ4XoKM"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                      <ul>
+                        <li>1. What is escape character?</li>
+                        <li>2. What is string concatination? + vs String</li>
+                        <li>3. What is string interpolation?</li>
+                        <li>4. What is verbating string?</li>
+                        <li>5. What is ternary operator?</li>
+                        <li>6. What is pattern matching?</li>
+                        <hr class="my-1" />
+                        <li class="mb-2 font-medium">Kodni o'qib, o'rganing</li>
+                        <li>
+                          <code class="bg-slate-50">
+                            PrintParagraph("IELTS score average FOR academic");
+                            PrintText("Listening score: "); decimal
+                            listeningScore = GetUserScore(); PrintText("Reading
+                            score: "); decimal readingScore = GetUserScore();
+                            PrintText("Speaking score: "); decimal speakingScore
+                            = GetUserScore(); PrintText("Writing score: ");
+                            decimal writingScore = GetUserScore(); decimal[]
+                            scores = { speakingScore, listeningScore,
+                            writingScore, readingScore }; decimal averageScore =
+                            scores.Average(); int baseScore = (int)averageScore;
+                            decimal remainder = ExtractRemainder(averageScore);
+                            averageScore = baseScore + remainder; string
+                            levelName = MapToLevelName(averageScore);
+                            PrintParagraph($"Your overall :
+                            {averageScore}!\nYour Category: {levelName}"); void
+                            PrintParagraph(string message) {
+                            Console.WriteLine(message); } void PrintText(string
+                            message) { Console.Write(message); } string
+                            MapToLevelName(decimal score) { return score switch
+                            { 9 or 8.5m => "Expert", 8 or 7.5m => "Very Good", 7
+                            or 6.5m => "Good", 6 or 5.5m => "Competent", 5 =>
+                            "Modest", _ =>"Incompetent" }; } decimal
+                            ExtractRemainder(decimal averageScore) { decimal
+                            rawRemainder = averageScore - (int)averageScore;
+                            return rawRemainder switch { < 0.25m=> 0, < 0.75m=>
+                            0.5m, _ => 1, }; } decimal GetUserScore() { string
+                            userInput = Console.ReadLine(); try { return
+                            Convert.ToDecimal(userInput); }
+                            catch(FormatException formatException) {
+                            Console.WriteLine("The score you inserted was
+                            invalid. Considering this section 0..."); return 0;
+                            } }
+                          </code>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://www.w3schools.com/cs/cs_methods.php"
+                            >Methods</a
+                          >
+                          mavzudan toki
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://www.w3schools.com/cs/cs_method_overloading.php"
+                            >Method overloading</a
+                          >
+                          mavzugacha o'rganish
+                        </li>
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://www.w3schools.com/cs/cs_exceptions.php"
+                            >Exceptions</a
+                          >
+                          mavzusini mustaqil o'rganish
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        target="_blank"
+                        href="https://youtu.be/LnXO2GNfDaU"
+                        class="card-title font-medium"
+                      >
+                        CLR Basics
+                      </a>
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/nwitZwE--Wk"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                      <ul>
+                        <li>1. What is .NET?</li>
+                        <li>2. What is CLR? How CLR works?</li>
+                        <li>3. What does compiler do?</li>
+                        <li>4. What is Managed Code?</li>
+                        <li>5. What does Managed Code contain</li>
+                        <li>6. What is IL?</li>
+                        <li>7. What is Assembly Language?</li>
+                        <li>8. Describe CLRs execution model?</li>
+                        <hr class="my-1" />
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://github.com/Hassanhabib/CSharpCodingStandard"
+                            >Kodni o'qib o'rganish</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1UQZpz_A1HL-ai5Q44sVvY59wjDNbfbFb/view?usp=share_link"
+                          >
+                            CLR via C# ktobini yuklab olish.
+                          </a>
+                        </li>
+                        <li>CLR via C# pg. 3-6</li>
+                        <li>CLR Execution Model</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        class="card-title font-medium"
+                        target="_blank"
+                        href="https://www.youtube.com/watch?v=f-QA-HGQccQ"
+                        >IL &amp; JIT Compilation</a
+                      >
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/f-QA-HGQccQ"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Amaliy Loyiha No. 1</h4>
+                      <ul>
+                        <li>
+                          Dasturlashni o'rganishning eng oson yo'li - loyiha
+                          tuzish. Tinimsiz video-darslik ko'rishni bas qiling va
+                          quyidagi amaliy loyihani tuzing
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          Karra Jadval
+                          <img
+                            class="object-left duration-300 hover:scale-[4]"
+                            src="dist/images/png/karra-jadval.jpg"
+                            alt=""
+                          />
+                          Rasmda ko'rsatilgandek karra jadvalni consolega
+                          chiqaring.
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          2. Calculator 1. Kiritilgan son tubmi? (Kiritilgan
+                          sondan keyingi 3 ta tub sonni chiqaring) 2. Kiritilgan
+                          songacha fibonacci sonlarini ekranga chiqaring.
+                        </li>
+                        <hr class="my-1" />
+                        <li>3. Kiritilgan string Polindrommi?</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://www.w3schools.com/cs/cs_while_loop.php"
+                            >While</a
+                          >
+                          mavzudan toki
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://www.w3schools.com/cs/cs_for_loop.php"
+                            >for loop</a
+                          >
+                          mavzugacha o'rganish
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://medium.com/@george.af.field/computer-science-fundamentals-sequencing-selection-iteration-b6d8f9ad904b"
+                          >
+                            Sequence, selection &amp; iteration
+                          </a>
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://github.com/JohnnySenior/Calculator"
+                          >
+                            Murakkab Calculator (example)
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        target="_blank"
+                        href="https://youtu.be/LnXO2GNfDaU"
+                        class="card-title font-medium"
+                      >
+                        While va for
+                      </a>
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/VHNvangsF_A"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Amaliy Loyiha No. 1</h4>
+                      <ul>
+                        <li>
+                          Dasturlashni o'rganishning eng oson yo'li - loyiha
+                          tuzish. Tinimsiz video-darslik ko'rishni bas qiling va
+                          quyidagi amaliy loyihani tuzing
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          Karra Jadval
+                          <img
+                            class="object-left duration-300 hover:scale-[4]"
+                            src="./images/png/karra-jadval.jpg"
+                            alt=""
+                          />
+                          Rasmda ko'rsatilgandek karra jadvalni consolega
+                          chiqaring.
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          2. Calculator 1. Kiritilgan son tubmi? (Kiritilgan
+                          sondan keyingi 3 ta tub sonni chiqaring) 2. Kiritilgan
+                          songacha fibonacci sonlarini ekranga chiqaring.
+                        </li>
+                        <hr class="my-1" />
+                        <li>3. Kiritilgan string Polindrommi?</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://www.w3schools.com/cs/cs_while_loop.php"
+                            >While</a
+                          >
+                          mavzudan toki
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://www.w3schools.com/cs/cs_for_loop.php"
+                            >for loop</a
+                          >
+                          mavzugacha o'rganish
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://medium.com/@george.af.field/computer-science-fundamentals-sequencing-selection-iteration-b6d8f9ad904b"
+                          >
+                            Sequence, selection &amp; iteration
+                          </a>
+                        </li>
+                        <hr class="my-1" />
+                        <li>
+                          <a
+                            class="font-medium text-blue-700"
+                            target="_blank"
+                            href="https://github.com/JohnnySenior/Calculator"
+                          >
+                            Murakkab Calculator (example)
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card relative">
+                  <div
+                    class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp"
+                  >
+                    <h2 class="h-12">
+                      <a
+                        class="card-title font-medium"
+                        target="_blank"
+                        href="https://www.youtube.com/watch?v=nGhcPOshYxk"
+                        >IL Verification &amp; FCL</a
+                      >
+                    </h2>
+                    <div class="h-44">
+                      <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/nGhcPOshYxk"
+                        allowfullscreen
+                        class="h-full w-full rounded-sm"
+                      ></iframe>
+                    </div>
+                    <div>
+                      <h3
+                        class="task mb-4 flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">vazifa</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+
+                      <h3
+                        class="extra flex cursor-pointer items-center justify-between"
+                      >
+                        <span class="font-medium capitalize">Qo'shimcha</span
+                        ><button class="collapse-btn"></button>
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
+                      <ul>
+                        <li>1. What is Stack vs Queue?</li>
+                        <li>2. What is Base Class Library (BCL)?</li>
+                        <li>3. What is Framework Class Library (FCL)?</li>
+                        <li>4. What is NGen.exe?</li>
+                        <li>
+                          5. Why to translate into IL? Can't we make CLR
+                          understand C# directly?
+                        </li>
+                        <li>6. What is IL Verification?</li>
+                        <li>7. What is safe vs unsafe code?</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500"
+                    >
+                      <ul>
+                        <hr class="my-1" />
+                        <li>CLR via C# pg. 17-23</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
+          <div class="flex justify-center">
+            <ul class="flex items-center">
+              <li class="mr-4 border-r-2 border-violet-50 pr-4">
+                <a
+                  class="text-2xl font-medium text-violet-50"
+                  target="_blank"
+                  href="https://t.me/ElbekningCSharpDarslari"
+                  ><img src="./images/svg/tg.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="text-2xl font-medium text-violet-50"
+                  target="_blank"
+                  href="https://t.me/azam_amonov"
+                  >Bog'lanish</a
+                >
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
-      <section class="pb-12">
-        <div class="container mx-auto px-4">
-          <div id="row" class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a target="_blank" href="https://youtu.be/LnXO2GNfDaU" class="card-title font-medium">
-                    Markdown tili, C# tili va VS Code O'rnatish
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/LnXO2GNfDaU" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button type="button"
-                      class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button type="button"
-                      class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Markdown fayl yaratish</h4>
-                  <ul>
-                    <li>
-                      1. O'zingiz haqingizda README.md file yarating.
-                      Shartlar:
-                    </li>
-                    <li>1.1 Sarlavha bo'lishi shart</li>
-                    <li>1.2 Matn bo'lish shart</li>
-                    <li>1.3 Rasm bo'lishi shart</li>
-                    <li>1.4 Ro'yxat bo'lishi shart</li>
-                    <li>1.5. Link bo'lishi shart</li>
-                    <hr class="my-1" />
-                    <li>2. Hello World! loyihasini yaratish</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-4 font-medium">
-                    <a target="_blank" class="font-medium text-blue-700"
-                      href="https://www.youtube.com/watch?v=QiK2IYZd6kY&amp;list=PLG2w4duP-rS3GtPSe7oUVTUAU53h7rUnS&amp;index=4">1.
-                      Git o'rnatish</a>
-                    <iframe loading="lazy"
-                      src="https://www.youtube.com/embed/QiK2IYZd6kY?list=PLG2w4duP-rS3GtPSe7oUVTUAU53h7rUnS"
-                      allowfullscreen></iframe>
-                  </h4>
-                  <h4>
-                    <a class="font-medium text-blue-700" target="_blank"
-                      href="https://www.markdownguide.org/basic-syntax/">2. Markdown dokumentatsiyasi</a>
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a target="_blank" href="https://youtu.be/LnXO2GNfDaU" class="card-title font-medium">
-                    Console nima? C# tilida ma'lumot turlari va operatorlar
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/c7_9Gx_l-js" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Armiya yoshidamisan?</h4>
-                  <ul>
-                    <li>
-                      1. Armiya yoshi kiritilganda katta yoki kichikligini
-                      aytadigan sodda loyiha tuzilsin
-                    </li>
-                    <li class="card">
-                      2. Darsda ko'rsatilgandek sodda kalkulyator loyihasi
-                      bajarilsin va githubga qoyilsin
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <h4>
-                    <a class="font-medium text-blue-700" target="_blank"
-                      href="https://www.w3schools.com/cs/cs_variables.php">Variables</a>
-                    mavzudan toki
-                    <a class="font-medium text-blue-700" target="_blank"
-                      href="https://www.w3schools.com/cs/cs_operators.php">Operators</a>
-                    mavzugacha o'rganish
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a target="_blank" href="https://youtu.be/LnXO2GNfDaU" class="card-title font-medium">
-                    String, if, switch, bool & ternary operator
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/0N3MM52VByU" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Armiya yoshidamisan?</h4>
-                  <ul>
-                    <li>
-                      1. Armiya yoshi kiritilganda katta yoki kichikligini
-                      aytadigan sodda loyiha tuzilsin
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      2. Darsda ko'rsatilgandek sodda kalkulyator loyihasi
-                      bajarilsin va githubga qoyilsin
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4>1. Geometry Guru:</h4>
-                  <ul>
-                    <li>1. Aylana yuzasini hisoblash (Pi * R^2)</li>
-                    <li>2. Mustaqil izlanib, qiziq muammoni hal qiling</li>
-                  </ul>
-                  <hr class="my-1" />
-                  <h4>2.Simple Calculator</h4>
-                  <ul>
-                    <li>1. +, -, *, /, ^ Input: 2^2, Output: 4</li>
-                    <li>
-                      2. Murakkab algebraik amallar orqali qiziq muammoni hal
-                      qiling
-                    </li>
-                    <hr class="my-1" />
-                    <li>Qabul qilish shartlari:</li>
-                    <li>1. Minimum: 3 Commit</li>
-                    <li>
-                      2. README file formatlangan holda, screenshot va gif
-                      (demo)
-                    </li>
-                    <li>
-                      3. Repo ortiqcha (ex. bin, obj, etc.) fayllar bo'lishi
-                      mumkin emas
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a target="_blank" href="https://www.youtube.com/embed/rPLInoxDHHc" class="card-title font-medium">
-                    Array va foreach
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/rPLInoxDHHc" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">1. IELTS Score Calculator</h4>
-                  <ul>
-                    <li>
-                      Foydalanuvchi har bir bo'lim bahosini kiritadi.
-                      O'rtachasini hisoblang IELTS baholash categorisini
-                      ko'rsating.
-                    </li>
-                    <hr class="my-1" />
-                    <li>9 - Expert</li>
-                    <li>8 - Very Good</li>
-                    <li>7 - Good</li>
-                    <li>6 - Competent</li>
-                    <li>5 - Modest</li>
-                    <li>Below or above that range is Invalid</li>
-                    <li class="cursor-pointer font-medium text-blue-700">
-                      https://ieltsliz.com/ielts-band-scores
-                    </li>
-                    <hr class="my-1" />
-                    <li>Qabul qilish shartlari:</li>
-                    <li>1. Minimum: 3 Commit</li>
-                    <li>
-                      2. README file formatlangan holda, screenshot va gif
-                      (demo)
-                    </li>
-                    <li>
-                      3. Repo ortiqcha (ex. bin, obj, etc.) fayllar bo'lishi
-                      mumkin emas
-                    </li>
-                    <hr class="my-1" />
-                    <li>2. Drawer</li>
-                    <li>1. Triangle, Square va hokazo kabi menu chiqadi</li>
-                    <li>
-                      2. Foydalanuvchi tanglagan shaklni * orqali chizib
-                      berish kerak
-                    </li>
-                    <li>
-                      3. Do you want to continue? Yes (y) / No (n)
-                      chiqarilsin. Yes bo'lsa dastur boshiga qaytilsin.
-                    </li>
-                    <hr class="my-1" />
-                    <li>Qabul qilish shartlari:</li>
-                    <li>1. Minimum: 3 Commit</li>
-                    <li>
-                      2. README file formatlangan holda, screenshot va gif
-                      (demo)
-                    </li>
-                    <li>
-                      3. Repo ortiqcha (ex. bin, obj, etc.) fayllar bo'lishi
-                      mumkin emas
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" href="https://www.w3schools.com/cs/cs_arrays.php">Array</a>
-                      mavzusini o'rganish
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a target="_blank" href="https://youtu.be/fBcMHZ4XoKM" class="card-title font-medium">
-                    Method nima?
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/fBcMHZ4XoKM" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                  <ul>
-                    <li>1. What is escape character?</li>
-                    <li>2. What is string concatination? + vs String</li>
-                    <li>3. What is string interpolation?</li>
-                    <li>4. What is verbating string?</li>
-                    <li>5. What is ternary operator?</li>
-                    <li>6. What is pattern matching?</li>
-                    <hr class="my-1" />
-                    <li class="mb-2 font-medium">Kodni o'qib, o'rganing</li>
-                    <li>
-                      <code class="bg-slate-50">
-                          PrintParagraph("IELTS score average FOR academic");
-                          PrintText("Listening score: "); decimal listeningScore
-                          = GetUserScore(); PrintText("Reading score: ");
-                          decimal readingScore = GetUserScore();
-                          PrintText("Speaking score: "); decimal speakingScore =
-                          GetUserScore(); PrintText("Writing score: "); decimal
-                          writingScore = GetUserScore(); decimal[] scores = {
-                          speakingScore, listeningScore, writingScore,
-                          readingScore }; decimal averageScore =
-                          scores.Average(); int baseScore = (int)averageScore;
-                          decimal remainder = ExtractRemainder(averageScore);
-                          averageScore = baseScore + remainder; string levelName
-                          = MapToLevelName(averageScore); PrintParagraph($"Your
-                          overall : {averageScore}!\nYour Category:
-                          {levelName}"); void PrintParagraph(string message) {
-                          Console.WriteLine(message); } void PrintText(string
-                          message) { Console.Write(message); } string
-                          MapToLevelName(decimal score) { return score switch {
-                          9 or 8.5m => "Expert", 8 or 7.5m => "Very Good", 7 or
-                          6.5m => "Good", 6 or 5.5m => "Competent", 5 =>
-                          "Modest", _ =>"Incompetent" }; } decimal
-                          ExtractRemainder(decimal averageScore) { decimal
-                          rawRemainder = averageScore - (int)averageScore;
-                          return rawRemainder switch { < 0.25m=> 0, < 0.75m=>
-                          0.5m, _ => 1, }; } decimal GetUserScore() { string
-                          userInput = Console.ReadLine(); try { return
-                          Convert.ToDecimal(userInput); } catch(FormatException
-                          formatException) { Console.WriteLine("The score you
-                          inserted was invalid. Considering this section 0...");
-                          return 0; } }
-                        </code>
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_methods.php">Methods</a>
-                      mavzudan toki
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_method_overloading.php">Method overloading</a>
-                      mavzugacha o'rganish
-                    </li>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_exceptions.php">Exceptions</a>
-                      mavzusini mustaqil o'rganish
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a target="_blank" href="https://youtu.be/LnXO2GNfDaU" class="card-title font-medium">
-                    CLR Basics
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/nwitZwE--Wk" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                  <ul>
-                    <li>1. What is .NET?</li>
-                    <li>2. What is CLR? How CLR works?</li>
-                    <li>3. What does compiler do?</li>
-                    <li>4. What is Managed Code?</li>
-                    <li>5. What does Managed Code contain</li>
-                    <li>6. What is IL?</li>
-                    <li>7. What is Assembly Language?</li>
-                    <li>8. Describe CLRs execution model?</li>
-                    <hr class="my-1" />
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://github.com/Hassanhabib/CSharpCodingStandard">Kodni o'qib o'rganish</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://drive.google.com/file/d/1UQZpz_A1HL-ai5Q44sVvY59wjDNbfbFb/view?usp=share_link">
-                        CLR via C# ktobini yuklab olish.
-                      </a>
-                    </li>
-                    <li>CLR via C# pg. 3-6</li>
-                    <li>CLR Execution Model</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank"
-                    href="https://www.youtube.com/watch?v=f-QA-HGQccQ">IL &amp; JIT
-                    Compilation</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/f-QA-HGQccQ" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Amaliy Loyiha No. 1</h4>
-                  <ul>
-                    <li>
-                      Dasturlashni o'rganishning eng oson yo'li - loyiha
-                      tuzish. Tinimsiz video-darslik ko'rishni bas qiling va
-                      quyidagi amaliy loyihani tuzing
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      Karra Jadval
-                      <img class="object-left duration-300 hover:scale-[4]" src="dist/images/png/karra-jadval.jpg"
-                        alt="" />
-                      Rasmda ko'rsatilgandek karra jadvalni consolega
-                      chiqaring.
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      2. Calculator 1. Kiritilgan son tubmi? (Kiritilgan
-                      sondan keyingi 3 ta tub sonni chiqaring) 2. Kiritilgan
-                      songacha fibonacci sonlarini ekranga chiqaring.
-                    </li>
-                    <hr class="my-1" />
-                    <li>3. Kiritilgan string Polindrommi?</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_while_loop.php">While</a>
-                      mavzudan toki
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_for_loop.php">for
-                        loop</a>
-                      mavzugacha o'rganish
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://medium.com/@george.af.field/computer-science-fundamentals-sequencing-selection-iteration-b6d8f9ad904b">
-                        Sequence, selection &amp; iteration
-                      </a>
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://github.com/JohnnySenior/Calculator">
-                        Murakkab Calculator (example)
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a target="_blank" href="https://youtu.be/LnXO2GNfDaU" class="card-title font-medium">
-                    While va for
-                  </a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/VHNvangsF_A" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Amaliy Loyiha No. 1</h4>
-                  <ul>
-                    <li>
-                      Dasturlashni o'rganishning eng oson yo'li - loyiha
-                      tuzish. Tinimsiz video-darslik ko'rishni bas qiling va
-                      quyidagi amaliy loyihani tuzing
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      Karra Jadval
-                      <img class="object-left duration-300 hover:scale-[4]" src="./images/png/karra-jadval.jpg"
-                        alt="" />
-                      Rasmda ko'rsatilgandek karra jadvalni consolega
-                      chiqaring.
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      2. Calculator 1. Kiritilgan son tubmi? (Kiritilgan
-                      sondan keyingi 3 ta tub sonni chiqaring) 2. Kiritilgan
-                      songacha fibonacci sonlarini ekranga chiqaring.
-                    </li>
-                    <hr class="my-1" />
-                    <li>3. Kiritilgan string Polindrommi?</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_while_loop.php">While</a>
-                      mavzudan toki
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://www.w3schools.com/cs/cs_for_loop.php">for loop</a>
-                      mavzugacha o'rganish
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://medium.com/@george.af.field/computer-science-fundamentals-sequencing-selection-iteration-b6d8f9ad904b">
-                        Sequence, selection &amp; iteration
-                      </a>
-                    </li>
-                    <hr class="my-1" />
-                    <li>
-                      <a class="font-medium text-blue-700" target="_blank"
-                        href="https://github.com/JohnnySenior/Calculator">
-                        Murakkab Calculator (example)
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card relative">
-              <div class="flex min-h-96 flex-col justify-between rounded-sm bg-white p-5 shadow-shadowsharp">
-                <h2 class="h-12">
-                  <a class="card-title font-medium" target="_blank"
-                    href="https://www.youtube.com/watch?v=nGhcPOshYxk">IL Verification &amp; FCL</a>
-                </h2>
-                <div class="h-44">
-                  <iframe loading="lazy" src="https://www.youtube.com/embed/nGhcPOshYxk" allowfullscreen
-                    class="h-full w-full rounded-sm"></iframe>
-                </div>
-                <div>
-                  <h3 class="task mb-4 flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">vazifa</span><button class="collapse-btn"></button>
-                  </h3>
-
-                  <h3 class="extra flex cursor-pointer items-center justify-between">
-                    <span class="font-medium capitalize">Qo'shimcha</span><button class="collapse-btn"></button>
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div class="task-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <h4 class="mb-2 font-medium">Savollarga javob berish</h4>
-                  <ul>
-                    <li>1. What is Stack vs Queue?</li>
-                    <li>2. What is Base Class Library (BCL)?</li>
-                    <li>3. What is Framework Class Library (FCL)?</li>
-                    <li>4. What is NGen.exe?</li>
-                    <li>
-                      5. Why to translate into IL? Can't we make CLR
-                      understand C# directly?
-                    </li>
-                    <li>6. What is IL Verification?</li>
-                    <li>7. What is safe vs unsafe code?</li>
-                  </ul>
-                </div>
-                <div class="extra-block absolute top-0 h-[71%] w-full overflow-y-scroll bg-violet-50 p-5 duration-500">
-                  <ul>
-                    <hr class="my-1" />
-                    <li>CLR via C# pg. 17-23</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="mt-auto bg-bgsharp-700 pb-10 pt-6">
-      <div class="flex justify-center">
-        <ul class="flex items-center">
-          <li class="mr-4 border-r-2 border-violet-50 pr-4">
-            <a class="text-2xl font-medium text-violet-50" target="_blank"
-              href="https://t.me/ElbekningCSharpDarslari"><img src="./images/svg/tg.svg" alt="" /></a>
-          </li>
-          <li>
-            <a class="text-2xl font-medium text-violet-50" target="_blank"
-              href="https://t.me/azam_amonov">Bog'lanish</a>
-          </li>
-        </ul>
+        </footer>
       </div>
-    </footer>
-  </div>
-  <script defer src="js/app.js"></script>
-</body>
-
+      <script defer src="js/app.js"></script>
+    </body>
+  </html>
+  <!doctype html>
 </html>
