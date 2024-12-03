@@ -52,7 +52,9 @@
 
 .open {
   left: 0 !important;
-  @apply duration-200;
+}
+#nav {
+  transition: all 400ms;
 }
 
 .fixed-body {
