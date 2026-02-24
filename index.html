@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C# va .NET darslari</title>
+    <script type="module" crossorigin src="/LearnNetUz/assets/index-GqGkBf5J.js"></script>
+    <link rel="stylesheet" crossorigin href="/LearnNetUz/assets/index-CN13DrmT.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+        // Post errors to parent window (for Surgent preview integration)
+        window._errorsSent = new Set();
+        function postErrorToParent(message, stack, source) {
+          // Dedupe errors
+          var key = (message || '').slice(0, 100);
+          if (window._errorsSent.has(key)) return;
+          window._errorsSent.add(key);
+          setTimeout(function() { window._errorsSent.delete(key); }, 5000);
+
+          if (window.parent && window.parent !== window) {
+            window.parent.postMessage({
+              type: 'error',
+              payload: {
+                message: message,
+                stack: stack,
+                url: window.location.href,
+                timestamp: new Date().toISOString(),
+                source: source || 'global'
+              }
+            }, '*');
+          }
+        }
+
+        // Catch errors before app loads (e.g., module resolution failures)
+        window.addEventListener('error', function(event) {
+          if (window.errorReporterReady) return;
+          // Skip cross-origin "Script error" — browser strips details, nothing actionable
+          if (!event.error && /^script error\.?$/i.test(event.message || '')) return;
+          var message = event.message || (event.error && event.error.message) || 'Unknown error';
+          var stack = event.error ? event.error.stack : null;
+          postErrorToParent(message, stack, 'global');
+        }, true);
+
+        // Catch unhandled promise rejections (dynamic import failures)
+        window.addEventListener('unhandledrejection', function(event) {
+          if (window.errorReporterReady) return;
+          var reason = event.reason || {};
+          var message = reason.message || String(reason) || 'Unhandled Promise Rejection';
+          // Skip generic rejections with no useful info
+          if (/^script error\.?$/i.test(message)) return;
+          var stack = reason.stack || null;
+          postErrorToParent(message, stack, 'promise');
+        });
+
+        // Catch module preload errors (Vite dynamic imports)
+        window.addEventListener('vite:preloadError', function(event) {
+          var message = 'Failed to load module: ' + (event.payload || 'unknown');
+          postErrorToParent(message, null, 'preload');
+        });
+    </script>
+  </body>
+</html>
