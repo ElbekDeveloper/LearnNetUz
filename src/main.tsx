@@ -18,15 +18,18 @@ window.addEventListener('vite:preloadError', (event) => {
   event.preventDefault();
   window.location.reload();
 });
-
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <HomePage />,
+      errorElement: <RouteErrorBoundary />,
+    }
+  ],
   {
-    path: "/",
-    element: <HomePage />,
-    errorElement: <RouteErrorBoundary />,
+    basename: import.meta.env.BASE_URL,
   }
-]);
-
+);
 // Signal to parent frame that app is ready
 const notifyParentReady = () => {
   if (window.parent && window.parent !== window) {
