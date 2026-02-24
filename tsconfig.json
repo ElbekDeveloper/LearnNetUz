@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+
+		/* Bundler mode */
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+
+		/* Paths */
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@convex/*": ["./convex/_generated/*"]
+		},
+
+		/* Strict */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true,
+
+		/* Compat */
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"useDefineForClassFields": true,
+		"types": ["vite/client"]
+	},
+	"include": ["src", "vite.config.ts"],
+	"exclude": ["dist", "node_modules"]
+}

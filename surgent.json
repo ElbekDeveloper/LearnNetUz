@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "init": "bun install && bun run build",
+    "dev": "bun run preview",
+    "lint": "bun run lint",
+    "dev:convex": "bunx convex codegen && bunx tsc -p convex --noEmit && bunx convex dev --once --typecheck=disable"
+  },
+  "name": "surgent-web-server"
+}
